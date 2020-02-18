@@ -1902,7 +1902,7 @@ $(document).ready(function () {
 		let mainCollection = document.querySelectorAll('.special-offers .container');
 		let catalog = document.querySelector('.special-offers.catalog');
 
-		$(".special-offers").each(function (index, element) {
+		$(".special-offers .container").each(function (index, element) {
 			var $this = $(this);
 			$this.find('[class ^=swiper-pagination]').addClass("instance-pagination-" + index);
 		});
