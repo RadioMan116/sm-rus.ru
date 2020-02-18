@@ -22,7 +22,8 @@ html {
 	-webkit-tap-highlight-color: transparent;
 	height: auto;
 	min-height: -webkit-fill-available;
-	width: calc(100vw - 17px);
+	// width: calc(100vw - 17px);
+	width: 100%;
 	display: flex;
 
 	@media screen and (max-width: 767px) {
