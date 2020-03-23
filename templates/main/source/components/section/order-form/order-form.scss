@@ -103,6 +103,7 @@
 
 		&__text {
 			padding-left: 8%;
+			padding-right: 16px;
 		}
 
 		.how-many {
@@ -313,7 +314,7 @@
 			margin-bottom: 0;
 
 			.sof-req {
-				color: #394791;
+				color: $base;
 			}
 		}
 
@@ -418,14 +419,14 @@
 			line-height: 1.5;
 			letter-spacing: normal;
 			text-align: left;
-			// color: #394791;
+			// color: $base;
 			margin: 28px 0 24px !important;
 			display: flex;
 			align-items: flex-start;
 			width: 100%;
 
 			a {
-				color: #394791;
+				color: $base;
 				margin: 0 3px;
 			}
 		}
@@ -434,7 +435,7 @@
 			width: 172px;
 			height: 40px;
 			border-radius: 3px;
-			background-color: #394791;
+			background-color: $base;
 			color: #ffffff;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
@@ -541,7 +542,7 @@
 					.ordering__payment-item {
 						padding: 20px 10px 9px;
 						border-color: transparent;
-						border: 2px solid #394791;
+						border: 2px solid $base;
 					}
 				}
 
@@ -571,7 +572,7 @@
 
 				&:checked+.ordering__payment-item {
 					padding: 20px 10px 9px;
-					border: 2px solid #394791;
+					border: 2px solid $base;
 
 					.ordering__payment-circle:after {
 						transform: scale(1);
@@ -1166,7 +1167,7 @@
 						.ordering__payment-item {
 							padding: 20px 4px 9px;
 							border-color: transparent;
-							border: 2px solid #394791;
+							border: 2px solid $base;
 						}
 					}
 				}
@@ -1188,7 +1189,7 @@
 
 					&:checked+.ordering__payment-item {
 						padding: 20px 4px 9px;
-						border: 2px solid #394791;
+						border: 2px solid $base;
 
 						.ordering__payment-circle:after {
 							transform: scale(1);

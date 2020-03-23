@@ -338,7 +338,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
 	opacity: 1;
-	background: #007aff;
+	background: $base;
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
@@ -371,7 +371,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-	margin: 0 4px;
+	margin: 0 8px;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {

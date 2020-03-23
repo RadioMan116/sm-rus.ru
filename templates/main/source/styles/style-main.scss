@@ -20,6 +20,7 @@ img {
 .fixed {
 	overflow: hidden;
 	// width:calc(100% - 17px);
+
 }
 
 .swiper-container,
@@ -38,7 +39,8 @@ img {
 	display: none;
 
 	.response-popup {
-		padding: 1rem;
+		padding: 32px;
+		width: 320px;
 
 		&__title {
 
@@ -64,6 +66,13 @@ img {
 			text-align: center;
 			color: #262626;
 			margin-bottom: 1rem;
+		}
+
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
 		}
 	}
 }
@@ -92,8 +101,9 @@ h1.title {
 		}
 	}
 
-	&.new-catalog{
+	&.new-catalog {
 		position: relative;
+		// width: calc(100% - 32px);
 	}
 }
 
@@ -101,6 +111,7 @@ h1.title {
 	padding-left: 0;
 
 }
+
 .fancybox-container {
 	transition: all 0.3s ease-in-out !important;
 }
@@ -124,7 +135,7 @@ h1.title {
 
 	img {
 		position: unset !important;
-		width: auto !important;
+		width: auto!important;
 		height: auto !important;
 		max-width: 100%;
 		max-height: 100%;
@@ -138,7 +149,6 @@ h1.title {
 	transition-duration: 500ms !important;
 }
 
-
 .compensate-for-scrollbar {
 	margin-right: 0px !important;
 }
@@ -146,51 +156,6 @@ h1.title {
 body.fancybox-active {
 	overflow: unset !important;
 }
-
-// body.pattern {
-// 	.content {
-// 		display: flex;
-// 		flex-direction: column;
-
-// 		.gallery~div,
-// 		.gallery~article {
-// 			background: white;
-// 		}
-
-// 		.special-offers {
-// 			margin: 0;
-// 			padding: 26px 0 30px;
-// 		}
-
-// 		.gallery {
-// 			margin-bottom: 58px;
-// 			// padding-bottom: 60px;
-// 		}
-
-// 		.main-tags {
-// 			margin-bottom: 0px;
-// 			padding-bottom: 0px;
-// 		}
-
-// 		.reviews-main {
-
-// 			margin-bottom: 0px;
-// 			padding-bottom: 42px;
-// 		}
-
-// 		.category {
-// 			padding-top: 15px;
-// 		}
-// 	}
-
-// 	.header {
-// 		background: white;
-// 	}
-
-// 	background: url('../images/l-rus-pattern.png');
-// }
-
-
 
 .docs-frame {
 	// flex-shrink: 0;
@@ -251,12 +216,6 @@ picture {
 	text-align: center;
 	// justify-content: center;
 	display: block;
-
-	img {
-		height: auto !important;
-		max-width: 100% !important;
-		max-height: 100% !important;
-	}
 }
 
 @media screen and (max-width: 767px) {
@@ -290,6 +249,12 @@ picture {
 
 	.fixed {
 		width: 100%;
+
+		.header {
+			+.section {
+				opacity: 0;
+			}
+		}
 	}
 
 }

@@ -22,7 +22,7 @@
 	&__slider {
 		.container {
 			background-color: #f8f8f8;
-			padding-top: 40px;
+			padding-top: 0px;
 			padding-bottom: 58px;
 
 			&::before {
@@ -620,7 +620,7 @@
 			margin: 0 5px;
 
 			&-active {
-				background: #394791 !important;
+				background: $base !important;
 			}
 		}
 

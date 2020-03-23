@@ -1,10 +1,11 @@
 .content-top {
-	background: url("../images/catalog.jpg") no-repeat;
-	background-size: 100% 100%;
+	// background: url("../images/catalog.jpg") no-repeat;
+	background-size: auto;
 	max-width: 1436px;
 	margin: 0 auto;
 	min-height: 362px;
 	display: flex;
+	background-position-x: right;
 
 	&__inner {
 		width: 100%;
@@ -43,6 +44,7 @@
 	}
 
 	.container {
+
 		padding: 0;
 		display: flex;
 		flex-direction: column;
@@ -51,7 +53,8 @@
 
 	&__aside {
 		border-radius: 3px;
-		background-color: #394791c4;
+		background-color:#666666;
+
 		padding: 32px 65px 32px 32px;
 		max-width: 572px;
 		margin-bottom: 32px;
@@ -82,14 +85,14 @@
 			// margin-bottom: 91px;
 			// width: 470px;
 			color: #ffffff;
-			font-family: Arial, sans-serif;
+			font-family: Arial,sans-serif;
 			font-size: 13px;
 			line-height: 22px;
 		}
 	}
 
 	.breadcrumbs {
-		width: fit-content;
+		width: 100%;
 		font-size: 12px;
 		font-weight: normal;
 		font-style: normal;
@@ -99,9 +102,6 @@
 		color: #ffffff;
 		margin-bottom: 10px;
 		margin-top: 25px;
-		border-radius: 2px;
-		background: rgba(0, 0, 0, 0.21);
-		padding:  0 11px;
 
 		div {
 			align-items: center;
@@ -110,18 +110,15 @@
 		a {
 			color: #ffffff;
 		}
-		&__text {
-			font-weight: 700;
-		}
 	}
 
 
 	@media screen and (max-width: 767px) {
 		height: auto;
-		background-position-x: 100%;
-		background: url("../images/catalog-mobile.png") 100% 100% no-repeat;
-		background-size: cover;
-		min-height: unset;
+		background-position-x: 100% !important;
+		// background: url("../images/catalog-mobile.png") 100% 100% no-repeat;
+		background-size: cover !important;
+		min-height: 400px;
 
 		.container {
 			height: 100%;
@@ -135,7 +132,7 @@
 		}
 
 		.navchain {
-			font-family: Arial, sans-serif;
+			font-family: Arial,sans-serif;
 			font-size: 12px;
 			line-height: 24px;
 			margin-top: 146px;
@@ -147,7 +144,6 @@
 			width: 100%;
 			padding: 0;
 			max-width: unset !important;
-			    margin-bottom: 3px;
 		}
 
 
@@ -174,10 +170,9 @@
 		}
 
 		.breadcrumbs {
-			width: 100%;
-			margin-top: 18px;
+			margin-top: 145px;
 			text-align: center;
-			padding: 0 8px;
+			padding: 0 16px;
 
 			div[itemtype="http://schema.org/BreadcrumbList"] {
 				justify-content: center;

@@ -11,7 +11,7 @@
 		right: 15px;
 		top: 15px;
 		font-size: 24px;
-		color: #394791;
+		color: $base;
 		padding-right: 5px;
 	}
 
@@ -194,7 +194,7 @@
 		background-position: center;
 		width: 56px;
 		height: 36px;
-		background-color: #394791;
+		background-color: $base;
 		background-repeat: no-repeat;
 		border-radius: 2px;
 
@@ -222,7 +222,7 @@
 		width: 190px;
 		min-width: 100px;
 		flex-shrink: 0;
-
+		align-items: center;
 	}
 
 	&:last-child {
@@ -328,17 +328,17 @@
 	}
 
 	.added-cart__back {
-		color: #394791;
+		color: $base;
 		border-radius: 2px;
-		border: solid 1px #394791;
+		border: solid 1px $base;
 		text-decoration: none !important;
 	}
 
 	.added-cart__order {
 		border-radius: 2px;
-		background-color: #394791;
+		background-color: $base;
 		color: #ffffff;
-		margin-left: auto;
+		margin-left: 16px;
 		text-decoration: none !important;
 	}
 
@@ -441,7 +441,8 @@
 		width: 100%;
 		margin-bottom: 7px !important;
 	}
-	.basket__parent{
+
+	.basket__parent {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -464,13 +465,15 @@
 
 	.added-cart__items {
 		max-width: 100%;
-		&:first-of-type{
+
+		&:first-of-type {
 			margin-bottom: 6px;
 		}
+
 		+.added-cart__items {
 
 			flex-wrap: wrap;
-	
+
 			&:before {
 				position: absolute;
 				height: 1px;
@@ -488,12 +491,20 @@
 
 
 		&:first-child {
-			width: 50px;
+			width: 84px;
 			min-width: unset;
 			position: absolute;
-			left: 30px;
+			left: 5px;
 			padding-top: 0;
+			top: 5px;
+			height: 60px;
+			justify-content: flex-start;
+
 			// padding-left: 0;
+			a {
+				height: 100%;
+				width: 100%;
+			}
 		}
 
 		&+.added-cart__item {
@@ -513,14 +524,19 @@
 			}
 
 			.added-cart__price {
-				text-align: center;
+				// text-align: center;
 				color: #333333;
 				font-family: "Roboto Condensed";
-				font-size: 32px;
+				font-size: 29px;
 				font-weight: 400;
 				line-height: 24px;
 				text-transform: uppercase;
 				margin-bottom: 20px;
+				padding-left: 80px;
+
+				b {
+					font-size: inherit;
+				}
 			}
 
 			.added-cart__button {
@@ -529,8 +545,10 @@
 				a {
 					width: 100%;
 					text-align: center;
-					
-					&:first-child{
+					margin-left: 0;
+					height: 36px;
+
+					&:first-child {
 						margin: 0 0 6px;
 					}
 				}

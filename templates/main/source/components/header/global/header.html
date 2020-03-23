@@ -7,7 +7,18 @@
 				</button>
 				{% include 'menu/menu-header/menu-header.html' %}
 				<div class="header__icons">
-					<div class="header__search js-header__search"></div>
+					<div class="header__search js-header__search">
+						Поиск…
+					</div>
+					<a class="header__mobile-tel" href="tel:+74959297078"></a>
+				</div>
+			</div>
+		</div>
+		<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+			<div class="container">
+				{% include 'logo/global/logo.html' %}
+				{% include 'popup-call/callback.html' %}
+				<div class="header__icons">
 					<a class="header__mobile-tel" href="tel:+74959297078"></a>
 					<a title="Перейти в отложенные" href="#" class="header__favorite  active">
 						<span class="header__number">3</span>
@@ -15,18 +26,25 @@
 					<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare  active">
 						<span class="header__number">2</span>
 					</a>
-					<a href="03 - Order Form.html" class="header__basket  active">
-						<span class="header__number">1</span>
-					</a>
+					<div class="header__basket  active">
+						<div class="header__basket-info">
+							В корзине
+							<a href="03 - Order Form.html" class="header__basket-link">5 товаров</a>
+							<!-- /.header__basket-link -->
+							<div class="header__basket-price">137 545 руб.</div>
+							<!-- /.header__basket-price -->
+						</div>
+						<!-- /.header__basket-info -->
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+		<div class="header__block header__block_menu">
 			<div class="container">
-				{% include 'logo/global/logo.html' %}
 				{% include 'menu/drop-menu/drop-menu.html' %}
 			</div>
 		</div>
+		<!-- /.header__main-menu -->
 	</div>
 	<div class="search__popup">
 		<form action="/search/" class="header__form">

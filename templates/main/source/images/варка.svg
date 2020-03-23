@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="25px" height="19px" viewBox="0 0 25 19" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.8 0 0 0 0 0.2392157 0 0 0 0.3058824 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.7294118 0 0 0 0 0.07058824 0 0 0 0 0.07058824 0 0 0 0.4039216 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <path d="M0 0L24 0L24 18L0 18L0 0Z" id="path_1" />
+    <path d="M3.999 0L4.001 0Q4.19746 0 4.39297 0.0192563Q4.58848 0.0385126 4.78117 0.0768396Q4.97385 0.115167 5.16185 0.172196Q5.34985 0.229224 5.53135 0.304406Q5.71285 0.379587 5.88612 0.472197Q6.05938 0.564807 6.22272 0.673953Q6.38607 0.783099 6.53794 0.907731Q6.6898 1.03236 6.82872 1.17128Q6.96764 1.3102 7.09227 1.46206Q7.2169 1.61393 7.32605 1.77727Q7.43519 1.94062 7.5278 2.11388Q7.62041 2.28715 7.69559 2.46865Q7.77078 2.65015 7.8278 2.83815Q7.88483 3.02615 7.92316 3.21883Q7.96149 3.41152 7.98074 3.60703Q8 3.80254 8 3.999L8 8.001Q8 8.19746 7.98074 8.39297Q7.96149 8.58848 7.92316 8.78117Q7.88483 8.97385 7.8278 9.16185Q7.77078 9.34985 7.69559 9.53135Q7.62041 9.71285 7.5278 9.88611Q7.43519 10.0594 7.32605 10.2227Q7.2169 10.3861 7.09227 10.5379Q6.96764 10.6898 6.82872 10.8287Q6.6898 10.9676 6.53794 11.0923Q6.38607 11.2169 6.22272 11.326Q6.05938 11.4352 5.88612 11.5278Q5.71285 11.6204 5.53135 11.6956Q5.34985 11.7708 5.16185 11.8278Q4.97385 11.8848 4.78117 11.9232Q4.58848 11.9615 4.39297 11.9807Q4.19746 12 4.001 12L3.999 12Q3.80254 12 3.60703 11.9807Q3.41152 11.9615 3.21883 11.9232Q3.02615 11.8848 2.83815 11.8278Q2.65015 11.7708 2.46865 11.6956Q2.28715 11.6204 2.11388 11.5278Q1.94062 11.4352 1.77727 11.326Q1.61393 11.2169 1.46206 11.0923Q1.3102 10.9676 1.17128 10.8287Q1.03236 10.6898 0.907731 10.5379Q0.783099 10.3861 0.673953 10.2227Q0.564807 10.0594 0.472197 9.88611Q0.379587 9.71285 0.304406 9.53135Q0.229224 9.34985 0.172196 9.16185Q0.115167 8.97385 0.0768396 8.78117Q0.0385126 8.58848 0.0192563 8.39297Q0 8.19746 0 8.001L0 3.999Q0 3.80254 0.0192563 3.60703Q0.0385126 3.41152 0.0768396 3.21883Q0.115167 3.02615 0.172196 2.83815Q0.229224 2.65015 0.304406 2.46865Q0.379587 2.28715 0.472197 2.11388Q0.564807 1.94062 0.673953 1.77727Q0.783099 1.61393 0.907731 1.46206Q1.03236 1.3102 1.17128 1.17128Q1.3102 1.03236 1.46206 0.907731Q1.61393 0.783099 1.77727 0.673953Q1.94062 0.564807 2.11388 0.472197Q2.28715 0.379587 2.46865 0.304406Q2.65015 0.229224 2.83815 0.172196Q3.02615 0.115167 3.21883 0.0768396Q3.41152 0.0385126 3.60703 0.0192563Q3.80254 0 3.999 0Z" transform="translate(3 2)" id="path_2" />
+    <path d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" transform="translate(3 2)" id="path_3" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+    <clipPath id="clip_3">
+      <use xlink:href="#path_3" />
+    </clipPath>
+  </defs>
+  <g id="индукционные-плиты" transform="translate(0.5 0.5)">
+    <g id="Rectangle">
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="2" />
+      </g>
+    </g>
+    <g id="Rectangle">
+      <use stroke="none" fill="#BA1212" fill-opacity="0.2509804" xlink:href="#path_2" />
+      <g clip-path="url(#clip_2)">
+        <use xlink:href="#path_2" fill="none" stroke="#BA1212" stroke-width="2" />
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <g id="Oval">
+        <g clip-path="url(#clip_3)">
+          <use xlink:href="#path_3" fill="none" stroke="#BA1212" stroke-width="2" />
+        </g>
+      </g>
+    </g>
+    <g filter="url(#filter_2)">
+      <path d="M0 0L6 0L6 2L0 2L0 0Z" transform="translate(9 15)" id="Rectangle" fill="#BA1212" stroke="none" />
+    </g>
+    <path d="M2 4C3.10457 4 4 3.10457 4 2C4 0.895431 3.10457 0 2 0C0.895431 0 0 0.895431 0 2C0 3.10457 0.895431 4 2 4Z" transform="translate(16 10)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M3 6C4.65685 6 6 4.65685 6 3C6 1.34315 4.65685 0 3 0C1.34315 0 0 1.34315 0 3C0 4.65685 1.34315 6 3 6Z" transform="translate(15 2)" id="Oval" fill="#000000" stroke="none" />
+  </g>
+</svg>

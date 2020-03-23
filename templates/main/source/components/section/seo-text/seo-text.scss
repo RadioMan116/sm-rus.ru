@@ -1,5 +1,5 @@
 .about-brand {
-	margin-bottom: 53px;
+	margin-bottom: 36px;
 	// .about-brand__title
 
 	&__title {
@@ -25,6 +25,9 @@
 
 	br {
 		line-height: 1;
+	}
+	.container{
+		display: block;
 	}
 
 	@media screen and (max-width: 767px) {

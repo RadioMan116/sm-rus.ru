@@ -7,7 +7,7 @@
 		line-height: 1;
 		letter-spacing: normal;
 		text-align: left;
-		   color: #333333;
+		color: #333333;
 		margin-bottom: 1rem;
 	}
 
@@ -50,7 +50,7 @@
 			label {
 				display: flex;
 				color: #666666;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 				line-height: 18px;
 			}
@@ -61,7 +61,7 @@
 		&__name {
 			width: 40%;
 			padding-right: 5%;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
 		}
@@ -77,6 +77,10 @@
 			line-height: normal;
 			resize: none;
 			line-height: 2;
+
+			&:required {
+				box-shadow: none;
+			}
 		}
 
 		&__required {
@@ -133,7 +137,7 @@
 			}
 
 			&__item {
-				height: unset;
+				height: unset !important;
 				flex-wrap: wrap;
 
 				label {

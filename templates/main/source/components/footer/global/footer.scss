@@ -1,8 +1,8 @@
 .footer {
 	// background-color: #f8f8f8;
 	background: url('../images/logo-bg.svg') no-repeat #f8f8f8;
-	background-size: 46% 30%;
-	background-position: 45% 41%;
+	background-size: auto;
+	background-position: center;
 	padding: 32px 0 19px;
 	z-index: 3;
 	position: relative;
@@ -17,12 +17,13 @@
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	&__col {
 		width: 25%;
-		flex-basis: 220px;
-		flex-grow: 1;
+		flex-basis: 250px;
+		// flex-grow: 1;
 
 		.menu-footer__item {
 			width: 85%;
@@ -30,13 +31,15 @@
 			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 16px;
-			color: #394791;
+			color: $base;
 			margin-bottom: 8px;
 		}
 
-		&:nth-child(3) {
+		&:nth-child(2) {
 			width: 39%;
-			flex-basis: 310px;
+			flex-basis: 326px;
+			// flex-grow: 1;
+			// margin-left: auto;
 
 
 			.menu-footer__list {
@@ -59,14 +62,22 @@
 			}
 		}
 
-		&:nth-child(4) {
+		// &:nth-child(4) {
+		// 	width: 15%;
+		// 	flex-basis: 180px;
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	flex-basis: 100px;
+		// 	padding-top: 12px;
+		// }
+		&:nth-child(3) {
 			width: 15%;
-			flex-basis: 192px;
 			display: flex;
 			flex-direction: column;
-			// flex-basis: 100px;
+			flex-basis: 250px;
 			padding-top: 12px;
 			flex-grow: 0;
+			// margin-left: auto;
 		}
 	}
 
@@ -99,7 +110,8 @@
 		height: 34px;
 		padding: 4px 14px 4px 14px;
 		border-radius: 3px;
-		background-color: #394791;
+		// background-color: #666666;
+		background-color: $base;
 		color: #ffffff;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
@@ -131,7 +143,7 @@
 	}
 
 	&__email {
-		color: #394791;
+		color: $base;
 		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
@@ -157,7 +169,7 @@
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 36px;
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			// cursor: pointer;
 			margin-bottom: 10px;
@@ -171,7 +183,7 @@
 			text-decoration: none !important;
 
 			&:hover {
-				color: #394791;
+				color: $base;
 			}
 		}
 
@@ -224,12 +236,12 @@
 		text-decoration: none !important;
 
 		&:hover {
-			color: #394791;
+			color: $base;
 		}
 	}
 
 	.footer__call-phone-button {
-		color: #394791;
+		color: $base;
 		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
@@ -249,18 +261,12 @@
 		}
 
 		span {
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 		}
 	}
 
 	.abuse__button {
 		text-decoration: none !important;
-	}
-
-	&__half {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
 	}
 
 
@@ -277,6 +283,10 @@
 		* {
 			transition: 0.3s;
 		}
+
+		// .container {
+		// 	width: calc(100% - 32px);
+		// }
 
 		&__row {
 			flex-wrap: wrap;
@@ -300,6 +310,8 @@
 		&__telephones {
 			margin: 0px;
 			width: 100%;
+			order: -1;
+			margin-bottom: 12px;
 
 			.l-abuse,
 			.footer__button {
@@ -340,8 +352,42 @@
 				&:nth-child(4) {
 					height: unset !important;
 					padding-top: 7px !important;
-					max-height: 150px;
+				}
+
+				&:last-child {
+					// flex-direction: row;
+					position: relative;
 					flex-wrap: wrap;
+					max-height: 195px;
+					padding-top: 40px;
+
+					.footer__text,
+					.footer__tel,
+					a {
+						width: 45%;
+						white-space: nowrap;
+					}
+
+					.footer__text_first {
+						margin-top: 0px;
+						width: 100%;
+						position: absolute;
+						top: 12px;
+					}
+
+					.footer__email {
+						order: 3;
+						margin-top: 13px;
+					}
+
+					.footer__call-phone-button {
+						margin-bottom: 16px;
+						margin-top: 20px;
+					}
+
+					.footer__text_two {
+						margin-top: 22px;
+					}
 				}
 			}
 
@@ -354,8 +400,8 @@
 			&__title {
 				line-height: 27px;
 				font-size: 16px;
-				margin-bottom: 0px;
-				padding: 9px 16px 11px 0;
+				margin-bottom: 7px;
+				padding: 16px 16px 16px 0;
 				background: url("https://icongr.am/entypo/chevron-down.svg?color=666666") 100% 17px/16px no-repeat;
 				color: #333333;
 				cursor: pointer;
@@ -368,7 +414,7 @@
 			&__list {
 				display: block;
 				height: unset !important;
-				padding-bottom: 11px;
+				padding-bottom: 17px;
 			}
 		}
 
@@ -395,16 +441,6 @@
 
 			&_three {
 				margin-top: 0;
-				// display: flex;
-				// flex-wrap: wrap;
-				font-size: 12px;
-			}
-
-			&_first {
-				white-space: nowrap;
-				position: absolute;
-				left: 0;
-				top: 0;
 			}
 
 		}
@@ -424,12 +460,11 @@
 
 		.footer__call-phone-button {
 			justify-content: flex-start;
-			margin-top: 16px;
 		}
 
 		.footer__email {
 			text-align: left;
-			order: 3;
+
 
 		}
 
@@ -439,27 +474,6 @@
 
 		.privacy-policy {
 			margin-bottom: 12px;
-		}
-
-		&__half {
-			width: calc(50% - 7px);
-			position: relative;
-
-			&:first-child {
-				padding-right: 14px;
-				padding-top: 22px;
-				align-items: flex-start;
-			}
-
-			&:last-child {
-				align-items: flex-start;
-				padding-top: 36px;
-				padding-left: 7px;
-
-				.footer__text {
-					text-align: left;
-				}
-			}
 		}
 	}
 }

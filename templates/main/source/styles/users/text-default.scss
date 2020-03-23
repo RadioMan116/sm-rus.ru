@@ -1,7 +1,8 @@
 .text-default,
 .articles-main__info,
 .about-store,
-.description {
+.description,
+.about-brand {
 	margin-bottom: 48px;
 	display: flex;
 	flex-direction: column;
@@ -51,7 +52,7 @@
 		font-stretch: normal;
 		line-height: 32px;
 		letter-spacing: normal;
-		color: #394791;
+		color: $base;
 		margin-bottom: 40px;
 	}
 
@@ -80,7 +81,7 @@
 		margin: 6px 0 16px;
 
 		a {
-			color: #394791;
+			color: $base;
 
 			&[href^="tel:"] {
 				font-size: 14px;
@@ -146,10 +147,10 @@
 		z-index: 99;
 		list-style: disc;
 		color: #333333;
-		font-family: "Roboto Condensed";
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 24px;
+			font-family: Arial,
+			sans-serif;
+			font-size: 14px;
+			line-height: 22px;
 		text-align: left;
 		color: #333333;
 		padding-left: 0;
@@ -335,7 +336,7 @@
 		padding: 16px;
 
 		a {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 12px;
 			margin-right: 26px;
@@ -362,10 +363,10 @@
 		flex-wrap: wrap;
 		width: 100%;
 		margin-bottom: 29px;
-		font-family: Arial,sans-serif;
+		display: block;
 
 		h2 {
-			text-align: center;
+			// text-align: center;
 			width: 100%;
 			margin-bottom: 18px;
 			margin-top: 18px;
@@ -383,12 +384,13 @@
 		// .official-dealers__link
 
 		&__link {
-			width: calc(50%-16px);
+			width: calc(50%-17px);
 			display: flex;
 			position: relative;
 			overflow: hidden;
 			margin-bottom: 19px;
 			margin-top: 14px;
+			display: inline-flex;
 
 			&:nth-of-type(1) {
 				margin-right: 29px;
@@ -423,8 +425,6 @@
 	.about-store__button {
 		display: none;
 	}
-
-
 
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
@@ -668,7 +668,7 @@
 			width: 100%;
 			background: white;
 			padding: 8px 15px;
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			display: flex;
@@ -679,7 +679,7 @@
 				width: 119px;
 				position: absolute;
 				height: 1px;
-				border-bottom: 1px dashed #394791;
+				border-bottom: 1px dashed $base;
 				bottom: 9px;
 			}
 

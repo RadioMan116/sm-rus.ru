@@ -38,7 +38,8 @@
 
 
 		&:hover {
-			box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
+			box-shadow: unset;
+			border: 1px solid transparent;
 		}
 	}
 
@@ -136,7 +137,7 @@
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 1;
-				text-decoration: line-through;
+				// text-decoration: line-through;
 				left: 0;
 				top: unset;
 				bottom: 0;
@@ -156,10 +157,19 @@
 			font-size: 12px;
 			font-weight: 500;
 			line-height: 24px;
-			text-decoration: line-through;
+			// text-decoration: line-through;
 			left: 0;
 			top: -20px;
 			white-space: nowrap;
+			&:before {
+				content: "";
+				width: calc(100% - 24px);
+				position: absolute;
+				height: 1px;
+				background: #f70000;
+				transform: rotate(-13deg);
+				bottom: 6px;
+			}
 		}
 	}
 
@@ -271,7 +281,7 @@
 		background: #000 !important;
 
 		&-active {
-			background: #394791 !important;
+			background: $base !important;
 			box-sizing: border-box;
 		}
 	}
@@ -348,7 +358,7 @@
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 1;
-				text-decoration: line-through;
+				// text-decoration: line-through;
 				left: 0;
 				top: unset;
 				bottom: 0;
