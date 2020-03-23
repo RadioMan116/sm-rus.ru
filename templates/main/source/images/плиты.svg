@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="21px" height="25px" viewBox="0 0 21 25" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.7294118 0 0 0 0 0.07058824 0 0 0 0 0.07058824 0 0 0 0.4039216 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.7294118 0 0 0 0 0.07058824 0 0 0 0 0.07058824 0 0 0 0.2509804 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <path d="M0 0L20 0L20 23L0 23L0 0Z" transform="translate(0 1)" id="path_1" />
+    <path d="M0 0L14 0L14 11L0 11L0 0Z" transform="translate(3 8)" id="path_2" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+  </defs>
+  <g id="Плиты" transform="translate(0.5 0.5)">
+    <g id="Rectangle">
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="2" />
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <path d="M0 0L6 0L6 2L0 2L0 0Z" transform="translate(7 2)" id="Rectangle" fill="#BA1212" stroke="none" />
+    </g>
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(2 3)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(4 3)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(15 3)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(17 3)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0 0L5 0L5 1L0 1L0 0Z" transform="translate(2 0)" id="Rectangle" fill="#000000" fill-opacity="0.152204245" stroke="none" />
+    <path d="M0 0L5 0L5 1L0 1L0 0Z" transform="translate(13 0)" id="Rectangle" fill="#000000" fill-opacity="0.152204245" stroke="none" />
+    <path d="M0 0L20 0L20 1L0 1L0 0Z" transform="translate(0 5)" id="Rectangle" fill="#000000" stroke="none" />
+    <g filter="url(#filter_2)">
+      <g id="Rectangle">
+        <use stroke="none" fill="#D0021B" fill-opacity="0.149019614" xlink:href="#path_2" />
+        <g clip-path="url(#clip_2)">
+          <use xlink:href="#path_2" fill="none" stroke="#BA1212" stroke-width="2" />
+        </g>
+      </g>
+    </g>
+    <path d="M0 0L14 0L14 1L0 1L0 0Z" transform="translate(3 10)" id="Rectangle" fill="#BA1212" fill-opacity="0.247058824" stroke="none" />
+    <path d="M0 0L14 0L14 1L0 1L0 0Z" transform="translate(3 12)" id="Rectangle" fill="#BA1212" fill-opacity="0.247058824" stroke="none" />
+    <path d="M0 0L14 0L14 1L0 1L0 0Z" transform="translate(3 14)" id="Rectangle" fill="#BA1212" fill-opacity="0.247058824" stroke="none" />
+    <path d="M0 0L14 0L14 1L0 1L0 0Z" transform="translate(3 16)" id="Rectangle" fill="#BA1212" fill-opacity="0.247058824" stroke="none" />
+  </g>
+</svg>

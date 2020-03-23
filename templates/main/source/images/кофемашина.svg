@@ -21,21 +21,28 @@
       <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
     </filter>
     <path d="M0 0L24 0L24 24L0 24L0 0Z" id="path_1" />
-    <path d="M0 0L18 0L18 11L0 11L0 0Z" transform="translate(3 10)" id="path_2" />
+    <path d="M0 0L18 0L18 12L0 12L0 0Z" transform="translate(3 9)" id="path_2" />
+    <path d="M0 0L8 0L6 6L2 6L0 0Z" transform="translate(8 14)" id="path_3" />
+    <path d="M1 0L2.501 0Q2.57464 0 2.64793 0.00721809Q2.72121 0.0144362 2.79344 0.0288029Q2.86567 0.0431695 2.93614 0.0645464Q3.00661 0.0859233 3.07464 0.114105Q3.14268 0.142286 3.20762 0.177Q3.27257 0.211714 3.3338 0.252627Q3.39503 0.29354 3.45196 0.340257Q3.50888 0.386975 3.56095 0.439047Q3.61303 0.491119 3.65974 0.548044Q3.70646 0.60497 3.74737 0.6662Q3.78829 0.727431 3.823 0.792376Q3.85771 0.857322 3.8859 0.925357Q3.91408 0.993393 3.93545 1.06386Q3.95683 1.13433 3.9712 1.20656Q3.98556 1.27879 3.99278 1.35207Q4 1.42536 4 1.499L4 1.501Q4 1.57464 3.99278 1.64793Q3.98556 1.72121 3.9712 1.79344Q3.95683 1.86567 3.93545 1.93614Q3.91408 2.00661 3.8859 2.07464Q3.85771 2.14268 3.823 2.20762Q3.78829 2.27257 3.74737 2.3338Q3.70646 2.39503 3.65974 2.45196Q3.61303 2.50888 3.56095 2.56095Q3.50888 2.61303 3.45196 2.65974Q3.39503 2.70646 3.3338 2.74737Q3.27257 2.78829 3.20762 2.823Q3.14268 2.85771 3.07464 2.8859Q3.00661 2.91408 2.93614 2.93545Q2.86567 2.95683 2.79344 2.9712Q2.72121 2.98556 2.64793 2.99278Q2.57464 3 2.501 3L0 3L1 0Z" transform="translate(14 15)" id="path_4" />
     <clipPath id="clip_1">
       <use xlink:href="#path_1" />
     </clipPath>
     <clipPath id="clip_2">
       <use xlink:href="#path_2" />
     </clipPath>
+    <clipPath id="clip_3">
+      <use xlink:href="#path_3" />
+    </clipPath>
+    <clipPath id="clip_4">
+      <use xlink:href="#path_4" />
+    </clipPath>
   </defs>
-  <g id="пароварка" transform="translate(0.5 0.5)">
+  <g id="кофемашина" transform="translate(0.5 0.5)">
     <g id="Rectangle">
       <g clip-path="url(#clip_1)">
         <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="2" />
       </g>
     </g>
-    <path d="M0 0L24 0L24 1L0 1L0 0Z" transform="translate(0 8)" id="Rectangle" fill="#000000" stroke="none" />
     <g filter="url(#filter_1)">
       <g id="Rectangle">
         <use stroke="none" fill="#D0021B" fill-opacity="0.149019614" xlink:href="#path_2" />
@@ -47,15 +54,28 @@
     <g filter="url(#filter_2)">
       <path d="M0 0L6 0L6 5L0 5L0 0Z" transform="translate(9 2)" id="Rectangle" fill="#BA1212" stroke="none" />
     </g>
+    <path d="M0 0L6 0L6 3L0 3L0 0Z" transform="translate(9 9)" id="Rectangle" fill="#BA1212" stroke="none" />
+    <path d="M0 0L2 0L2 4L0 4L0 0Z" transform="translate(9 9)" id="Rectangle" fill="#BA1212" stroke="none" />
+    <path d="M0 0L2 0L2 4L0 4L0 0Z" transform="translate(13 9)" id="Rectangle" fill="#BA1212" stroke="none" />
     <path d="M1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2Z" transform="translate(5 2)" id="Oval" fill="#000000" stroke="none" />
     <path d="M1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2Z" transform="translate(2 2)" id="Oval" fill="#000000" stroke="none" />
     <path d="M1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2Z" transform="translate(5 5)" id="Oval" fill="#000000" stroke="none" />
     <path d="M1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2Z" transform="translate(2 5)" id="Oval" fill="#000000" stroke="none" />
-    <path d="M0 0L1 0L1 3L0 3L0 0Z" transform="translate(17 2)" id="Rectangle" fill="#000000" stroke="none" />
-    <path d="M0 0L7 0L7 1L0 1L0 0Z" transform="translate(17 5)" id="Rectangle" fill="#000000" stroke="none" />
-    <path d="M0 0L18 0L18 1L0 1L0 0Z" transform="translate(3 12)" id="Rectangle" fill="#BA1212" fill-opacity="0.2509804" stroke="none" />
-    <path d="M0 0L18 0L18 1L0 1L0 0Z" transform="translate(3 14)" id="Rectangle" fill="#BA1212" fill-opacity="0.2509804" stroke="none" />
-    <path d="M0 0L18 0L18 1L0 1L0 0Z" transform="translate(3 16)" id="Rectangle" fill="#BA1212" fill-opacity="0.2509804" stroke="none" />
-    <path d="M0 0L18 0L18 1L0 1L0 0Z" transform="translate(3 18)" id="Rectangle" fill="#BA1212" fill-opacity="0.2509804" stroke="none" />
+    <path d="M1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2Z" transform="translate(20 2)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2Z" transform="translate(17 2)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2Z" transform="translate(20 5)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M1 2C1.55228 2 2 1.55228 2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2Z" transform="translate(17 5)" id="Oval" fill="#000000" stroke="none" />
+    <g id="Rectangle">
+      <use stroke="none" fill="#D0021B" fill-opacity="0.149019614" xlink:href="#path_3" />
+      <g clip-path="url(#clip_3)">
+        <use xlink:href="#path_3" fill="none" stroke="#BA1212" stroke-width="2" />
+      </g>
+    </g>
+    <g id="Path-2">
+      <use stroke="none" fill="#D0021B" fill-opacity="0.149019614" xlink:href="#path_4" />
+      <g clip-path="url(#clip_4)">
+        <use xlink:href="#path_4" fill="none" stroke="#BA1212" stroke-width="2" />
+      </g>
+    </g>
   </g>
 </svg>

@@ -178,6 +178,202 @@
 				line-height: 39px;
 				padding: 0px 5px 0px 0px;
 			}
+
+
+			.sub-menu__list {
+				display: none;
+			}
+
+			.sub-menu__link {
+				z-index: 9;
+
+				&:hover {
+					text-decoration: none;
+
+					&:after {
+						content: '';
+						width: calc(100% - 12px);
+						height: 1px;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						border-bottom: 1px dashed;
+					}
+				}
+			}
+
+			.dropdown-menu__parent {
+				flex-direction: row;
+				left: -53px;
+				right: -53px;
+				max-width: calc(100% + 104px);
+				background-color: #fff;
+				padding-right: 0;
+				max-height: calc(100vh - 150px);
+				overflow: visible;
+				position: absolute;
+				-webkit-box-shadow: 0 18px 41px 0 rgba(0, 0, 0, .1);
+				box-shadow: 0 18px 41px 0 rgba(0, 0, 0, .1);
+				z-index: 99999;
+				top: 100%;
+				width: auto;
+				min-width: 198px;
+
+				&:before {}
+
+				.dropdown-menu__list {
+					height: auto;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					padding: 12px 40px;
+					justify-content: space-between;
+				}
+			}
+
+			.dropdown-menu__reference {
+				color: inherit;
+			}
+
+			.dropdown-menu__image {
+				img {
+					border: 1px solid transparent;
+				}
+
+				&:hover {
+					img {
+						border: 1px solid $base;
+
+					}
+
+					+.dropdown-menu__subtitle .sub-menu__list {
+						display: flex;
+
+						&:after {
+							content: '';
+							border-bottom: 1px dashed transparent;
+							position: absolute;
+							// bottom: 8px;
+							width: calc(100% + 2px);
+							height: calc(100% + 44px);
+							left: 0;
+							top: -43px;
+							box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
+						}
+
+					}
+				}
+			}
+
+			.dropdown-menu__item {
+				margin: 17px 17px 7px;
+				width: calc((100%/4) - 35px);
+				position: relative;
+
+				.dropdown-menu__subtitle {
+					padding: 13px 16px 6px;
+					position: relative;
+					width: fit-content;
+					cursor: pointer;
+
+					&:before {
+						content: '';
+						border-bottom: 1px dashed transparent;
+						position: absolute;
+						bottom: 8px;
+						width: calc(100% - 32px);
+					}
+
+					&:hover {
+						color: $base;
+
+						// box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
+						.dropdown-menu__reference {
+							position: relative;
+							display: flex;
+							z-index: 4;
+							text-decoration: none;
+						}
+
+						&:before {
+							border-bottom: 1px dashed $base;
+						}
+
+						& .sub-menu__list {
+							display: flex;
+
+							&:after {
+								content: '';
+								border-bottom: 1px dashed transparent;
+								position: absolute;
+								// bottom: 8px;
+								width: calc(100% + 2px);
+								height: calc(100% + 44px);
+								left: 0;
+								top: -43px;
+								box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
+							}
+
+						}
+
+					}
+				}
+
+				.sub-menu__link {
+					word-spacing: 2px;
+					position: relative;
+					padding-left: 11px;
+					line-height: 23px;
+					margin-bottom: 3px;
+
+					&:before {
+						content: '? ';
+						position: absolute;
+						left: 0;
+					}
+				}
+
+				.sub-menu__list {
+					padding-left: 16px;
+					background: #ffffff;
+					box-shadow: inherit;
+					position: absolute;
+					width: 267px;
+					z-index: 2;
+					top: 43px;
+					left: -2px;
+				}
+			}
+
+			.show-more {
+				color: $base;
+				font-family: Arial;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 18px;
+				margin: 16px 0;
+				z-index: 4;
+
+			}
+
+			&.active {
+				.dropdown-menu__parent {
+					display: flex;
+
+				}
+
+				.dropdown-menu__title {
+					box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
+					z-index: 999;
+					position: relative;
+					color: $base;
+					background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97% 12px/14px no-repeat;
+				}
+
+				// .dropdown-menu__list {
+				// 	height: auto;
+				// }
+			}
 		}
 	}
 

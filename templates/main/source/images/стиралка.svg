@@ -1,32 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="25" viewBox="0 0 21 25">
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="21px" height="25px" viewBox="0 0 21 25" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
   <defs>
-    <circle id="стиралка-b" cx="10" cy="14" r="7"/>
-    <filter id="стиралка-a" width="171.4%" height="171.4%" x="-35.7%" y="-28.6%" filterUnits="objectBoundingBox">
-      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
-      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
-      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0"/>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.7294118 0 0 0 0 0.07058824 0 0 0 0 0.07058824 0 0 0 0.2509804 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
     </filter>
-    <rect id="стиралка-d" width="5" height="3" x="13" y="2"/>
-    <filter id="стиралка-c" width="300%" height="433.3%" x="-100%" y="-133.3%" filterUnits="objectBoundingBox">
-      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
-      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.404747596 0"/>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.7294118 0 0 0 0 0.07058824 0 0 0 0 0.07058824 0 0 0 0.4039216 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
     </filter>
+    <path d="M0 0L20 0L20 24L0 24L0 0Z" id="path_1" />
+    <path d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" transform="translate(3 7)" id="path_2" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
   </defs>
-  <g fill="none" fill-rule="evenodd">
-    <rect width="19" height="23" x=".5" y=".5" stroke="#000"/>
-    <use fill="#000" filter="url(#стиралка-a)" xlink:href="#стиралка-b"/>
-    <circle cx="10" cy="14" r="6.5" fill="#B00" fill-opacity=".15" stroke="#B00" stroke-linejoin="square"/>
-    <use fill="#000" filter="url(#стиралка-c)" xlink:href="#стиралка-d"/>
-    <use fill="#B00" xlink:href="#стиралка-d"/>
-    <rect width="9" height="1" x="2" y="4" fill="#000" opacity=".152"/>
-    <rect width="3" height="2" x="15" y="20" fill="#000" opacity=".152"/>
-    <circle cx="2.5" cy="2.5" r="1" fill="#000"/>
-    <circle cx="4.5" cy="2.5" r="1" fill="#000"/>
-    <circle cx="6.5" cy="2.5" r="1" fill="#000"/>
-    <circle cx="8.5" cy="2.5" r="1" fill="#000"/>
-    <circle cx="10.5" cy="2.5" r="1" fill="#000"/>
-    <path stroke="#B00" stroke-linecap="round" stroke-linejoin="round" d="M4,15 C5.87152563,13.7523162 8.24659725,13.534256 10.3140245,14.4202962 L10.6859755,14.5797038 C12.6065328,15.4027998 14.8409517,14.7385725 16,13 L16,13 L16,13"/>
+  <g id="стиралка" transform="translate(0.5 0.5)">
+    <g id="Rectangle">
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="2" />
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <g id="Oval">
+        <use stroke="none" fill="#BA1212" fill-opacity="0.149019614" xlink:href="#path_2" />
+        <g clip-path="url(#clip_2)">
+          <use xlink:href="#path_2" fill="none" stroke="#BA1212" stroke-width="2" />
+        </g>
+      </g>
+    </g>
+    <g filter="url(#filter_2)">
+      <path d="M0 0L5 0L5 3L0 3L0 0Z" transform="translate(13 2)" id="Rectangle" fill="#BA1212" stroke="none" />
+    </g>
+    <path d="M0 0L9 0L9 1L0 1L0 0Z" transform="translate(2 4)" id="Rectangle" fill="#000000" fill-opacity="0.152204245" stroke="none" />
+    <path d="M0 0L3 0L3 2L0 2L0 0Z" transform="translate(15 20)" id="Rectangle" fill="#000000" fill-opacity="0.152204245" stroke="none" />
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(2 2)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(4 2)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(6 2)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(8 2)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0.5 1C0.776142 1 1 0.776142 1 0.5C1 0.223858 0.776142 0 0.5 0C0.223858 0 0 0.223858 0 0.5C0 0.776142 0.223858 1 0.5 1Z" transform="translate(10 2)" id="Oval" fill="#000000" stroke="none" />
+    <path d="M0 2L1.50045 0.9997Q1.67246 0.885029 1.85734 0.792533Q2.04221 0.700038 2.23712 0.63114Q2.43203 0.562243 2.63397 0.518004Q2.8359 0.473765 3.04176 0.454864Q3.24762 0.435964 3.45424 0.442693Q3.66086 0.449422 3.86505 0.481677Q4.06924 0.513932 4.26787 0.571217Q4.4665 0.628502 4.65651 0.709935L8.34375 2.29018Q8.43015 2.32721 8.51943 2.35661Q8.60872 2.38602 8.70021 2.40758Q8.7917 2.42914 8.88472 2.44269Q8.97774 2.45625 9.07158 2.46169Q9.16542 2.46714 9.25938 2.46444Q9.35334 2.46173 9.44672 2.4509Q9.54009 2.44007 9.63218 2.42119Q9.72426 2.40231 9.81436 2.37553Q9.90446 2.34874 9.99191 2.31425Q10.0794 2.27976 10.1635 2.23783Q10.2476 2.1959 10.3278 2.14683Q10.408 2.09777 10.4836 2.04194Q10.5592 1.98612 10.6297 1.92395Q10.7002 1.86179 10.7651 1.79375Q10.83 1.72571 10.8887 1.65231Q10.9474 1.5789 10.9995 1.50069L12 0" transform="translate(4 13)" id="Path" fill="none" stroke="#BA1212" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
   </g>
 </svg>

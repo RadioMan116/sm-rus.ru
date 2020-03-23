@@ -1,35 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="24" viewBox="0 0 20 24">
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="21px" height="25px" viewBox="0 0 21 25" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
   <defs>
-    <circle id="посудомойка-b" cx="12" cy="16" r="4"/>
-    <filter id="посудомойка-a" width="225%" height="225%" x="-62.5%" y="-50%" filterUnits="objectBoundingBox">
-      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
-      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
-      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0"/>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.7294118 0 0 0 0 0.07058824 0 0 0 0 0.07058824 0 0 0 0.2509804 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
     </filter>
-    <rect id="посудомойка-d" width="6" height="1" x="7" y="4"/>
-    <filter id="посудомойка-c" width="266.7%" height="1100%" x="-83.3%" y="-400%" filterUnits="objectBoundingBox">
-      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
-      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.733333333   0 0 0 0 0   0 0 0 0 0  0 0 0 0.404747596 0"/>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="1" />
+      <feGaussianBlur stdDeviation="1.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.7294118 0 0 0 0 0.07058824 0 0 0 0 0.07058824 0 0 0 0.4039216 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
     </filter>
+    <path d="M0 0L20 0L20 24L0 24L0 0Z" id="path_1" />
+    <path d="M2.5 5C3.88071 5 5 3.88071 5 2.5C5 1.11929 3.88071 0 2.5 0C1.11929 0 0 1.11929 0 2.5C0 3.88071 1.11929 5 2.5 5Z" transform="translate(4 15)" id="path_2" />
+    <path d="M3 6C4.65685 6 6 4.65685 6 3C6 1.34315 4.65685 0 3 0C1.34315 0 0 1.34315 0 3C0 4.65685 1.34315 6 3 6Z" transform="translate(6 14)" id="path_3" />
+    <path d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" transform="translate(8 12)" id="path_4" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+    <clipPath id="clip_3">
+      <use xlink:href="#path_3" />
+    </clipPath>
+    <clipPath id="clip_4">
+      <use xlink:href="#path_4" />
+    </clipPath>
   </defs>
-  <g fill="none" fill-rule="evenodd">
-    <rect width="19" height="23" x=".5" y=".5" stroke="#000"/>
-    <rect width="20" height="1" y="3" fill="#000"/>
-    <circle cx="6.5" cy="17.5" r="2" fill="#E794A2" stroke="#B00"/>
-    <circle cx="9" cy="17" r="2.5" fill="#E794A2" stroke="#B00"/>
-    <use fill="#000" filter="url(#посудомойка-a)" xlink:href="#посудомойка-b"/>
-    <circle cx="12" cy="16" r="3.5" fill="#E794A2" stroke="#B00" stroke-linejoin="square"/>
-    <circle cx="12" cy="16" r="2" fill="#B00"/>
-    <use fill="#000" filter="url(#посудомойка-c)" xlink:href="#посудомойка-d"/>
-    <use fill="#B00" xlink:href="#посудомойка-d"/>
-    <path stroke="#B00" d="M2.5,15 L2.5,19.5 C2.5,20.6045695 3.3954305,21.5 4.5,21.5 L15.5,21.5 C16.6045695,21.5 17.5,20.6045695 17.5,19.5 L17.5,15 L17.5,15"/>
-    <line x1="6" x2="5" y1="7" y2="9" fill="#D8D8D8" stroke="#000" stroke-linecap="square" stroke-linejoin="round"/>
-    <line x1="4" x2="3" y1="11" y2="13" fill="#D8D8D8" stroke="#000" stroke-linecap="square" stroke-linejoin="round"/>
-    <line x1="15" x2="14" y1="7" y2="9" fill="#D8D8D8" stroke="#000" stroke-linecap="square" stroke-linejoin="round" transform="matrix(-1 0 0 1 29 0)"/>
-    <line x1="17" x2="16" y1="11" y2="13" fill="#D8D8D8" stroke="#000" stroke-linecap="square" stroke-linejoin="round" transform="matrix(-1 0 0 1 33 0)"/>
-    <line x1="10" x2="10" y1="7" y2="8" fill="#D8D8D8" stroke="#000" stroke-linecap="square" stroke-linejoin="round"/>
-    <line x1="10" x2="10" y1="10" y2="11" fill="#D8D8D8" stroke="#000" stroke-linecap="square" stroke-linejoin="round"/>
+  <g id="посудомойка" transform="translate(0.5 0.5)">
+    <g id="Rectangle">
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="2" />
+      </g>
+    </g>
+    <path d="M0 0L20 0L20 1L0 1L0 0Z" transform="translate(0 3)" id="Rectangle" fill="#000000" stroke="none" />
+    <g id="Oval">
+      <use stroke="none" fill="#E794A2" xlink:href="#path_2" />
+      <g clip-path="url(#clip_2)">
+        <use xlink:href="#path_2" fill="none" stroke="#BA1212" stroke-width="2" />
+      </g>
+    </g>
+    <g id="Oval">
+      <use stroke="none" fill="#E794A2" xlink:href="#path_3" />
+      <g clip-path="url(#clip_3)">
+        <use xlink:href="#path_3" fill="none" stroke="#BA1212" stroke-width="2" />
+      </g>
+    </g>
+    <g filter="url(#filter_1)">
+      <g id="Oval">
+        <use stroke="none" fill="#E794A2" xlink:href="#path_4" />
+        <g clip-path="url(#clip_4)">
+          <use xlink:href="#path_4" fill="none" stroke="#BA1212" stroke-width="2" />
+        </g>
+      </g>
+    </g>
+    <path d="M2 4C3.10457 4 4 3.10457 4 2C4 0.895431 3.10457 0 2 0C0.895431 0 0 0.895431 0 2C0 3.10457 0.895431 4 2 4Z" transform="translate(10 14)" id="Oval" fill="#BA1212" stroke="none" />
+    <g filter="url(#filter_2)">
+      <path d="M0 0L6 0L6 1L0 1L0 0Z" transform="translate(7 4)" id="Rectangle" fill="#BA1212" stroke="none" />
+    </g>
+    <path d="M0 0L-7.38035e-14 4.501Q-7.54138e-14 4.5992 0.00962573 4.69694Q0.0192515 4.79467 0.0384102 4.89099Q0.057569 4.9873 0.0860763 5.08128Q0.114584 5.17525 0.152165 5.26598Q0.189746 5.35671 0.236039 5.44332Q0.282333 5.52993 0.336892 5.61158Q0.391452 5.69324 0.453752 5.76915Q0.516052 5.84507 0.585494 5.91451Q0.654935 5.98395 0.730848 6.04625Q0.806761 6.10855 0.888415 6.16311Q0.970069 6.21767 1.05668 6.26396Q1.14329 6.31025 1.23402 6.34783Q1.32474 6.38542 1.41872 6.41392Q1.5127 6.44243 1.60901 6.46159Q1.70533 6.48075 1.80306 6.49037Q1.9008 6.5 1.999 6.5L13.001 6.5Q13.0992 6.5 13.1969 6.49037Q13.2947 6.48075 13.391 6.46159Q13.4873 6.44243 13.5813 6.41392Q13.6753 6.38542 13.766 6.34783Q13.8567 6.31025 13.9433 6.26396Q14.0299 6.21767 14.1116 6.16311Q14.1932 6.10855 14.2692 6.04625Q14.3451 5.98395 14.4145 5.91451Q14.4839 5.84507 14.5462 5.76915Q14.6085 5.69324 14.6631 5.61158Q14.7177 5.52993 14.764 5.44332Q14.8103 5.35671 14.8478 5.26598Q14.8854 5.17525 14.9139 5.08128Q14.9424 4.9873 14.9616 4.89099Q14.9807 4.79467 14.9904 4.69694Q15 4.5992 15 4.501L15 0" transform="translate(2.5 15)" id="Path-3" fill="none" stroke="#BA1212" stroke-width="1" />
+    <path d="M1 0L0 2" transform="translate(5 7)" id="Path-4" fill="#D8D8D8" stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="round" />
+    <path d="M1 0L0 2" transform="translate(3 11)" id="Path-4" fill="#D8D8D8" stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="round" />
+    <path d="M1 0L0 2" transform="matrix(-1 0 0 1 15 7)" id="Path-4" fill="#D8D8D8" stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="round" />
+    <path d="M1 0L0 2" transform="matrix(-1 0 0 1 17 11)" id="Path-4" fill="#D8D8D8" stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="round" />
+    <path d="M0.5 0.75L0.5 1.75" transform="translate(9.5 6.25)" id="Path-5" fill="#D8D8D8" stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="round" />
+    <path d="M0.5 0.5L0.5 1.5" transform="translate(9.5 9.5)" id="Path-5" fill="#D8D8D8" stroke="#000000" stroke-width="1" stroke-linecap="square" stroke-linejoin="round" />
   </g>
 </svg>
