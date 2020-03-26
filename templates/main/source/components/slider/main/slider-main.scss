@@ -431,7 +431,7 @@
 
 
 		&__items {
-			padding: 16px;
+			padding: 16px !important;
 
 			.gallery__el {
 				height: unset;
@@ -630,8 +630,8 @@
 
 
 		&__items {
-			// padding: 16px;
-			padding: 16px 0;
+			padding: 16px;
+			// padding: 16px 0;
 			max-width: 100%;
 			margin: 0;
 			position: relative;

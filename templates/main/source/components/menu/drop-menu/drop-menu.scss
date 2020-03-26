@@ -373,7 +373,7 @@
 					// box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
 					z-index: 999;
 					position: relative;
-					color: $base;
+					color: #212121;
 					background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97% 12px/14px no-repeat;
 
 					&:before {
@@ -515,6 +515,7 @@
 
 			.dropdown-menu__parent {
 				padding-bottom: 15px;
+				box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 			}
 
 			.dropdown-menu__item {
