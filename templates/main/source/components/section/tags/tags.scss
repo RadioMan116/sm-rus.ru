@@ -62,8 +62,9 @@
 		}
 
 		&:hover {
-			border: 1px solid $base;
-			background-color: #F1F1F1;
+			border: 1px solid #ffe3e3;
+			// background-color: #F1F1F1;
+			background-color: #ffe3e3;
 
 			a {
 				color: $base;
@@ -93,7 +94,7 @@
 		font-family: "Roboto Condensed";
 		font-size: 30px;
 		font-weight: 400;
-		margin-bottom: 48px;
+		margin-bottom: 30px;
 	}
 
 
@@ -107,9 +108,9 @@
 		line-height: 24px;
 		text-transform: uppercase;
 		position: absolute;
-		right: 3px;
-		top: 4px;
-		transform: translateY(-4px);
+		right: 0px;
+		top: -7px;
+		transform: translateY(0px);
 		padding: 6px 12px;
 		text-decoration: none !important;
 	}
@@ -119,8 +120,9 @@
 	}
 
 	&.main-tags {
-		margin-bottom: 41px;
+		margin-bottom: 61px;
 		position: relative;
+
 		// width: 1176px;
 		// max-width: 100%;
 		@media screen and (max-width: 1200px) {

@@ -129,7 +129,6 @@
 		display: none;
 	}
 
-
 	@media (max-width: 767px) {
 		display: none;
 
@@ -189,10 +188,11 @@
 			order: 3;
 			flex-wrap: wrap;
 			height: unset;
-			max-height: 120px;
+			max-height: 125px;
 			padding-top: 1rem;
 			padding-bottom: 0;
 			margin-bottom: auto;
+			position: relative;
 
 			&:nth-of-type(4) {
 				display: none;
@@ -208,7 +208,7 @@
 
 		&__list {
 			flex-direction: row;
-			padding: 7px 16px 10px;
+			padding: 7px 16px 24px;
 			width: calc(100% + 32px);
 			flex-wrap: wrap;
 			background-color: #f1f1f1;
@@ -223,6 +223,8 @@
 
 			a {
 				white-space: nowrap;
+				color: #666666 !important;
+				font-weight: 400 !important;
 			}
 		}
 
@@ -270,13 +272,13 @@
 		}
 
 		.time-work__email {
-			color: #666666;
+			color: $base;
 			font-family: Arial;
 			font-size: 13px;
 			font-weight: 400;
 			line-height: 22px;
 			display: flex;
-			margin-top: 6px;
+			margin-top: 8px;
 
 			i {
 				display: none;

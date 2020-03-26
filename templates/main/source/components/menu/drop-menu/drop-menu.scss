@@ -114,7 +114,7 @@
 			// background: #ffffff;
 
 			&:hover {
-				color: #b2b6b8;
+				color: #666666;
 				text-decoration: underline;
 			}
 		}
@@ -171,12 +171,12 @@
 		&.collection {
 			.dropdown-menu__title {
 				background: unset !important;
-				color: #ba1212;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 16px;
 				font-weight: 700;
 				line-height: 39px;
-				padding: 0px 5px 0px 0px;
+				padding: 0px 0px 0px 0px;
 			}
 
 
@@ -204,9 +204,9 @@
 
 			.dropdown-menu__parent {
 				flex-direction: row;
-				left: -53px;
-				right: -53px;
-				max-width: calc(100% + 104px);
+				// left: -53px;
+				right: 0px;
+				// max-width: calc(100% + 104px);
 				background-color: #fff;
 				padding-right: 0;
 				max-height: calc(100vh - 150px);
@@ -218,6 +218,8 @@
 				top: 100%;
 				width: auto;
 				min-width: 198px;
+				display: none;
+				width: 660px;
 
 				&:before {}
 
@@ -267,14 +269,18 @@
 
 			.dropdown-menu__item {
 				margin: 17px 17px 7px;
-				width: calc((100%/4) - 35px);
+				width: calc((100%/3) - 35px);
 				position: relative;
 
 				.dropdown-menu__subtitle {
-					padding: 13px 16px 6px;
+					padding: 13px 16px 6px 0;
 					position: relative;
 					width: fit-content;
 					cursor: pointer;
+					font-family: "Roboto Condensed";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 29px;
 
 					&:before {
 						content: '';
@@ -285,7 +291,8 @@
 					}
 
 					&:hover {
-						color: $base;
+						color: #666666;
+						text-decoration: underline;
 
 						// box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 						.dropdown-menu__reference {
@@ -295,9 +302,9 @@
 							text-decoration: none;
 						}
 
-						&:before {
-							border-bottom: 1px dashed $base;
-						}
+						// &:before {
+						// 	border-bottom: 1px dashed $base;
+						// }
 
 						& .sub-menu__list {
 							display: flex;
@@ -327,7 +334,7 @@
 					margin-bottom: 3px;
 
 					&:before {
-						content: '? ';
+						content: '∙ ';
 						position: absolute;
 						left: 0;
 					}
@@ -363,11 +370,15 @@
 				}
 
 				.dropdown-menu__title {
-					box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
+					// box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
 					z-index: 999;
 					position: relative;
 					color: $base;
 					background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97% 12px/14px no-repeat;
+
+					&:before {
+						width: 100%;
+					}
 				}
 
 				// .dropdown-menu__list {
@@ -419,23 +430,22 @@
 
 @media (max-width: 767px) {
 	.menu.active {
-		// height: 100vh;
 		height: auto;
-		// overflow-y: scroll;
 	}
 
 	.header__dropdown-menu {
-		align-items: baseline;
-		width: unset;
+		height: 90%;
+		left: 3%;
+		right: 3%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
-		position: unset;
+		position: static;
 		order: -1;
 		margin-left: 0;
 		padding-left: 0;
-		width: 100%;
-		flex-grow: 0;
-
+		padding-top: 0;
+		align-items: normal;
 
 		.container {
 			padding: 0;
@@ -443,31 +453,226 @@
 			margin: 0;
 		}
 
-		.dropdown-menu {
+		.dropdown-menu,
+		.dropdown-menu__service {
 			display: flex;
 			margin-left: 0 !important;
 			flex-wrap: wrap;
 			padding-left: 0px;
-			width: 100%;
+			border-bottom: 1px solid #f1f1f1;
 
 			&__three {
 				margin-bottom: 0;
 				border-bottom: 0;
 			}
 
-			// &:first-child {
-			// 	background: url("../images/dp-2.svg") no-repeat 0 10px;
+			&:first-child {
+				background: url("../images/grohe.svg") no-repeat 0 10px;
 
-			// }
+			}
 
-			// &:nth-child(2) {
-			// 	background: url("../images/dp-1.svg") no-repeat 0 10px;
+			&:nth-child(2) {
+				background: url("../images/sfera.svg") no-repeat 0 10px;
 
-			// }
+			}
 
 			&:nth-child(3) {
-				display: none;
+				background: url("../images/collections.svg") no-repeat -1px 14px;
+
 			}
+
+			&__service {
+				display: flex;
+				background: url("../images/service.svg") no-repeat 0 10px;
+				border: 0;
+
+				span {
+					background: none !important;
+				}
+			}
+
+			&__title {
+				font-family: "Roboto Condensed";
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 46px;
+				padding: 0;
+				width: 100%;
+				background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97%/14px no-repeat !important;
+
+				&:hover {
+					box-shadow: none !important;
+				}
+
+				&.last {
+					padding: 0;
+				}
+
+				&:before {
+					display: none;
+				}
+			}
+
+			.dropdown-menu__parent {
+				padding-bottom: 15px;
+			}
+
+			.dropdown-menu__item {
+				margin: 0 !important;
+				background-image: none !important;
+			}
+
+			&.active {
+
+				.dropdown-menu__list,
+				.dropdown-menu__parent {
+					position: unset !important;
+					box-shadow: none !important;
+					padding-top: 0;
+					margin-top: 0;
+					margin-right: 0px;
+					margin-left: 0px;
+					width: 100% !important;
+				}
+
+				&:nth-child(3),
+				&.new-collection {
+					>.dropdown-menu__parent {
+						width: 100% !important;
+						overflow-y: scroll !important;
+						height: 100% !important;
+						height: auto !important;
+					}
+
+					.collection__banner {
+						display: none;
+					}
+
+					.dropdown-menu__list {
+						display: flex !important;
+						flex-direction: column !important;
+						width: 100% !important;
+						padding: 0 !important;
+						flex-wrap: nowrap !important;
+						height: auto !important;
+					}
+
+					.dropdown-menu__item {
+						width: 100% !important;
+						max-width: 100% !important;
+						margin-bottom: 0;
+						border-bottom: 1px solid #f1f1f1;
+
+
+
+						.sub-menu__list {
+							display: none;
+						}
+
+						&:last-child {
+							border: 0;
+							padding-bottom: 10px;
+						}
+
+						&.active {
+							.dropdown-menu__subtitle {
+								background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") calc(100% - 14px) 10px/18px no-repeat;
+							}
+
+							.sub-menu__list {
+								display: flex;
+
+								&:after {
+									display: none;
+								}
+							}
+
+
+						}
+
+					}
+
+					.dropdown-menu__subtitle {
+						padding: 8px 17px 8px;
+						width: 100%;
+						line-height: 22px;
+						margin-bottom: 0 !important;
+						background: url("https://icongr.am/entypo/chevron-right.svg?color=b0b0b0") calc(100% - 14px) 10px/18px no-repeat;
+					}
+
+					.dropdown-menu__image {
+						display: none;
+					}
+
+					.dropdown-menu__subtitle {
+						text-decoration: unset !important;
+
+						&:before {
+							display: none;
+						}
+					}
+				}
+
+				.dropdown-menu__title {
+					box-shadow: none !important;
+					background: url("https://icongr.am/entypo/chevron-up.svg?color=ba1212") 97%/14px no-repeat !important;
+				}
+
+			}
+
+			&.collection {
+				.dropdown-menu__parent {
+					margin-left: -0px;
+
+					.dropdown-menu__list {
+						padding: 6px 0 0;
+
+						.dropdown-menu__item {
+							width: calc(50% - 7px);
+						}
+
+						.dropdown-menu__subtitle {
+							width: 100%;
+							color: #333333;
+							font-family: "Roboto Condensed";
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 1;
+							padding: 9px 16px 9px 0;
+							margin-bottom: 13px;
+						}
+					}
+				}
+
+
+
+				.sub-menu__list {
+					position: unset;
+				}
+
+				.dropdown-menu__subtitle {
+
+					// background: url("https://icongr.am/entypo/chevron-right.svg?color=b0b0b0") calc(100% - 14px) 10px/18px no-repeat !important;
+
+					&.active {
+						// background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") calc(100% - 14px) 10px/18px no-repeat !important;
+					}
+
+					.sub-menu__list {
+						margin-bottom: 0;
+					}
+				}
+
+
+			}
+		}
+
+		.dropdown-menu.collection.active .dropdown-menu__title {
+			background: url("https://icongr.am/entypo/chevron-up.svg?color=ba1212") 97%/14px no-repeat !important;
+		}
+
+		.dropdown-menu.collection .dropdown-menu__title {
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97%/14px no-repeat !important;
 		}
 
 		.dropdown-menu__back {
@@ -475,37 +680,40 @@
 		}
 
 		.header__telephones {
-			// display: none !important;
+			display: none !important;
 		}
 
-		.time-work {
-			color: #666;
-			font-family: Arial, sans-serif;
-			font-size: 13px;
-			line-height: 22px;
-			text-align: left;
-			display: block;
+		.sub-menu__list {
+			padding-left: 13px;
+			margin-bottom: 20px;
+			max-height: unset !important;
+		}
 
-			i {
-				color: #666;
-				font-family: Arial, sans-serif;
-				font-size: 13px;
-				line-height: 22px;
-				text-align: left;
-				font-style: normal;
-				margin-right: 4px;
+		.sub-menu__link {
+			color: #666666;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 28px;
+		}
+
+		.dropdown-menu__link {
+			padding: 3px 0 !important;
+			color: #666666;
+			white-space: normal !important;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 22px;
+			position: relative;
+			padding-left: 11px !important;
+			margin-bottom: 0 !important;
+
+			&:before {
+				content: '∙ ';
+				position: absolute;
+				left: 0;
 			}
 		}
 
-		.header__telephones {
-			display: flex;
-			flex-wrap: wrap;
-			margin-top: 0;
-			align-items: baseline;
-			order: 3;
-			max-height: 190px;
-			padding-top: 1rem;
-		}
 	}
 
 	.menu-480 {
@@ -521,105 +729,13 @@
 		}
 	}
 
-	.header__dropdown-menu {
-		.dropdown-menu {
-			margin-bottom: 0;
-
-			&__title {
-				font-family: "Roboto Condensed";
-				font-size: 16px;
-				font-weight: 400;
-				line-height: 46px;
-				padding: 2px 0 0 0;
-				width: 100%;
-
-				// &:hover {
-				// 	box-shadow: none !important;
-				// }
-				&:before {
-					display: none;
-				}
-
-
-				&.last {
-					padding: 13px 0 0 0;
-				}
-			}
-
-			.dropdown-menu__parent {
-				margin-left: 0px;
-				width: 100%;
-			}
-
-			&.active {
-
-				.dropdown-menu__list,
-				.dropdown-menu__parent {
-					position: unset;
-					box-shadow: none;
-					padding: 0;
-					margin-top: 0;
-					margin-right: 0px;
-				}
-
-				.dropdown-menu__list {
-					display: flex;
-					flex-wrap: wrap;
-					flex-direction: row;
-					justify-content: space-between;
-				}
-
-
-				.dropdown-menu__title {
-					box-shadow: none !important;
-				}
-
-				.dropdown-menu__item {
-					width: 30%;
-					height: 95px;
-					display: flex;
-					flex-direction: column;
-					padding-top: 70px;
-					background-size: auto 47px !important;
-					margin: 9px 0 27px;
-					background-position: 50% 9px !important;
-					align-items: center;
-				}
-			}
-		}
-
-		.sub-menu__list {
-			padding-left: 13px;
-			margin-bottom: 20px;
-		}
-
-		.sub-menu__link {
-			color: #666666;
-			font-size: 13px;
-			font-weight: 400;
-			line-height: 28px;
-		}
-
-		.dropdown-menu__link {
-			padding: 3px 0;
-			color: #333333;
-			font-family: "Roboto Condensed";
-			font-size: 12px;
-			font-weight: 400;
-			line-height: 14px;
-			text-align: center;
-			white-space: normal !important;
-			width: 82px;
-		}
-	}
-
 	.menu__item {
 		display: flex;
 		position: relative;
 		flex-wrap: wrap;
 
 		&:first-child {
-
+			order: 2;
 
 			// &:hover {
 			// 	background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 100% 50%/18px no-repeat;
@@ -630,9 +746,29 @@
 				width: 100%;
 			}
 		}
+
+		&:nth-child(3) {
+			order: 3;
+		}
+	}
+
+
+	.new-collection {
+		.dropdown-menu__item {
+			.dropdown-menu__reference {
+				pointer-events: none;
+			}
+
+			&.active {
+				.dropdown-menu__reference {
+					pointer-events: unset;
+				}
+			}
+		}
 	}
 
 }
+
 
 // @media (max-width: 1150px) {
 // 	.header__dropdown-menu {

@@ -12,6 +12,6 @@
     <rect width="1" height="16" x="7.5" y="7.5" fill="#000" transform="rotate(90 8 15.5)"/>
     <rect width="12" height="1" x="2" y="17" fill="#000" opacity=".152"/>
     <use fill="#000" filter="url(#холодильник-a)" xlink:href="#холодильник-b"/>
-    <use fill="#B00" xlink:href="#холодильник-b"/>
+    <use fill="#ba1212" xlink:href="#холодильник-b"/>
   </g>
 </svg>

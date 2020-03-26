@@ -17,9 +17,9 @@
   <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
     <rect width="19" height="23" x=".5" y=".5" stroke="#000"/>
     <use fill="#000" filter="url(#сушилка-a)" xlink:href="#сушилка-b"/>
-    <circle cx="10" cy="13" r="6.5" fill="#B00" fill-opacity=".65" stroke="#B00" stroke-linejoin="square"/>
+    <circle cx="10" cy="13" r="6.5" fill="#ba1212" fill-opacity=".65" stroke="#B00" stroke-linejoin="square"/>
     <use fill="#000" filter="url(#сушилка-c)" xlink:href="#сушилка-d"/>
-    <use fill="#B00" xlink:href="#сушилка-d"/>
+    <use fill="#ba1212" xlink:href="#сушилка-d"/>
     <circle cx="2.5" cy="2.5" r="1" fill="#000"/>
     <circle cx="4.5" cy="2.5" r="1" fill="#000"/>
     <circle cx="15.5" cy="2.5" r="1" fill="#000"/>

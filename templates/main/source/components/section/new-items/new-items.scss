@@ -5,7 +5,7 @@
 
 	&__caption {
 		display: flex;
-		margin-bottom: 40px;
+		margin-bottom: 38px;
 	}
 
 	.announcing {
@@ -42,10 +42,11 @@
 
 	.new-items__slide {
 		min-height: unset;
+		padding: 20px;
 	}
 
 	.special-offers__text {
-		padding-bottom: 0;
+		padding-bottom: 24px;
 		color: #333333;
 		font-family: "Roboto Condensed";
 		font-size: 18px;
@@ -88,7 +89,7 @@
 	&__link {
 		padding: 7px;
 		border-radius: 3px;
-		border: solid 1px #666666;
+		border: solid 1px $base;
 		font-size: 14px;
 		font-weight: 500;
 		font-style: normal;
@@ -96,8 +97,8 @@
 		line-height: normal;
 		letter-spacing: normal;
 		text-align: left;
-		color: #333333;
-		margin: 41px auto;
+		color: $base;
+		margin: 42px auto;
 		text-transform: uppercase;
 		text-decoration: none !important;
 	}

@@ -161,6 +161,7 @@
 			left: 0;
 			top: -20px;
 			white-space: nowrap;
+
 			&:before {
 				content: "";
 				width: calc(100% - 24px);
@@ -493,4 +494,9 @@
 			}
 		}
 	}
+}
+
+.category+.special-offers {
+	margin-top: 56px;
+	margin-bottom: 54px;
 }
