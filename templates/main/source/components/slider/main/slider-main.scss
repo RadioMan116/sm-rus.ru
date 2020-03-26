@@ -36,6 +36,10 @@
 			.swiper-wrapper {
 				flex-wrap: nowrap;
 			}
+
+			.gallery__items-pagination {
+				display: none;
+			}
 		}
 	}
 
@@ -635,6 +639,30 @@
 			max-width: 100%;
 			margin: 0;
 			position: relative;
+
+			.gallery__items-pagination {
+				display: flex !important;
+				position: static;
+				-webkit-transform: none;
+				transform: none;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				margin: 16px 0 12px;
+
+				.swiper-pagination-bullet {
+					background: #d8d8d8 !important;
+					opacity: 1;
+
+					&-active {
+						background: #ba1212 !important
+					}
+				}
+			}
+
+			&.swiper-container {
+				flex-direction: column;
+			}
 		}
 
 		&__item {
