@@ -15,25 +15,29 @@ img {
 	height: auto;
 	max-width: 100%;
 	max-height: 100%;
+	object-fit: contain;
 }
 
 .fixed {
-	overflow: hidden;
+
+	// overflow: hidden;
 	// width:calc(100% - 17px);
-
+	@media (min-width: 767px) {
+		// overflow: hidden;
+	}
 }
 
-.swiper-container,
-.swiper-container-three,
-.swiper-container-two {
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-	list-style: none;
-	padding: 0 !important;
-	z-index: 1;
-	width: 100%;
-}
+// .swiper-container,
+// .swiper-container-three,
+// .swiper-container-two {
+// 	margin: 0 auto;
+// 	position: relative;
+// 	overflow: hidden;
+// 	list-style: none;
+// 	padding: 0 !important;
+// 	z-index: 1;
+// 	width: 100%;
+// }
 
 .popup {
 	display: none;
@@ -135,7 +139,7 @@ h1.title {
 
 	img {
 		position: unset !important;
-		width: auto!important;
+		width: auto !important;
 		height: auto !important;
 		max-width: 100%;
 		max-height: 100%;
@@ -148,6 +152,7 @@ h1.title {
 .fancybox-container {
 	transition-duration: 500ms !important;
 }
+
 
 .compensate-for-scrollbar {
 	margin-right: 0px !important;
@@ -218,6 +223,10 @@ picture {
 	display: block;
 }
 
+input:required {
+	box-shadow: none;
+}
+
 @media screen and (max-width: 767px) {
 	h1.title {
 		font-size: 30px;
@@ -249,6 +258,7 @@ picture {
 
 	.fixed {
 		width: 100%;
+		overflow: hidden;
 
 		.header {
 			+.section {

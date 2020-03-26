@@ -1044,28 +1044,19 @@ $(document).ready(function () {
 			// 	nextEl: ".practical-features__next",
 			// 	prevEl: ".practical-features__prev"
 			// },
-			pagination: {
-				el: ".articles__pagination",
-				clickable: true
-			},
+			// pagination: {
+			// 	el: ".articles__pagination",
+			// 	clickable: true
+			// },
+			slidesPerView: 3,
+			slidesPerGroup: 1,
+			spaceBetween: 20,
 			breakpoints: {
 				600: {
 					slidesPerView: 1,
-					slidesPerGroup: 1,
-					spaceBetween: 12,
-
 				},
 				700: {
 					slidesPerView: 2,
-					slidesPerGroup: 1,
-					spaceBetween: 12,
-
-				},
-
-				767: {
-					slidesPerView: 3,
-					slidesPerGroup: 1,
-					spaceBetween: 16
 				},
 			}
 		});
