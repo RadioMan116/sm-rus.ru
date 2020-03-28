@@ -487,7 +487,9 @@
 		// position: absolute;
 		top: 0;
 
-
+		.gallery__text {
+			padding: 0;
+		}
 
 		&.active {
 			position: absolute;

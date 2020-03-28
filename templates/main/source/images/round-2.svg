@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="round-keyboard_arrow_down-24px-(2)" transform="matrix(1.192488E-08 1 -1 1.192488E-08 16 0)">
+    <g id="round-keyboard_arrow_left-24px" transform="matrix(-1 0 0 1 16 0)">
+      <g id="round-keyboard_arrow_left-24px">
+        <path d="M0 0L16 0L16 16L0 16L0 0Z" id="Shape" fill="none" stroke="none" />
+        <path d="M4.195 6.30833L1.60833 3.72167L4.195 1.135C4.455 0.875 4.455 0.455 4.195 0.195L4.195 0.195C3.935 -0.065 3.515 -0.065 3.255 0.195L0.195 3.255C-0.065 3.515 -0.065 3.935 0.195 4.195L3.255 7.255C3.515 7.515 3.935 7.515 4.195 7.255L4.195 7.255C4.44833 6.995 4.455 6.56833 4.195 6.30833Z" transform="translate(5.611667 4.278334)" id="Shape" fill="#FFFFFF" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -257,7 +257,7 @@
 			width: 15px;
 			height: 15px;
 			border-radius: 2px;
-			border: 3px solid $base;
+			border: 3px solid #333333;
 			background-color: #ffffff;
 			padding: 0;
 			position: absolute;
@@ -1140,7 +1140,7 @@
 		width: 15px;
 		height: 15px;
 		border-radius: 2px;
-		border: 3px solid $base;
+		border: 3px solid #333333;
 		background-color: #fff;
 		padding: 0;
 		position: absolute;
@@ -1424,6 +1424,38 @@
 		margin-left: -8px;
 	}
 
+	.filter-color__item {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 7px 10px 0
+	}
+
+	.filter-color__label {
+		display: block;
+		position: relative
+	}
+
+	.filter-color__input {
+		visibility: hidden;
+		position: absolute
+	}
+
+	.filter-color__color {
+		width: 24px;
+		height: 24px;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: center center !important;
+		outline: 1px solid #B0B0B0;
+		border: 2px solid #ffffff;
+		display: block
+	}
+
+	.filter-color__input:checked~.filter-color__color {
+
+		outline: 2px solid $base;
+
+	}
 
 	@media screen and (max-width: 767px) {
 		display: flex;

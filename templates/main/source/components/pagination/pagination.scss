@@ -28,8 +28,8 @@
 		&.active {
 			&:after {
 				content: '';
-				border-left: 2px solid #666666;
-				border-bottom: 2px solid #666666;
+				border-left: 2px solid #2e2e2e;
+				border-bottom: 2px solid #2e2e2e;
 
 			}
 		}
@@ -64,7 +64,7 @@
 			height: 32px;
 			border-radius: 2px;
 			// border: 1px solid #394791;
-			background: #f1f1f1;
+			background-color: #ffe3e3;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -106,8 +106,8 @@
 
 		&.active {
 			&:after {
-				border-top: 2px solid #666666;
-				border-right: 2px solid #666666;
+				border-top: 2px solid #2e2e2e;
+				border-right: 2px solid #2e2e2e;
 			}
 		}
 

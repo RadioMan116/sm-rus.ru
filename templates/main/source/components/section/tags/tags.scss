@@ -15,6 +15,7 @@
 		margin: 0;
 		list-style: none;
 		width: 100%;
+		align-items: center;
 
 		&.active {
 			.tags__item {
@@ -47,10 +48,25 @@
 		// 	margin-right: 0;
 		// }
 
+		&.last {
+			border: none;
+			margin-left: 10px;
+			padding: 0;
+			color: $base;
+			background: url('/images/round-3.svg') no-repeat 100% 50%/15px;
+			background-color: transparent !important;
+			border: 0 !important;
+
+			a {
+				padding: 0 0 2px;
+				margin-right: 16px;
+				border-bottom: 1px dashed $base;
+			}
+		}
 
 		&.active {
-			border: 1px solid #666666;
-			background-color: #F1F1F1;
+			border: solid 1px $base;
+			background: #fff4f4;
 
 			a {
 				color: #666666;
