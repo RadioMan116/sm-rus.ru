@@ -36,7 +36,7 @@
 
 			a,
 			span {
-				color: #bb0000;
+				color: $base;
 				text-decoration: none;
 			}
 		}
@@ -67,7 +67,7 @@
 
 	.city-change {
 		display: flex;
-		color: #bb0000;
+		color: $base;
 		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 22px;
@@ -83,7 +83,7 @@
 		}
 
 		&__title {
-			border-bottom: 1px dashed#bb0000;
+			border-bottom: 1px dashed $base;
 			margin-right: 10px;
 			white-space: nowrap;
 		}
@@ -161,7 +161,7 @@
 
 			&__title {}
 
-			color: #bb0000;
+			color: $base;
 			font-family: Arial;
 			font-size: 16px;
 			font-weight: 400;

@@ -631,7 +631,7 @@
 
 .yandex__img {
 	max-width: 100%;
-	display: none;
+	// display: none;
 }
 
 .yandex__button {
@@ -646,7 +646,7 @@
 	color: #333333;
 	padding: 7px 13px 5px 14px;
 	border-radius: 2px;
-	border: 1px solid #666666	;
+	border: 1px solid #666666;
 	text-decoration: none !important;
 	margin-bottom: 7px;
 
@@ -694,10 +694,10 @@
 }
 
 .yandex__logo {
-	background: url("../images/yamarket.svg") no-repeat;
+	// background: url("../images/yamarket.svg") no-repeat;
 	width: 160px;
-	height: 106px;
-	margin-bottom: 12px;
+	// height: 106px;
+	margin-bottom: 22px;
 }
 
 
@@ -843,7 +843,7 @@
 
 		i {
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			text-transform: uppercase;
 			font-style: normal;

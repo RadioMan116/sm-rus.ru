@@ -266,13 +266,10 @@ $(document).ready(function () {
 
 	}
 
-
-
-
 	var mySwiper9 = new Swiper(".js-product-card__rel", {
-		slidesPerView: 3,
+		slidesPerView: 2,
 		slidesPerGroup: 1,
-		// spaceBetween: 27,
+		spaceBetween: 30,
 		touchRatio: 1,
 		allowTouchMove: false,
 		navigation: {
@@ -284,6 +281,19 @@ $(document).ready(function () {
 			clickable: true
 		},
 		breakpoints: {
+			479: {
+				allowTouchMove: true,
+
+				slidesPerView: 1,
+				// slidesPerGroup: 1,
+
+			},
+			600: {
+				allowTouchMove: true,
+				slidesPerView: 1.3,
+				// slidesPerGroup: 1,
+
+			},
 			767: {
 				allowTouchMove: true,
 				slidesPerView: 2,
@@ -292,6 +302,7 @@ $(document).ready(function () {
 			},
 		},
 	});
+
 	var mySwiper10 = new Swiper(".js-download-catalogs", {
 		// Optional parameters
 		// slidesPerGroup: 1,
@@ -952,6 +963,7 @@ $(document).ready(function () {
 		$('.logo').appendTo('.header__block_top .container');
 		$('.labels').appendTo('.product-card .product__header_top');
 		$('.sidebar-right').appendTo('.product-card');
+		$('.sidebar-right .gallery__items.swiper-container').appendTo('.hide-tabs');
 
 		$('.reviews__main-link').appendTo('.product-card .reviews');
 		$(".col-md-3 .js-container-upsale").remove();
@@ -1039,7 +1051,7 @@ $(document).ready(function () {
 				},
 			}
 		});
-		var mySwiper233 = new Swiper(".gallery .gallery__items.swiper-container", {
+		var mySwiper233 = new Swiper(".gallery__items.swiper-container", {
 			// navigation: {
 			// 	nextEl: ".practical-features__next",
 			// 	prevEl: ".practical-features__prev"
@@ -2401,6 +2413,96 @@ $(window).on('load', function () {
 
 
 	})();
+	(function () {
+		let collection = document.querySelector('.product-card__collection');
+		if (collection) {
+			let tabs = collection.querySelectorAll(".tags__list li");
+			let collectionChild = collection.querySelectorAll('.swiper-container');
+			let collectionNext = collection.querySelectorAll('.collection__next');
+			let collectionPrev = collection.querySelectorAll('.collection__prev');
+			let collectionPagination = collection.querySelectorAll('.swiper-pagination-collection');
+			let collectionHeight = [];
+			let maxHeight = []
 
+			collectionNext.forEach((element, index) => {
+				element.classList.add("instance-button-" + index);
+			});
+			collectionPrev.forEach((element, index) => {
+				element.classList.add("instance-button-" + index);
+			});
+			collectionPagination.forEach((element, index) => {
+				element.classList.add("instance-pagination-" + index);
+			});
+			collectionChild.forEach((element, index) => {
+				element.classList.add("instance-" + index);
+				var mySwiper71 = new Swiper(".product-card__collection .swiper-container.instance-" + index, {
+					// Optional parameters
+					// slidesPerGroup: 1,
+					slidesPerView: 3,
+					spaceBetween: 24,
+					// allowTouchMove: false,
+					// direction: "horizontal",
+					// loop: true,
+					// If we need pagination
+					navigation: {
+						nextEl: ".collection__next.instance-button-" + index,
+						prevEl: ".collection__prev.instance-button-" + index
+					},
+					pagination: {
+						el: ".swiper-pagination-collection.instance-pagination-" + index,
+						clickable: true
+					},
+					breakpoints: {
+						// when window width is <= 320px
+						// 500: {
+						// 	allowTouchMove: true,
+						// 	slidesPerView: 1,
+						// },
+						600: {
+							allowTouchMove: true,
+							slidesPerView: 1.4,
+						},
+						767: {
+							allowTouchMove: true,
+							slidesPerView: 2,
+							spaceBetween: 1,
+						}
+					}
+					// Navigation arrows
+					// navigation: {
+					// 	nextEl: ".main_next",
+					// 	prevEl: ".main_prev"
+					// },
+
+					// And if we need scrollbar
+					// scrollbar: {
+					// 	el: ".swiper-scrollbar"
+					// }
+				})
+				collectionHeight.push(element.offsetHeight + 48);
+
+			});
+			maxHeight.push(Math.max.apply(Math, collectionHeight))
+
+			tabs.forEach((element, index) => {
+				element.classList.add("tabs-" + index);
+				element.style.height = `${maxHeight}px`;
+				element.addEventListener('click', function () {
+					tabs.forEach((element, i) => {
+						element.classList.remove('cur');
+						collectionChild[i].classList.remove('active');
+						collectionNext[i].classList.remove('active');
+						collectionPrev[i].classList.remove('active');
+						collectionPagination[i].classList.remove('active');
+					});
+					this.classList.add('cur');
+					collectionChild[index].classList.add('active');
+					collectionNext[index].classList.add('active');
+					collectionPrev[index].classList.add('active');
+					collectionPagination[index].classList.add('active');
+				});
+			});
+		}
+	})();
 
 });
