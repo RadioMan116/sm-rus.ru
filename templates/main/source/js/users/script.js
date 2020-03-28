@@ -226,7 +226,7 @@ $(document).ready(function () {
 			}
 		} else {
 			var mySwiper13 = new Swiper(".js-recently-watched .swiper-container", {
-				slidesPerView: 5,
+				slidesPerView: 6,
 				slidesPerGroup: 1,
 				spaceBetween: 25,
 				touchRatio: 1,

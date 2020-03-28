@@ -1,0 +1,66 @@
+.collections {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 5px;
+	margin-bottom: 24px;
+
+	// .collections__link
+
+	&__link {
+		color: $base;
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 28px;
+		width: 272px;
+		height: 40px;
+		border: 1px solid #f1f1f1;
+		margin-bottom: 8px;
+		display: flex;
+		align-items: center;
+		padding: 0 16px;
+		justify-content: space-between;
+
+		// &:nth-child(3n+2) {
+		// 	margin: 0 17px 8px;
+		// }
+
+		&:after {
+			content: '';
+			border-top: 1.5px solid #b0b0b0;
+			border-right: 1.5px solid #b0b0b0;
+			display: block;
+			width: 10px;
+			height: 10px;
+			transform: rotate(45deg)
+		}
+
+	}
+
+	// &+.all-video__bottom {
+	// 	display: none;
+	// }
+
+	@media screen and (max-width:767px) {
+		padding-bottom: 18px;
+
+		&__link {
+			flex-basis: 288px;
+			flex-grow: 1;
+
+			&:nth-child(3n+2) {
+				margin: unset;
+			}
+
+			// &:nth-child(n+13) {
+			// 	display: none;
+			// }
+
+			margin: 0 4px 8px !important;
+
+		}
+
+		// &+.all-video__bottom {
+		// 	display: flex;
+		// }
+	}
+}

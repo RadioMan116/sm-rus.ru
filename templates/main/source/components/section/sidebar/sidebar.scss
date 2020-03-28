@@ -643,10 +643,10 @@
 	letter-spacing: normal;
 	text-align: center;
 	text-transform: uppercase;
-	color: #333333;
+	color: $base;
 	padding: 7px 13px 5px 14px;
 	border-radius: 2px;
-	border: 1px solid #666666;
+	border: 1px solid $base;
 	text-decoration: none !important;
 	margin-bottom: 7px;
 
@@ -776,10 +776,10 @@
 		letter-spacing: normal;
 		text-align: left;
 		text-transform: uppercase;
-		color: #333333;
+		color: $base;
 		padding: 7px 13px 5px 14px;
 		border-radius: 2px;
-		border: solid 1px #666666;
+		border: solid 1px $base;
 		text-decoration: none !important;
 		width: 150px !important;
 	}

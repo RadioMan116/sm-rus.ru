@@ -139,7 +139,7 @@
 		font-size: 16px;
 		margin-bottom: 16px;
 		font-weight: 400;
-		line-height: 24px;
+		line-height: 1.1;
 		padding-right: 17px;
 		background: url("https://icongr.am/entypo/chevron-up.svg?color=d6d6d6") 100% 0px/18px no-repeat;
 		width: 100%;
@@ -337,6 +337,7 @@
 
 			.more-text {
 				position: absolute;
+
 				&:after {
 					border-bottom: 1px dashed $base;
 					content: '';
@@ -344,7 +345,7 @@
 					position: absolute;
 					width: 85px;
 					bottom: 4px;
-
+					left: 0;
 				}
 			}
 
@@ -367,6 +368,7 @@
 			width: 100%;
 			margin-top: 10px;
 			position: relative;
+
 			// border-bottom: 1px dashed $base;
 			&:after {
 				border-bottom: 1px dashed $base;
@@ -375,6 +377,7 @@
 				position: absolute;
 				width: 59px;
 				bottom: 4px;
+				left: 0;
 			}
 		}
 	}
@@ -920,7 +923,7 @@
 		display: flex;
 		position: relative;
 		padding-right: 13px;
-		max-width:235px;
+		max-width: 235px;
 
 		span {
 			color: #333333;
@@ -1657,5 +1660,11 @@
 				margin-left: -8px;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.col-md-3 .js-favorite_filter+.sidebar {
+		display: none;
 	}
 }

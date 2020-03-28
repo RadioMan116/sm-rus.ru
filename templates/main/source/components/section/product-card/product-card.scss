@@ -5264,12 +5264,16 @@
 			}
 
 			.practical-features__title {
-				color: $base;
+				color: black;
 				font-family: "Roboto Condensed";
 				font-size: 22px;
 				font-weight: 400;
 				line-height: 28px;
 				margin-bottom: 15px;
+			}
+
+			.practical-features__subtitle {
+				width: 100%;
 			}
 
 			.swiper-slide {
