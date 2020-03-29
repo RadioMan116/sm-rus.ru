@@ -2563,6 +2563,12 @@
 					.all-video__item {
 						margin: unset;
 
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+
 						&:nth-child(3n-1) {
 							margin: unset;
 						}
@@ -2956,6 +2962,12 @@
 		&.catalog__thumb,
 		&.catalog__list {
 			position: unset;
+
+			.swiper-container {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
 
 			.catalog-view {
 				position: absolute;
