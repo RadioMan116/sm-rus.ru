@@ -108,7 +108,7 @@
 		&__price {
 			color: #333333 !important;
 			font-family: "Roboto Condensed";
-			font-size: 16px;
+			font-size: 13px;
 			font-weight: 600;
 			line-height: 1.2;
 			letter-spacing: normal;
@@ -4206,6 +4206,11 @@
 					margin-right: unset !important;
 				}
 
+				&:nth-child(2n) {
+					margin-left: unset !important;
+					margin-right: unset !important;
+				}
+
 				&.mobile {
 					width: 134px;
 				}
@@ -4807,6 +4812,12 @@
 				padding-bottom: 12px;
 				flex-wrap: wrap;
 				height: unset;
+
+				.ratings__star {
+					width: 24px;
+					height: 24px;
+					background-size: contain;
+				}
 			}
 
 			.reviews__link {
@@ -4951,6 +4962,10 @@
 					box-shadow: unset !important;
 				}
 
+				&:before {
+					top: calc(50% + 24px);
+				}
+
 				&__items {
 					// flex-wrap: nowrap !important;
 
@@ -5082,6 +5097,7 @@
 						background-position: 50%;
 						width: 40px !important;
 						height: 34px !important;
+						margin-right: 5px;
 					}
 				}
 
@@ -5237,7 +5253,79 @@
 
 			p {
 				margin-bottom: 22px;
+
+
 			}
+
+			&:not(.active) {
+				*:nth-child(2)~* {
+					display: none;
+					// height: 0;
+					// width: 0;
+					// // color: transparent;
+					// opacity: 0;
+					// margin: 0;
+					// min-width: 0;
+				}
+			}
+
+			.description__switch {
+				position: relative;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				background: #fff;
+				padding: 8px 15px 8px 0;
+				color: $base;
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				display: -webkit-box !important;
+				display: -ms-flexbox !important;
+				display: flex !important;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				z-index: 9;
+				cursor: pointer;
+				// display: none;
+
+				&:before {
+					content: "";
+					width: 119px;
+					position: absolute;
+					height: 1px;
+					border-bottom: 1px dashed $base;
+					bottom: 9px;
+				}
+
+				&:after {
+					content: '';
+					background: url("https://icongr.am/entypo/chevron-down.svg?color=666666") center/16px no-repeat;
+					width: 16px;
+					height: 16px;
+					position: absolute;
+					left: calc(119px);
+				}
+
+			}
+
+			&.active {
+				height: auto;
+
+				.description__switch {
+
+					&:before {
+						width: 63px;
+					}
+
+					&:after {
+						content: '';
+						background: url("https://icongr.am/entypo/chevron-up.svg?color=666666") center/16px no-repeat;
+						left: 65px;
+					}
+				}
+			}
+
 		}
 
 		.practical-features {
@@ -5591,6 +5679,10 @@
 				display: flex;
 				justify-content: center;
 				white-space: nowrap;
+			}
+
+			&__price {
+				font-size: 13px;
 			}
 
 			// .recently-watched__pic

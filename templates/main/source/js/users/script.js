@@ -198,7 +198,7 @@ $(document).ready(function () {
 				},
 				breakpoints: {
 					480: {
-						slidesPerView: 1.3,
+						slidesPerView: 2.5,
 						slidesPerGroup: 1,
 						spaceBetween: 16,
 
@@ -206,7 +206,7 @@ $(document).ready(function () {
 
 					767: {
 						allowTouchMove: true,
-						slidesPerView: 2,
+						slidesPerView: 3.5,
 						slidesPerGroup: 1,
 						spaceBetween: 24
 					},
@@ -243,7 +243,7 @@ $(document).ready(function () {
 					},
 
 					767: {
-						slidesPerView: 2,
+						slidesPerView: 3.5,
 						slidesPerGroup: 1,
 						spaceBetween: 24
 					},
@@ -409,6 +409,7 @@ $(document).ready(function () {
 				allowTouchMove: true,
 				slidesPerView: 1,
 				slidesPerColumn: 2,
+				spaceBetween: 32,
 			}
 		}
 
@@ -2348,14 +2349,14 @@ $(window).on('load', function () {
 			console.log($(this))
 		});
 		(function () {
-			let moreText = document.querySelector('.js-reviews-main .swiper-container');
+			let moreText = document.querySelector('.description.text-default');
 			if (moreText) {
 				console.log('есть');
 				let button = document.createElement('div');
 				let openText = 'Читать подробнее',
 					closeText = 'Свернуть';
 				moreText.append(button);
-				button.classList.add('js-switch', 'reviews-main__switch');
+				button.classList.add('js-switch', 'description__switch');
 				button.innerHTML = openText
 				button.onclick = function () {
 					this.parentElement.classList.toggle('active');
