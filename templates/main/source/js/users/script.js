@@ -200,7 +200,7 @@ $(document).ready(function () {
 					480: {
 						slidesPerView: 2.5,
 						slidesPerGroup: 1,
-						spaceBetween: 16,
+						spaceBetween: 8,
 
 					},
 
@@ -238,7 +238,7 @@ $(document).ready(function () {
 					480: {
 						slidesPerView: 2.5,
 						slidesPerGroup: 1,
-						spaceBetween: 16,
+						spaceBetween: 8,
 
 					},
 
@@ -2350,6 +2350,23 @@ $(window).on('load', function () {
 		});
 		(function () {
 			let moreText = document.querySelector('.description.text-default');
+			if (moreText) {
+				console.log('есть');
+				let button = document.createElement('div');
+				let openText = 'Читать подробнее',
+					closeText = 'Свернуть';
+				moreText.append(button);
+				button.classList.add('js-switch', 'description__switch');
+				button.innerHTML = openText
+				button.onclick = function () {
+					this.parentElement.classList.toggle('active');
+					button.innerHTML == 'Читать подробнее' ? button.innerHTML = closeText : button.innerHTML = openText;
+				};
+			}
+
+		})();
+		(function () {
+			let moreText = document.querySelector('.catalog__description.description');
 			if (moreText) {
 				console.log('есть');
 				let button = document.createElement('div');
