@@ -1678,7 +1678,7 @@
 			input#del_filter {
 				display: flex;
 				align-items: center;
-				width: 176px;
+				width: calc(100% - 76px);
 				height: 40px;
 				border-radius: 3px;
 				padding: 9px 43px 8px 16px;
