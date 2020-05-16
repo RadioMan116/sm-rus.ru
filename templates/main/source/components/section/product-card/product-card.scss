@@ -6076,7 +6076,7 @@
 
 			.collection__link {
 				flex-direction: column;
-				padding: 36px 7px 25px 14px;
+				padding: 36px 14px 25px 14px;
 				height: 100%;
 			}
 
@@ -6084,6 +6084,7 @@
 				margin-bottom: 38px;
 				margin-right: 0;
 				text-align: center;
+				max-width: unset;
 			}
 
 			.collection__text {
