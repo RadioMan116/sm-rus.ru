@@ -3606,11 +3606,12 @@
 				// .collection__pic
 
 				&__pic {
-					max-width: 194px;
+					max-width: 162px;
 					align-items: center;
 					// margin: 0 auto;
 					max-height: inherit;
 					margin-right: 24px;
+					flex-grow: 1;
 
 					picture {
 						height: 95px;
