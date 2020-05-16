@@ -199,11 +199,15 @@
 				}
 			}
 
+			&:after {
+				background: url('../images/round-2.svg') no-repeat -3px 2px/15px;
+			}
+
 		}
 
 		&.sorting__link_up {
 			&:after {
-				background: url('../images/round-2.svg') no-repeat -3px 2px/15px;
+				background: url('../images/round-2.svg') no-repeat 6px 2px/15px;
 				-webkit-transform: rotate(180deg);
 				transform: rotate(180deg);
 
