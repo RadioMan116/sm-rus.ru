@@ -53,8 +53,8 @@
 		top: 19px;
 		right: 100px;
 
-		span:nth-child(even) {
-			margin: 0 16px;
+		span {
+			margin: 0 16px 0 0 !important;
 		}
 	}
 
@@ -1034,9 +1034,17 @@
 			height: fit-content;
 			top: 47%;
 			z-index: 9999;
+			max-width: 150px;
+			// height: 34px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
 
 			.swiper-pagination-bullet-active {
 				background: $base;
+			}
+			.swiper-pagination-bullet {
+				margin: 0 16px 10px 0 !important;
 			}
 		}
 

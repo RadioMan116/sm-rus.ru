@@ -421,13 +421,14 @@
 		/* Style for "Oval" */
 		top: -13px;
 		left: 25px;
-		width: 20px;
-		height: 20px;
+		min-width: 20px;
+		min-height: 20px;
+		padding: 1px 3px;
 		color: #ffffff;
 		font-family: Arial;
 		font-size: 13px;
 		font-weight: 400;
-		line-height: 22px;
+		line-height: 17px;
 		text-align: center;
 		background-color: $base;
 		border-radius: 50%;
