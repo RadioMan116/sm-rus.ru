@@ -3516,7 +3516,7 @@
 				// .tags__list
 
 				&__list {
-					padding-bottom: 200px;
+					padding-bottom: 160px;
 				}
 
 				// .tags__item
@@ -3693,7 +3693,7 @@
 				left: 0vw;
 				align-self: flex-end;
 				opacity: 0;
-				bottom: 0;
+				bottom: 2px;
 				// &.active {
 				// 	left: unset;
 				// 	position: relative;
@@ -6077,15 +6077,19 @@
 			.collection__link {
 				flex-direction: column;
 				padding: 36px 7px 25px 14px;
+				height: 100%;
 			}
 
 			.collection__pic {
 				margin-bottom: 38px;
+				margin-right: 0;
+				text-align: center;
 			}
 
 			.collection__text {
 				max-width: unset;
 				padding-bottom: 0;
+				flex-grow: 1;
 			}
 
 			.collection__info {
