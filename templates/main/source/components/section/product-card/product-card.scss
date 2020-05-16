@@ -6053,6 +6053,7 @@
 
 			.tags__list {
 				width: auto;
+				padding-bottom: 240px;
 
 				li {
 					height: auto;
@@ -6062,6 +6063,7 @@
 			.swiper-container {
 				pointer-events: none;
 				opacity: 0;
+				height: calc(100% - 150px);
 			}
 
 
