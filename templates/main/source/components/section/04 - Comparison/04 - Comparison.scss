@@ -1043,6 +1043,7 @@
 			.swiper-pagination-bullet-active {
 				background: $base;
 			}
+
 			.swiper-pagination-bullet {
 				margin: 0 16px 10px 0 !important;
 			}
@@ -1141,13 +1142,20 @@
 			}
 
 			.swiper-pagination {
-				top: 5px;
+				top: 1px;
 				transform: translateX(-50%);
-				height: 50px;
+				height: 39px;
 				background: white;
 				left: 50%;
 				width: 80%;
+				justify-content: center;
+				max-width: unset;
+				padding-top: 8px;
 				z-index: 9999;
+
+				* {
+					margin: 0 16px !important;
+				}
 			}
 
 			.fixed-header__text {
