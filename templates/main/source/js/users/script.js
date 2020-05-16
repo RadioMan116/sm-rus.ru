@@ -2440,6 +2440,7 @@ $(window).on('load', function () {
 	(function () {
 		let collection = document.querySelector('.product-card__collection');
 		if (collection) {
+			let tabsParent = collection.querySelector(".tags__list");
 			let tabs = collection.querySelectorAll(".tags__list li");
 			let collectionChild = collection.querySelectorAll('.swiper-container');
 			let collectionNext = collection.querySelectorAll('.collection__next');
@@ -2510,7 +2511,7 @@ $(window).on('load', function () {
 
 			tabs.forEach((element, index) => {
 				element.classList.add("tabs-" + index);
-				element.style.height = `${maxHeight}px`;
+				// element.style.height = `${maxHeight}px`;
 				element.addEventListener('click', function () {
 					tabs.forEach((element, i) => {
 						element.classList.remove('cur');
@@ -2526,6 +2527,7 @@ $(window).on('load', function () {
 					collectionPagination[index].classList.add('active');
 				});
 			});
+			tabsParent.style.paddingBottom = `${maxHeight - 50}px`;
 		}
 	})();
 
