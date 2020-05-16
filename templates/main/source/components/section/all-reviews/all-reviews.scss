@@ -201,8 +201,8 @@
 
 		.ratings__star {
 			width: 15px;
-			height: 19px;
-			background-size: 12px 11px;
+			height: 14px;
+			background-size: 12px 12px;
 		}
 	}
 
@@ -381,6 +381,14 @@
 					margin-bottom: 12px;
 				}
 
+			}
+
+			.ratings:first-of-type {
+
+
+				.reviews__all {
+					height: 17px;
+				}
 			}
 		}
 
