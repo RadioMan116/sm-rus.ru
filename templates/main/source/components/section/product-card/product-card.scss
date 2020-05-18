@@ -658,13 +658,13 @@
 		color: #cccccc;
 		display: flex;
 		align-items: center;
-		margin-left: auto;
+		// margin-left: auto;
 
-		&::before {
+		&:before {
 			width: 14px;
 			height: 14px;
 			content: '';
-			background: url('../images/price updated.svg');
+			background: url('../images/price_updated.svg');
 			margin-right: 9px;
 			flex-shrink: 0;
 		}
