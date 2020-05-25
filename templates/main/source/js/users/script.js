@@ -674,7 +674,7 @@ $(document).ready(function () {
 	});
 	$(".labels>img").hover(function () {
 		var alt = $(this).attr('alt');
-		var handel = $(this).position().left - 20;
+		var handel = $(this).position().left - 25;
 		console.log(handel)
 		if ($('.labels .labels__popup').length) {
 			if ($('.labels .labels__popup').text() == alt) {
