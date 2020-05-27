@@ -106,11 +106,20 @@
 				position: relative;
 			}
 
-			.time-work__text+.time-work__text {
-				display: none;
+			.time-work__text {
 
-				+.time-work__email {
+				&:first-child {
+					border-bottom: 1px dotted #00000099;
+					width: fit-content;
+				}
+
+				+.time-work__text {
 					display: none;
+					border-bottom: none;
+
+					+.time-work__email {
+						display: none;
+					}
 				}
 			}
 
