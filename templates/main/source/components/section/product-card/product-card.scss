@@ -737,17 +737,21 @@
 			text-transform: uppercase;
 			position: absolute;
 			bottom: -19px;
-			left: 0;
+			left: 1px;
 
 			&:before {
 				content: "";
-				width: calc(100% - 32px);
+				width: calc(100% - 49px);
 				position: absolute;
 				height: 1px;
 				background: #f70000;
-				transform: rotate(-10deg);
+				transform: rotate(-12deg);
 				bottom: 10px;
-			}
+				-webkit-transform: rotate(-12deg);
+				-moz-transform: rotate(-12deg);
+				-ms-transform: rotate(-12deg);
+				-o-transform: rotate(-12deg);
+}
 		}
 
 		&.specify-price {
