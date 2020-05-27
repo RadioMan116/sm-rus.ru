@@ -30,7 +30,8 @@
 		justify-content: unset !important;
 	}
 
-	&__input {
+	&__input,
+	&__select {
 		height: 46px;
 		border-radius: 2px;
 		background-color: #ffffff;
@@ -38,6 +39,11 @@
 		max-width: 372px;
 		flex-grow: 1;
 		padding-left: 15px;
+		color: #2e2e2e;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 28px;
 	}
 
 	&__textarea {
@@ -53,12 +59,13 @@
 
 	&__required {
 		color: $base;
+		margin-left: 5px;
 	}
 
 	&__copyright {
 		width: 100%;
 		color: #666666;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 12px;
 		line-height: 18px;
 		margin-bottom: 15px;
@@ -74,6 +81,14 @@
 			margin-right: 5px;
 			margin-left: 5px;
 		}
+	}
+
+	&__applications {
+		color: #b0b0b0;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
 	}
 
 	&__attachment {

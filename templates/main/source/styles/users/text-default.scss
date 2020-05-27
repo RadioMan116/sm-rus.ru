@@ -55,6 +55,7 @@
 		color: $base;
 		margin-bottom: 40px;
 	}
+
 	h5 {
 		color: #333333;
 		font-family: "Roboto Condensed";
@@ -62,7 +63,12 @@
 		font-weight: 400;
 		line-height: 28px;
 
+		b {
+			color: $base;
+			line-height: inherit;
+		}
 	}
+
 	b {
 		width: 100%;
 		margin-bottom: 13px;
@@ -151,6 +157,10 @@
 		line-height: 22px;
 		padding-left: 0;
 		margin-bottom: 20px;
+
+		li:first-child {
+			margin-top: 16px;
+		}
 	}
 
 	ul {
@@ -344,7 +354,7 @@
 		margin-bottom: 2rem;
 
 		b {
-			display: inline;
+
 			width: 100%;
 			margin-bottom: 13px;
 			color: #333333;
@@ -355,6 +365,45 @@
 			text-align: left;
 			color: #333333;
 			margin-top: 18px;
+		}
+
+		p {
+			margin: 0 0 14px;
+			b {
+				font-size: inherit;
+				line-height: inherit;
+			}
+		}
+
+		strong {
+			margin-bottom: 15px;
+			display: block;
+		}
+
+		ul {
+			li {
+				color: #ba1212;
+				margin-left: 16px;
+
+				p {
+					margin: 0;
+				}
+			}
+		}
+
+		&.column {
+			display: flex;
+			flex-wrap: wrap;
+
+			ul {
+				width: 33%;
+			}
+			.time{
+				margin-top: 14px;
+				br{
+					display: none;
+				}
+			}
 		}
 	}
 
@@ -546,6 +595,11 @@
 			margin-bottom: 23px;
 			padding-top: 0;
 		}
+		h5{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+		}
 
 		p {
 			font-size: 14px;
@@ -565,7 +619,7 @@
 		}
 
 		b {
-			display: block;
+
 			width: 100%;
 			margin-bottom: 11px;
 			font-size: 16px;
@@ -780,6 +834,24 @@
 
 			a {
 				margin-top: 22px;
+			}
+			&.column{
+				ul{
+					width: 100%;
+					margin-bottom: 0;
+					&:last-of-type{
+						margin-bottom: 16px;
+					}
+				}
+				.time{
+					b{
+						display: block;
+
+					}
+					br{
+						display: block;
+					}
+				}
 			}
 		}
 
