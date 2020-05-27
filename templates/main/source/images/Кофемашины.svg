@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25">
+  <defs>
+    <rect id="кофемашины-b" width="18" height="12" x="3" y="9"/>
+    <filter id="кофемашины-a" width="155.6%" height="183.3%" x="-27.8%" y="-33.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.251311189 0"/>
+    </filter>
+    <rect id="кофемашины-d" width="6" height="5" x="9" y="2"/>
+    <filter id="кофемашины-c" width="266.7%" height="300%" x="-83.3%" y="-80%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.404747596 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="23" height="23" x=".5" y=".5" stroke="#000"/>
+    <use fill="#000" filter="url(#кофемашины-a)" xlink:href="#кофемашины-b"/>
+    <rect width="17" height="11" x="3.5" y="9.5" fill="#D0021B" fill-opacity=".149" stroke="#BA1212" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#кофемашины-c)" xlink:href="#кофемашины-d"/>
+    <use fill="#BA1212" xlink:href="#кофемашины-d"/>
+    <rect width="6" height="3" x="9" y="9" fill="#BA1212"/>
+    <rect width="2" height="4" x="9" y="9" fill="#BA1212"/>
+    <rect width="2" height="4" x="13" y="9" fill="#BA1212"/>
+    <circle cx="6" cy="3" r="1" fill="#000"/>
+    <circle cx="3" cy="3" r="1" fill="#000"/>
+    <circle cx="6" cy="6" r="1" fill="#000"/>
+    <circle cx="3" cy="6" r="1" fill="#000"/>
+    <circle cx="21" cy="3" r="1" fill="#000"/>
+    <circle cx="18" cy="3" r="1" fill="#000"/>
+    <circle cx="21" cy="6" r="1" fill="#000"/>
+    <circle cx="18" cy="6" r="1" fill="#000"/>
+    <path fill="#D0021B" fill-opacity=".149" stroke="#BA1212" d="M15.3062871 14.5L8.69371294 14.5 10.3603796 19.5 13.6396204 19.5 15.3062871 14.5zM16.5 15.5L15.3603796 15.5 14.6937129 17.5 16.5 17.5C16.7761424 17.5 17.0261424 17.3880712 17.2071068 17.2071068 17.3880712 17.0261424 17.5 16.7761424 17.5 16.5 17.5 16.2238576 17.3880712 15.9738576 17.2071068 15.7928932 17.0261424 15.6119288 16.7761424 15.5 16.5 15.5z"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="24" viewBox="0 0 20 24">
+  <defs>
+    <rect id="проф-котломоечные-машины-b" width="4" height="5" x="8" y="14"/>
+    <filter id="проф-котломоечные-машины-a" width="275%" height="240%" x="-87.5%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.301901224 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="19" height="20" x=".5" y="2.5" stroke="#000"/>
+    <use fill="#000" filter="url(#проф-котломоечные-машины-a)" xlink:href="#проф-котломоечные-машины-b"/>
+    <use fill="#BA1212" xlink:href="#проф-котломоечные-машины-b"/>
+    <rect width="1" height="8" x="3" y="13" fill="#D8D8D8"/>
+    <rect width="1" height="8" x="16" y="13" fill="#D8D8D8"/>
+    <rect width="1" height="6" x="3" y="4" fill="#D8D8D8"/>
+    <rect width="3" height="2" x="3" fill="#D8D8D8"/>
+    <rect width="1" height="6" x="16" y="4" fill="#D8D8D8"/>
+    <rect width="5" height="1" x="1" y="23" fill="#D8D8D8"/>
+    <rect width="5" height="1" x="14" y="23" fill="#D8D8D8"/>
+    <rect width="18" height="1" x="1" y="11" fill="#BA1212"/>
+  </g>
+</svg>

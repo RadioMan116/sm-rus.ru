@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="24" viewBox="0 0 26 24">
+  <defs>
+    <rect id="проф-аксессуары-b" width="20" height="18" x="2" y="2"/>
+    <filter id="проф-аксессуары-a" width="150%" height="155.6%" x="-25%" y="-22.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.251311189 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1)">
+    <rect width="23" height="21" x=".5" y=".5" stroke="#000"/>
+    <path stroke="#D8D8D8" stroke-linecap="round" d="M2.5,3 L20.5,19 M6,2.5 L21,15.5 M2,6.5 L17,19.5 M2,10 L13,19.5 M2,13.75 L9,19.5 M2,16.875 L5,19.5 M10.5,2.5 L21,11.5 M14.75,2.5 L21,7.5 M18.625,2.5 L21,4.5" transform="matrix(-1 0 0 1 23.5 0)"/>
+    <use fill="#000" filter="url(#проф-аксессуары-a)" xlink:href="#проф-аксессуары-b"/>
+    <rect width="19" height="17" x="2.5" y="2.5" fill="#D0021B" fill-opacity=".149" stroke="#BA1212" stroke-linejoin="square"/>
+    <path stroke="#BA1212" stroke-linecap="round" d="M3,3 L21,19 M6.5,2.5 L21.5,15.5 M2.5,6.5 L17.5,19.5 M2.5,10 L13.5,19.5 M2.5,13.75 L9.5,19.5 M2.5,16.875 L5.5,19.5 M11,2.5 L21.5,11.5 M15.25,2.5 L21.5,7.5 M19.125,2.5 L21.5,4.5"/>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="21" viewBox="0 0 24 21">
+  <defs>
+    <rect id="ящики-сомелье-b" width="11" height="16" x="0" y="0"/>
+    <filter id="ящики-сомелье-a" width="190.9%" height="162.5%" x="-45.5%" y="-25%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="ящики-сомелье-d" cx="4" cy="12.5" r="1.5"/>
+    <filter id="ящики-сомелье-c" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="ящики-сомелье-f" cx="4" cy="9.5" r="1.5"/>
+    <filter id="ящики-сомелье-e" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="ящики-сомелье-h" cx="4" cy="6.5" r="1.5"/>
+    <filter id="ящики-сомелье-g" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="ящики-сомелье-j" cx="4" cy="3.5" r="1.5"/>
+    <filter id="ящики-сомелье-i" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="ящики-сомелье-l" cx="8" cy="3.5" r="1.5"/>
+    <filter id="ящики-сомелье-k" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
+    <rect width="19" height="15" x="2.5" y=".5" stroke="#000"/>
+    <g transform="rotate(90 8.75 11.25)">
+      <use fill="#000" filter="url(#ящики-сомелье-a)" xlink:href="#ящики-сомелье-b"/>
+      <rect width="10" height="15" x=".5" y=".5" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+      <path fill="#BA1212" d="M8.5,6 L8.50070296,8.08560151 C9.08293192,8.29171807 9.5,8.8471533 9.5,9.5 L9.5,14 L6.5,14 L6.5,9.5 C6.5,8.84678131 6.91754351,8.29108512 7.50029246,8.08524952 L7.5,6 L8.5,6 Z"/>
+      <use fill="#000" filter="url(#ящики-сомелье-c)" xlink:href="#ящики-сомелье-d"/>
+      <circle cx="4" cy="12.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+      <use fill="#000" filter="url(#ящики-сомелье-e)" xlink:href="#ящики-сомелье-f"/>
+      <circle cx="4" cy="9.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+      <use fill="#000" filter="url(#ящики-сомелье-g)" xlink:href="#ящики-сомелье-h"/>
+      <circle cx="4" cy="6.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+      <use fill="#000" filter="url(#ящики-сомелье-i)" xlink:href="#ящики-сомелье-j"/>
+      <circle cx="4" cy="3.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+      <use fill="#000" filter="url(#ящики-сомелье-k)" xlink:href="#ящики-сомелье-l"/>
+      <circle cx="8" cy="3.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+    </g>
+    <path stroke="#000" d="M23.2614835,15.5 L0.738516481,15.5 L2.33851648,19.5 L21.6614835,19.5 L23.2614835,15.5 Z"/>
+  </g>
+</svg>

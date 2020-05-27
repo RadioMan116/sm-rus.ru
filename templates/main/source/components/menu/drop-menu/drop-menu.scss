@@ -30,7 +30,7 @@
 			max-height: calc(100vh - 95px);
 		}
 
-		&:nth-child(1) {
+		&:not(.collection) {
 
 
 			.dropdown-menu__title {
@@ -536,7 +536,7 @@
 					width: 100% !important;
 				}
 
-				&:nth-child(3),
+
 				&.new-collection {
 					>.dropdown-menu__parent {
 						width: 100% !important;

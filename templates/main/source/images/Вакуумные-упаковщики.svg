@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20" viewBox="0 0 24 20">
+  <defs>
+    <polygon id="вакуумные-упаковщики-b" points="4 2.5 9 3 20 2.5 19 10 20 13.5 13 13 4 13.5 5 7"/>
+    <filter id="вакуумные-упаковщики-a" width="162.5%" height="190.9%" x="-31.2%" y="-36.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="19" height="15" x="2.5" y=".5" stroke="#000"/>
+    <use fill="#000" filter="url(#вакуумные-упаковщики-a)" xlink:href="#вакуумные-упаковщики-b"/>
+    <path fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square" d="M19.4253569,3.0266364 L8.98640456,3.50113424 L4.63804089,3.06629787 L5.5084657,6.98320955 L4.58794946,12.9665651 L13.0039602,12.499009 L19.3229538,12.9503657 L18.4906169,10.0371867 L19.4253569,3.0266364 Z"/>
+    <path stroke="#BA1212" d="M15.2543974,5.2086053 C19.4154561,5.72983444 15.3412803,11.8606781 11.3288358,10.8975393 C8.28736989,10.1674721 6.67317561,6.33028485 9.37464197,5.16443656 C11.1985562,4.93133958 13.1584747,4.9460625 15.2543974,5.2086053 Z"/>
+    <path fill="#BA1212" d="M9.4136824,8.42316682 C15.8829231,13.8091579 12.1575766,3.40478032 9.4136824,6.63614418 C8.86210587,7.23181839 8.86210587,7.82749261 9.4136824,8.42316682 Z"/>
+    <path fill="#BA1212" d="M13,6.7474918 C13.03289,12.2120229 18.6859712,6.01795163 14.38796,6.00181062 C13.5658337,5.9760776 13.1031804,6.22463799 13,6.7474918 Z"/>
+    <path stroke="#000" d="M23.2614835,15.5 L0.738516481,15.5 L2.33851648,19.5 L21.6614835,19.5 L23.2614835,15.5 Z"/>
+  </g>
+</svg>

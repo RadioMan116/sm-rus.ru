@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23" viewBox="0 0 24 23">
+  <defs>
+    <polygon id="аксессуары-b" points="5 3 19 3 20 19 4 19"/>
+    <filter id="аксессуары-a" width="162.5%" height="162.5%" x="-31.2%" y="-25%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.251311189 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#000" d="M21.5433927,0.5 L2.45660732,0.5 L0.54751641,21.5 L23.4524836,21.5 L21.5433927,0.5 Z"/>
+    <use fill="#000" filter="url(#аксессуары-a)" xlink:href="#аксессуары-b"/>
+    <path fill="#D0021B" fill-opacity=".149" stroke="#BA1212" stroke-linejoin="square" d="M18.5302744,3.5 L5.46972561,3.5 L4.53222561,18.5 L19.4677744,18.5 L18.5302744,3.5 Z"/>
+    <rect width="14" height="1" x="5" y="5" fill="#BA1212"/>
+    <rect width="14" height="1" x="5" y="7" fill="#BA1212"/>
+    <rect width="14" height="1" x="5" y="9" fill="#BA1212"/>
+    <rect width="14" height="1" x="5" y="11" fill="#BA1212"/>
+    <rect width="14" height="1" x="5" y="13" fill="#BA1212"/>
+    <rect width="14" height="1" x="5" y="15" fill="#BA1212"/>
+  </g>
+</svg>

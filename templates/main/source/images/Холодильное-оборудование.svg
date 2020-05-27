@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <rect id="холодильное-оборудование-b" width="1" height="3" x="21" y="18"/>
+    <filter id="холодильное-оборудование-a" width="800%" height="333.3%" x="-350%" y="-83.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.301901224 0"/>
+    </filter>
+    <rect id="холодильное-оборудование-d" width="1" height="3" x="19" y="18"/>
+    <filter id="холодильное-оборудование-c" width="800%" height="333.3%" x="-350%" y="-83.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.301901224 0"/>
+    </filter>
+    <rect id="холодильное-оборудование-f" width="1" height="3" x="17" y="18"/>
+    <filter id="холодильное-оборудование-e" width="800%" height="333.3%" x="-350%" y="-83.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.301901224 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#212121" d="M23.3596118,0.5 L0.640388203,0.5 L2.3903882,7.5 L21.6096118,7.5 L23.3596118,0.5 Z"/>
+    <path fill="#D0021B" fill-opacity=".149" stroke="#BA1212" d="M20.3279847,2.5 L3.67201533,2.5 L4.87201533,6.5 L19.1279847,6.5 L20.3279847,2.5 Z"/>
+    <rect width="23" height="15" x=".5" y="7.5" stroke="#000"/>
+    <rect width="5" height="1" x="2" y="23" fill="#D8D8D8"/>
+    <rect width="5" height="1" x="17" y="23" fill="#D8D8D8"/>
+    <use fill="#000" filter="url(#холодильное-оборудование-a)" xlink:href="#холодильное-оборудование-b"/>
+    <use fill="#BA1212" xlink:href="#холодильное-оборудование-b"/>
+    <use fill="#000" filter="url(#холодильное-оборудование-c)" xlink:href="#холодильное-оборудование-d"/>
+    <use fill="#BA1212" xlink:href="#холодильное-оборудование-d"/>
+    <use fill="#000" filter="url(#холодильное-оборудование-e)" xlink:href="#холодильное-оборудование-f"/>
+    <use fill="#BA1212" xlink:href="#холодильное-оборудование-f"/>
+  </g>
+</svg>

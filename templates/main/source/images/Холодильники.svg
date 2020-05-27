@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="24" viewBox="0 0 25 24">
+  <defs>
+    <rect id="холодильники-b" width="11" height="14" x="11" y="2"/>
+    <filter id="холодильники-a" width="190.9%" height="171.4%" x="-45.5%" y="-28.6%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="холодильники-d" cx="14.5" cy="13.5" r="1.5"/>
+    <filter id="холодильники-c" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="холодильники-f" cx="14.5" cy="10.5" r="1.5"/>
+    <filter id="холодильники-e" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="холодильники-h" cx="14.5" cy="7.5" r="1.5"/>
+    <filter id="холодильники-g" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="холодильники-j" cx="14.5" cy="4.5" r="1.5"/>
+    <filter id="холодильники-i" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+    <circle id="холодильники-l" cx="18.5" cy="4.5" r="1.5"/>
+    <filter id="холодильники-k" width="433.3%" height="433.3%" x="-166.7%" y="-133.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.25 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="23" height="23" x=".5" y=".5" stroke="#000"/>
+    <rect width="23" height="1" x="-2" y="12" fill="#040404" transform="rotate(90 9.5 12.5)"/>
+    <path fill="#040404" d="M6,16 L6,15 L7,15 L6.999,3 L6,3 L6,2 L8,2 L8,3 L7.999,3 L8,15 L8,16 L6,16 Z"/>
+    <rect width="24" height="1" y="17" fill="#040404"/>
+    <rect width="11" height="1" x="11" y="19" fill="#040404"/>
+    <rect width="6" height="1" x="2" y="19" fill="#BA1212"/>
+    <rect width="11" height="1" x="11" y="21" fill="#000" opacity=".152"/>
+    <use fill="#000" filter="url(#холодильники-a)" xlink:href="#холодильники-b"/>
+    <rect width="10" height="13" x="11.5" y="2.5" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+    <path fill="#BA1212" d="M19,7 L19.000703,9.08560151 C19.5829319,9.29171807 20,9.8471533 20,10.5 L20,15 L17,15 L17,10.5 C17,9.84678131 17.4175435,9.29108512 18.0002925,9.08524952 L18,7 L19,7 Z"/>
+    <use fill="#000" filter="url(#холодильники-c)" xlink:href="#холодильники-d"/>
+    <circle cx="14.5" cy="13.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#холодильники-e)" xlink:href="#холодильники-f"/>
+    <circle cx="14.5" cy="10.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#холодильники-g)" xlink:href="#холодильники-h"/>
+    <circle cx="14.5" cy="7.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#холодильники-i)" xlink:href="#холодильники-j"/>
+    <circle cx="14.5" cy="4.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#холодильники-k)" xlink:href="#холодильники-l"/>
+    <circle cx="18.5" cy="4.5" r="1" fill="#BA1212" fill-opacity=".15" stroke="#BA1212" stroke-linejoin="square"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="18" viewBox="0 0 25 18">
+  <defs>
+    <rect id="микроволновые-печи-b" width="15" height="12" x="2" y="2"/>
+    <filter id="микроволновые-печи-a" width="166.7%" height="183.3%" x="-33.3%" y="-33.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.251311189 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1)">
+    <rect width="23" height="15" x=".5" y=".5" stroke="#000"/>
+    <use fill="#000" filter="url(#микроволновые-печи-a)" xlink:href="#микроволновые-печи-b"/>
+    <rect width="14" height="11" x="2.5" y="2.5" fill="#D0021B" fill-opacity=".149" stroke="#BA1212" stroke-linejoin="square"/>
+    <rect width="2" height="1" x="20" y="8" fill="#BA1212"/>
+    <rect width="2" height="1" x="20" y="10" fill="#BA1212"/>
+    <rect width="3" height="2" x="20" y="12" fill="#000"/>
+    <circle cx="21" cy="3" r="1" fill="#000"/>
+    <circle cx="21" cy="6" r="1" fill="#000"/>
+    <rect width="1" height="15" x="18" y="1" fill="#000"/>
+    <rect width="11" height="1" x="4" y="12" fill="#BA1212"/>
+    <path stroke="#BA1212" d="M14.0657415,8.5 L4.93425855,8.5 L6.26759188,10.5 L12.7324081,10.5 L14.0657415,8.5 Z"/>
+  </g>
+</svg>

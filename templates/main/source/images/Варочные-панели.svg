@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="21" viewBox="0 0 24 21">
+  <defs>
+    <circle id="варочные-панели-b" cx="7" cy="6" r="4"/>
+    <filter id="варочные-панели-a" width="225%" height="225%" x="-62.5%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+      <feOffset dy="1" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1   0 0 0 0 0.801339727   0 0 0 0 0.237866951  0 0 0 0.304933348 0"/>
+    </filter>
+    <rect id="варочные-панели-d" width="6" height="2" x="9" y="15"/>
+    <filter id="варочные-панели-c" width="266.7%" height="600%" x="-83.3%" y="-200%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.729411765   0 0 0 0 0.0705882353   0 0 0 0 0.0705882353  0 0 0 0.404747596 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="23" height="17" x=".5" y=".5" stroke="#000"/>
+    <rect width="7" height="11" x="3.5" y="2.5" fill="#BA1212" fill-opacity=".25" stroke="#BA1212" rx="3.5"/>
+    <use fill="#000" filter="url(#варочные-панели-a)" xlink:href="#варочные-панели-b"/>
+    <circle cx="7" cy="6" r="3.5" stroke="#BA1212" stroke-linejoin="square"/>
+    <use fill="#000" filter="url(#варочные-панели-c)" xlink:href="#варочные-панели-d"/>
+    <use fill="#BA1212" xlink:href="#варочные-панели-d"/>
+    <circle cx="18" cy="12" r="2" fill="#000"/>
+    <circle cx="18" cy="5" r="3" fill="#000"/>
+  </g>
+</svg>
