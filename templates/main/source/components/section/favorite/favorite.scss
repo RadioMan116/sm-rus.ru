@@ -43,6 +43,108 @@
 				align-items: center;
 				padding-top: 2px;
 				line-height: 1;
+
+				.price__absolute {
+					position: absolute;
+					left: 0;
+					color: #999999;
+					font-family: "Roboto Condensed";
+					font-size: 13px;
+					font-weight: 400;
+					line-height: 1;
+					text-decoration: unset;
+					left: 0;
+					top: unset !important;
+					bottom: -2px;
+					display: flex;
+
+					&:before {
+						content: "";
+						width: calc(100% - 23px);
+						position: absolute;
+						height: 1px;
+						background: #f70000;
+						transform: rotate(-14deg);
+						bottom: 6px;
+						-webkit-transform: rotate(-14deg);
+						-moz-transform: rotate(-14deg);
+						-ms-transform: rotate(-14deg);
+						-o-transform: rotate(-14deg);
+					}
+
+					.price__cheaper {
+						border-radius: 11px;
+						background: #ff6060;
+						padding: 2px 8px;
+						color: #ffffff;
+						font-size: 12px;
+						font-weight: 400;
+						line-height: 1;
+						text-transform: uppercase;
+						position: absolute;
+						left: calc(100% + 3px);
+					}
+				}
+
+				.announcing {
+
+					&__popup {
+						width: 261px;
+						border-radius: 3px;
+						background: #ffffff;
+						box-shadow: 0px 2px 38px rgba(82, 64, 64, 0.17);
+						color: #333333;
+						font-family: Arial, sans-serif;
+						font-size: 12px;
+						font-weight: 400;
+						line-height: 18px;
+						position: absolute;
+						padding: 16px 24px;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 20px;
+						display: flex;
+						flex-direction: column;
+						transform: translateY(-50%);
+						z-index: 120;
+						display: none;
+						left: -19px;
+						top: unset;
+						bottom: 0;
+						white-space: normal;
+
+						a {
+							color: #ba1212;
+							margin-top: 10px;
+						}
+
+						&:before {
+							content: "";
+							-webkit-transform: translateX(-50%);
+							transform: translateX(-50%);
+							left: 50px;
+							top: unset;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 16px 16px 0;
+							border-color: white transparent transparent;
+							position: absolute;
+							bottom: -15px;
+							-moz-transform: translateX(-50%);
+							-ms-transform: translateX(-50%);
+							-o-transform: translateX(-50%);
+							box-shadow: 0 12px 38px rgba(82, 64, 64, .17);
+						}
+					}
+				}
+
+				&:hover {
+
+					.announcing__popup {
+						display: flex;
+					}
+				}
 			}
 
 			.special-offers__rub {
