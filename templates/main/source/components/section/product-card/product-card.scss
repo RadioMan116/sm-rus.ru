@@ -751,7 +751,7 @@
 				-moz-transform: rotate(-12deg);
 				-ms-transform: rotate(-12deg);
 				-o-transform: rotate(-12deg);
-}
+			}
 		}
 
 		&.specify-price {
@@ -3466,8 +3466,68 @@
 		line-height: 17px;
 		width: 100%;
 		margin: 12px 0 0;
-		a{
+
+		a {
 			color: #ba1212;
+		}
+	}
+
+	&__discount {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		color: white;
+		background: #2d2d32;
+		font-family: Arial;
+		height: 56px;
+		padding: 0 12px;
+		overflow: hidden;
+		margin-bottom: 16px;
+
+		.discount__text {
+			width: 122px;
+			font-size: 26px;
+			font-weight: 600;
+			text-transform: uppercase;
+			line-height: 27px;
+		}
+
+		.discont__precent {
+			font-size: 79px;
+			font-weight: 600;
+			z-index: 3;
+		}
+
+		.discont__desc {
+			position: relative;
+			z-index: 2;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -87px;
+				left: -7px;
+				width: 100%;
+				height: 237px;
+				background: #ab1111;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(23deg);
+				z-index: -1;
+			}
+
+			p {
+
+				margin: 0;
+
+				&:first-child {
+					font-weight: 600;
+				}
+
+				&:last-child {
+					color: #b7b7b7;
+				}
+			}
 		}
 	}
 
@@ -4202,7 +4262,7 @@
 			// margin-bottom: 14px;
 			margin: 0 auto 14px;
 			display: flex;
-			width:auto;
+			width: auto;
 			font-size: 24px;
 			font-weight: 400;
 			line-height: 23px;
@@ -4550,7 +4610,7 @@
 			// margin-left: 18px;
 			// margin-right: unset;
 			// margin-bottom: 10px;
-			margin: 0 ;
+			margin: 0;
 			position: absolute;
 			bottom: 2px;
 			right: 0;
@@ -4599,6 +4659,27 @@
 				margin-right: 6px;
 				flex-shrink: 0;
 				order: -1;
+			}
+		}
+
+		&__discount {
+			height: 70px;
+			padding: 0 10px;
+
+			.discount__text {
+				width: 75px;
+				font-size: 12px;
+				line-height: 18px;
+			}
+
+			.discont__precent {
+				margin: 0 6px;
+				font-size: 20px;
+			}
+
+			.discont__desc {
+				font-size: 12px;
+				line-height: 17px;
 			}
 		}
 
@@ -6233,12 +6314,13 @@
 				margin-bottom: 14px;
 			}
 		}
-		.product-card__equipment{
+
+		.product-card__equipment {
 			font-size: 14px;
 			line-height: 17px;
 			text-align: center;
 			padding: 0 33px;
-			margin:0 0 12px;
+			margin: 0 0 12px;
 
 		}
 	}
