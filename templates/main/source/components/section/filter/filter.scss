@@ -70,7 +70,7 @@
 				/* Обязательно задаем высоту */
 				border-radius: 2px;
 				background-color: #e7e7e7;
-				padding: 3px 34px 3px 9px;
+				padding: 3px 9px 3px 9px;
 
 				&+.checkbox-custom {}
 			}
@@ -134,19 +134,19 @@
 			&:hover+.checkbox-custom+.checkbox-number {
 				color: transparent;
 
-				&::before {
-					content: "x";
-					/* Добавляем наш псевдоэлемент */
-					display: flex;
-					/* Делаем его блочным элементом */
-					position: absolute;
-					top: -2px;
-					right: 0px;
-					bottom: 0px;
-					left: 0px;
-					justify-content: flex-end;
-					color: white;
-				}
+				// &::before {
+				// 	content: "x";
+				// 	/* Добавляем наш псевдоэлемент */
+				// 	display: flex;
+				// 	/* Делаем его блочным элементом */
+				// 	position: absolute;
+				// 	top: -2px;
+				// 	right: 0px;
+				// 	bottom: 0px;
+				// 	left: 0px;
+				// 	justify-content: flex-end;
+				// 	color: white;
+				// }
 			}
 		}
 

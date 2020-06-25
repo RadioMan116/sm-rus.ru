@@ -6253,9 +6253,11 @@
 			.tags__list {
 				width: auto;
 				padding-bottom: 300px;
+				flex-wrap: nowrap;
 
 				li {
 					height: auto;
+					white-space: nowrap;
 				}
 			}
 

@@ -120,6 +120,10 @@
 		a {
 			color: #ffffff;
 		}
+
+		&__link {
+			color: white;
+		}
 	}
 
 
@@ -186,11 +190,13 @@
 		.breadcrumbs {
 			margin-top: 30px;
 			text-align: center;
-			padding: 0px;
+			padding: 0px 16px;
 
 			div[itemtype="http://schema.org/BreadcrumbList"] {
 				justify-content: center;
 			}
+
+
 		}
 
 		&__tags {

@@ -306,7 +306,7 @@
 				background: #ffffff;
 				box-shadow: 0px 2px 38px rgba(82, 64, 64, 0.17);
 				color: #333333;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 				font-weight: 400;
 				line-height: 18px;
@@ -1634,7 +1634,7 @@
 					display: flex;
 					flex-wrap: wrap;
 					color: #999999;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 					font-weight: 400;
 					line-height: 10px;
@@ -1909,6 +1909,7 @@
 
 			img {
 				max-height: 100%;
+
 			}
 		}
 
@@ -2392,6 +2393,7 @@
 					img {
 						max-height: 100%;
 						padding-bottom: 14px;
+						height: 100%;
 					}
 				}
 
@@ -3209,7 +3211,7 @@
 			}
 
 			.price__dashed {
-				.announcing__popup{
+				.announcing__popup {
 					max-width: unset;
 					width: calc(100% + 12px);
 					padding: 6px 10px;
@@ -3333,6 +3335,7 @@
 							margin: 0;
 						}
 					}
+
 					.price__dashed {
 						.price__absolute {
 							bottom: 5px;
