@@ -4673,13 +4673,25 @@
 			}
 
 			.discont__precent {
-				margin: 0 6px;
+				margin: 0 6px 0 16px;
 				font-size: 20px;
 			}
 
 			.discont__desc {
 				font-size: 12px;
 				line-height: 17px;
+
+				&:before {
+					left: 8px;
+				}
+
+				p {
+					padding-left: 16px;
+
+					&:last-child {
+						width: 158px;
+					}
+				}
 			}
 		}
 
