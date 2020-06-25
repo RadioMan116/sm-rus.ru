@@ -537,6 +537,14 @@
 		}
 	}
 
+	@media screen and (max-width: 1200px) {
+		& {
+			.swiper-slide {
+				padding: 12px;
+			}
+		}
+	}
+
 	@media screen and (max-width: 767px) {
 
 
