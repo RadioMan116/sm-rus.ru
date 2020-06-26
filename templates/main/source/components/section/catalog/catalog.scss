@@ -70,7 +70,22 @@
 		margin-bottom: 5px;
 		margin-top: 0px;
 
-		.link-pop-glossary {}
+		.link-pop-glossary {
+			margin-left: 2px;
+			position: relative;
+			cursor: pointer;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:nth-child(n + 7) {
+
+				.popup-prop {
+					right: 0;
+				}
+			}
+		}
 
 		.icons-prop-item {
 			width: 37px;
@@ -3410,6 +3425,17 @@
 
 		}
 
+		.catalog__prop {
+
+			.link-pop-glossary {
+				margin-left: 0px;
+				position: static;
+
+				.popup-prop {
+					left: 0 !important;
+				}
+			}
+		}
 
 	}
 
