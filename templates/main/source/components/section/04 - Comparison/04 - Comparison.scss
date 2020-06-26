@@ -1629,6 +1629,12 @@
 			text-align: left;
 			color: #ffffff;
 			width: 100%;
+
+			&:before {
+				margin-right: 3px;
+				padding-right: 20px;
+				background-repeat: no-repeat;
+			}
 		}
 
 		.special-offers__sale {
