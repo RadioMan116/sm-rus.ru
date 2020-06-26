@@ -2393,7 +2393,7 @@
 					img {
 						max-height: 100%;
 						padding-bottom: 14px;
-						height: 100%;
+
 					}
 				}
 
@@ -3237,6 +3237,7 @@
 					margin-bottom: 0;
 					padding: 8px 11px 16px 11px;
 					min-width: unset;
+					flex-grow: 0;
 
 					&:nth-child(3n-1) {
 						margin-bottom: 0;
@@ -3299,7 +3300,9 @@
 						height: 160px;
 
 						picture {
-							height: 160px;
+							max-height: 160px;
+							height: 100%;
+							object-fit: contain;
 						}
 					}
 

@@ -715,11 +715,12 @@
 				picture {
 					padding: 0;
 					width: 100%;
+					height: auto;
 
 					img {
 						position: static;
 						transform: unset;
-						object-fit: contain;
+						height: auto;
 					}
 				}
 
