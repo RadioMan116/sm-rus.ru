@@ -403,6 +403,10 @@
 
 		&.active {
 			position: relative;
+
+			.header__number {
+				display: flex;
+			}
 		}
 	}
 
@@ -422,6 +426,10 @@
 
 		&.active {
 			position: relative;
+
+			.header__number {
+				display: flex;
+			}
 		}
 	}
 
@@ -472,7 +480,7 @@
 		/* Style for "Oval" */
 		top: -13px;
 		left: 25px;
-		min-width: 20px;
+		min-width: 22px;
 		min-height: 20px;
 		padding: 1px 3px;
 		color: #ffffff;
@@ -487,6 +495,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		display: none;
 	}
 
 	.hamburger {
@@ -599,7 +608,10 @@
 					background-color: #ffffff;
 					overflow: auto;
 					padding-bottom: 12vh;
-					padding-top: 52px;
+
+					&.padding {
+						padding-top: 52px;
+					}
 				}
 			}
 
@@ -629,7 +641,7 @@
 					display: flex;
 				}
 
-				&.active {
+				&.padding {
 					height: 112px;
 
 					.header__favorite,
