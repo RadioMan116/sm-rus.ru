@@ -421,6 +421,10 @@
 	.warranty__map {
 		height: 440px;
 
+		&-point {
+			display: none;
+		}
+
 		* {
 			transition: none !important;
 		}
