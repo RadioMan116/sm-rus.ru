@@ -216,8 +216,27 @@
 			bottom: calc(100% + 12px);
 			white-space: normal;
 			z-index: 120;
-			display: flex;
-			flex-direction: column;
+			// display: flex;
+			// flex-direction: column;
+
+			&:before {
+				content: "";
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				left: 50%;
+				top: unset;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 16px 16px 0;
+				border-color: white transparent transparent;
+				position: absolute;
+				bottom: -15px;
+				-moz-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				-o-transform: translateX(-50%);
+
+			}
 
 			a {
 				color: #ba1212;
