@@ -16,6 +16,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="images/favicon.png" type="image/png">
+
 </head>
 
 
@@ -776,7 +777,9 @@
 								Официальная гарантия
 							</h1>
 							<div class="text-default">
-								<img src="images/баннер.png" alt="" class="shipping-payment__pic">
+								<h2>
+									<img src="images/баннер.png" alt="" class="shipping-payment__pic">
+								</h2>
 								<h3>
 									Для размещения заявок на ремонт холодильного оборудования необходимо воспользоваться телефоном бесплатной горячей линии: 8 (800) 100-34-55. Или же обратиться напрямую в один из ближайших к Вам авторизованных сервисных центров.
 								</h3>
@@ -829,15 +832,20 @@
 									<h2>
 										Сервисные центры Liebherr по обслуживанию бытовой техники в Москве:
 									</h2>
-									<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f1b05c361c1e26b8254ea41b64bd72bc9426743f38c95247c3c30359a2d8079&amp;source=constructor" width="100%" height="440" frameborder="0"></iframe>
+
+									<div class="warranty__map" id="js-warranty__map" data-center="59.9386300,30.3141300" data-coords="59.9386300,30.3141300" data-content="ООО «Пульсар»" data-text="Россия, Москва, улица Олеко Дундича,
+					21к2">
+									</div>
 								</div>
 								<h2>
 									Сервисные центры Liebherr по обслуживанию бытовой техники в регионах РФ:
 								</h2>
 								<a data-url="ajax/warranty.html" data-ajax class="warranty__button" href="#">Посмотреть сервисные центры</a>
+
 							</div>
 						</div>
 					</div>
+
 				</div>
 				<!-- END WORKAREA -->
 			</div>
@@ -1050,30 +1058,31 @@
 	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 	<script src="js/frontend-works.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/script.min.js"></script>
 
+	<!-- <script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+<script>
+	var yaBrowserUpdater = new ya.browserUpdater.init({
+		"lang": "ru",
+		"browsers": {
+			"yabrowser": "15.12",
+			"chrome": "54",
+			"ie": "11",
+			"opera": "41",
+			"safari": "8",
+			"fx": "49",
+			"iron": "35",
+			"flock": "Infinity",
+			"palemoon": "25",
+			"camino": "Infinity",
+			"maxthon": "4.5",
+			"seamonkey": "2.3"
+		},
+		"theme": "yellow"
+	});
+</script> -->
 
-	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
-	<script>
-		var yaBrowserUpdater = new ya.browserUpdater.init({
-			"lang": "ru",
-			"browsers": {
-				"yabrowser": "15.12",
-				"chrome": "54",
-				"ie": "11",
-				"opera": "41",
-				"safari": "8",
-				"fx": "49",
-				"iron": "35",
-				"flock": "Infinity",
-				"palemoon": "25",
-				"camino": "Infinity",
-				"maxthon": "4.5",
-				"seamonkey": "2.3"
-			},
-			"theme": "yellow"
-		});
-	</script>
 
 
 </body>

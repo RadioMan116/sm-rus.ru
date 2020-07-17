@@ -369,6 +369,7 @@
 
 		p {
 			margin: 0 0 14px;
+
 			b {
 				font-size: inherit;
 				line-height: inherit;
@@ -398,9 +399,11 @@
 			ul {
 				width: 33%;
 			}
-			.time{
+
+			.time {
 				margin-top: 14px;
-				br{
+
+				br {
 					display: none;
 				}
 			}
@@ -413,6 +416,14 @@
 		border-bottom: 1px solid #e2e2e2;
 		border-top: 1px solid #e2e2e2;
 		margin-bottom: 30px;
+	}
+
+	.warranty__map {
+		height: 440px;
+
+		* {
+			transition: none !important;
+		}
 	}
 
 	.tags__status {
@@ -595,7 +606,8 @@
 			margin-bottom: 23px;
 			padding-top: 0;
 		}
-		h5{
+
+		h5 {
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 24px;
@@ -835,20 +847,24 @@
 			a {
 				margin-top: 22px;
 			}
-			&.column{
-				ul{
+
+			&.column {
+				ul {
 					width: 100%;
 					margin-bottom: 0;
-					&:last-of-type{
+
+					&:last-of-type {
 						margin-bottom: 16px;
 					}
 				}
-				.time{
-					b{
+
+				.time {
+					b {
 						display: block;
 
 					}
-					br{
+
+					br {
 						display: block;
 					}
 				}
@@ -859,7 +875,8 @@
 			margin-bottom: 20px;
 		}
 
-		.maps iframe {
+		.maps iframe,
+		.warranty__map {
 			max-height: 260px;
 		}
 
