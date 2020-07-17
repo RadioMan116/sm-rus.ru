@@ -1219,6 +1219,11 @@ $(document).ready(function () {
 		});
 		$('.articles .articles__text').matchHeight();
 		$('.catalog__thumb .catalog__specification').matchHeight();
+		(() => {
+			if ($('.catalog .js-recently-watched').length) {
+				$('.col-md-3 .sidebar').css('padding-bottom', '400px')
+			}
+		})()
 	}
 	if ($('.js-sidebar-articles').length > 0) {
 
