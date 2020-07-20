@@ -63,7 +63,7 @@ $(document).ready(function () {
 		// }
 		$(items).each(function (index) {
 
-			var tmp = (this.getAttribute('data-coords')).split(';')
+			var tmp = (this.getAttribute('data-coords')).split('||')
 			// var tmp = ();
 			// var tmp = (this.getAttribute('data-text'));
 
