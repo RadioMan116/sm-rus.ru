@@ -5742,6 +5742,9 @@
 				width: 100%;
 				display: flex;
 				justify-content: center;
+				z-index: 5;
+				align-items: center;
+				max-height: 36px;
 			}
 
 			.swiper-slide {
