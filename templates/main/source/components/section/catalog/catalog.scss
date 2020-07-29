@@ -66,7 +66,7 @@
 		flex-wrap: wrap;
 		align-content: baseline;
 		position: relative;
-		margin: 0 -4px;
+		margin: 0 -2px;
 
 		margin-bottom: 5px;
 		margin-top: 0px;
@@ -1852,6 +1852,7 @@
 
 		.price__dashed {
 			cursor: pointer;
+			padding-bottom: 14px;
 
 			.price__absolute {
 				position: absolute;
@@ -1864,7 +1865,7 @@
 				text-decoration: unset;
 				left: 0;
 				top: unset;
-				bottom: -2px;
+				bottom: -3px;
 				display: flex;
 
 				&:before {
@@ -1892,6 +1893,7 @@
 				line-height: 1;
 				text-transform: uppercase;
 				position: absolute;
+				bottom: -2px;
 				left: calc(100% + 3px);
 			}
 
@@ -2463,10 +2465,11 @@
 
 				.catalog__pic {
 					height: 230px;
+					padding-bottom: 14px;
 
 					img {
 						max-height: 100%;
-						padding-bottom: 14px;
+
 
 					}
 				}
@@ -2486,7 +2489,7 @@
 				}
 
 				.catalog__sale {
-					margin-bottom: 8px;
+					margin-bottom: 14px;
 					padding-right: 0px;
 				}
 
@@ -2607,6 +2610,10 @@
 				margin-bottom: 0px;
 			}
 
+			&__all {
+				margin-left: 12px;
+			}
+
 			.reviews__section {
 				width: 100%;
 				display: flex;
@@ -2629,6 +2636,12 @@
 				.ratings {
 					align-items: center;
 					padding-left: 1px;
+					flex-grow: 1;
+
+					&__number {
+						font-size: 16px;
+						margin-left: auto;
+					}
 				}
 			}
 

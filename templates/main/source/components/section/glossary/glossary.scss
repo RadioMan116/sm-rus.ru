@@ -183,6 +183,9 @@
 				width: 3px;
 			}
 		}
+
+		&__li {}
+
 	}
 
 	@media screen and (max-width:767px) {
@@ -193,14 +196,20 @@
 		}
 
 		&__li {
+
 			// flex-direction: column;
 			// margin-top: 16px;
 			// height: 35px;
 			// align-items: center;
+			height: auto;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			margin-top: 14px;
 
-			.glossary__desc {
+			.glossary__decs {
 				font-size: 14px;
 				line-height: 22px;
+				display: none;
 			}
 
 			b {
@@ -213,11 +222,19 @@
 			}
 
 			&__b {
-				 color: #2e2e2e;
-				 font-family: "Roboto Condensed";
-				 font-size: 16px;
-				 font-weight: 400;
-				 line-height: 24px;
+				color: #2e2e2e;
+				font-family: "Roboto Condensed";
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+			}
+
+			&.active {
+				padding-bottom: 24px;
+
+				.glossary__decs {
+					display: block;
+				}
 			}
 		}
 
@@ -241,6 +258,7 @@
 		&__items {
 			display: block;
 			padding: 0 16px 14px;
+			margin-bottom: 20px;
 		}
 
 		&__item {

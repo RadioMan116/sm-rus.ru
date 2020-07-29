@@ -521,6 +521,10 @@
 		.announcing {
 			top: 20px;
 			left: 20px;
+
+			&__popup {
+				left: -18px;
+			}
 		}
 
 		.special-offers__slide {
