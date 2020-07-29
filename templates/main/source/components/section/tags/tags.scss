@@ -103,6 +103,21 @@
 			display: flex;
 		}
 
+		&.last,
+		&.js-tags_data {
+
+
+			&:after {
+				content: "";
+				background: url("https://icongr.am/entypo/chevron-small-down.svg?color=bb0000&size=50");
+				width: 12px;
+				height: 12px;
+				background-size: 22px;
+				background-position: 50%;
+				background-repeat: no-repeat;
+				margin-left: 5px
+			}
+		}
 	}
 
 	&__title {
@@ -176,7 +191,7 @@
 		}
 
 		&__list {
-			max-width: 1176px;
+			max-width: 970px;
 			overflow-x: scroll;
 			width: 1176px;
 			width: max-content;
