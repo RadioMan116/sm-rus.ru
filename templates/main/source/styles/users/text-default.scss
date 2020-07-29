@@ -833,6 +833,55 @@
 					}
 				}
 			}
+
+
+		}
+
+		table.service-table {
+			display: flex;
+			overflow-x: auto;
+
+			td {
+
+
+				&:nth-of-type(2) {
+					justify-content: flex-end;
+					max-width: unset;
+					min-width: 120px;
+				}
+
+				&:first-of-type {
+					width: 180px !important;
+				}
+
+				&[colspan="2"] {
+					width: 100% !important;
+					text-align: left;
+				}
+			}
+
+			tr:first-of-type {
+				td {
+					&:first-of-type {
+						padding-left: 0;
+					}
+
+					&:last-of-type {
+						max-width: unset;
+						text-align: right;
+						flex-shrink: 1;
+					}
+				}
+			}
+
+			tbody {
+				display: flex;
+				max-width: 1176px;
+				overflow-x: scroll;
+				width: 330px;
+				flex-grow: 1;
+				flex-direction: column;
+			}
 		}
 
 		blockquote {
