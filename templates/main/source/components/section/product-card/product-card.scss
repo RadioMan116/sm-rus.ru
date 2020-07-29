@@ -5020,6 +5020,10 @@
 					height: 24px;
 					background-size: contain;
 				}
+
+				.ratings__number {
+					font-size: 16px;
+				}
 			}
 
 			.reviews__link {
@@ -5156,7 +5160,7 @@
 				position: relative;
 				border: 1px solid #eeeeee;
 				background-color: #ffffff;
-				padding: 12px 25px 51px;
+				padding: 12px 14px 51px;
 				margin-top: 16px;
 				margin-bottom: 18px;
 
@@ -5180,6 +5184,7 @@
 					margin-top: 18px !important;
 					align-items: flex-start;
 					min-height: 110px;
+					background: white;
 				}
 
 				&__aside {
@@ -6298,6 +6303,7 @@
 				max-width: unset;
 				padding-bottom: 0;
 				flex-grow: 1;
+				white-space: normal;
 			}
 
 			.collection__info {
