@@ -587,6 +587,10 @@
 		}
 	}
 
+	.js-switch {
+		display: none;
+	}
+
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
 
@@ -979,7 +983,8 @@
 		}
 
 		.seo-text__button,
-		.switch {
+		.switch,
+		.js-switch {
 			color: $base;
 			font-family: Arial;
 			font-size: 14px;
@@ -1030,5 +1035,6 @@
 			}
 
 		}
+
 	}
 }
