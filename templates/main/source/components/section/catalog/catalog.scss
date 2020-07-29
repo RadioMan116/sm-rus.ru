@@ -3444,7 +3444,9 @@
 
 		}
 
-		.catalog__prop {
+		.catalog__prop,
+		&__prop {
+			position: relative;
 
 			.link-pop-glossary {
 				margin-left: 0px;
@@ -3452,6 +3454,7 @@
 
 				.popup-prop {
 					left: 0 !important;
+					width: 100%;
 				}
 			}
 		}
