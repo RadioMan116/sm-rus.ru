@@ -1883,6 +1883,7 @@
 		width: calc(75% - 12px);
 		margin-bottom: 0px;
 		height: fit-content;
+		margin-bottom: 24px;
 
 		.active {
 
@@ -5573,6 +5574,7 @@
 				font-weight: 400;
 				line-height: 28px;
 				margin-bottom: 15px;
+				width: auto;
 			}
 
 			.practical-features__subtitle {
