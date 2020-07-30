@@ -2311,6 +2311,8 @@ $(window).on('load', function () {
 				}, 4000);
 			}
 		});
+		$(".js-comparison__select").removeClass("active");
+		$(".js-comparison__select[compare='DIFF']").addClass("active");
 		$(".js-comparison__select.active").trigger('click');
 
 	}
