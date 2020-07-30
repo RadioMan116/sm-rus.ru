@@ -1531,6 +1531,8 @@ $(document).ready(function () {
 					$(ul).slideUp(200);
 				});
 			});
+			$(".js-comparison__select").removeClass("active");
+			$(".js-comparison__select[compare='DIFF']").addClass("active");
 			console.log("compare_table")
 			$(".js-comparison-height").parent().parent().addClass('thead__comparison');
 			$('.js-comparison__link').click(function (e) {
@@ -2311,8 +2313,7 @@ $(window).on('load', function () {
 				}, 4000);
 			}
 		});
-		$(".js-comparison__select").removeClass("active");
-		$(".js-comparison__select[compare='DIFF']").addClass("active");
+
 		$(".js-comparison__select.active").trigger('click');
 
 	}
