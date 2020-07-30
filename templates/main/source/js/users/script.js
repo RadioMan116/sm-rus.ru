@@ -1,5 +1,4 @@
 //Доступный hamburger https://foxland.fi/simple-accessible-svg-menu-hamburger-animation
-
 $(document).ready(function () {
 
 	function hamburger(element, menu, favorite, compare) {
