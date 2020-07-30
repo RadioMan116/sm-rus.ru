@@ -1826,7 +1826,7 @@
 			&__items {
 				display: flex;
 				flex-wrap: wrap;
-				height: a;
+				height: auto;
 			}
 
 			&__item {
@@ -2951,6 +2951,7 @@
 				align-items: center;
 				z-index: 9;
 				cursor: pointer;
+				border-bottom: unset;
 				// display: none;
 
 				&:before {
@@ -3142,6 +3143,7 @@
 				font-size: 20px;
 				font-weight: 400;
 				line-height: 24px;
+				white-space: break-spaces;
 			}
 
 			.articles__date {
