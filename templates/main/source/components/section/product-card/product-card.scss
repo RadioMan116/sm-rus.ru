@@ -3176,6 +3176,7 @@
 			height: auto;
 			display: flex;
 			position: relative;
+			height: 354px;
 		}
 
 		&__sidebar {
@@ -3653,6 +3654,8 @@
 					font-size: 26px;
 					font-weight: 400;
 					margin-bottom: 26px;
+					width: 41%;
+					line-height: 32px;
 
 					span {
 						color: #999999;
@@ -6338,6 +6341,7 @@
 				line-height: 30px;
 				display: flex;
 				flex-wrap: wrap;
+				width: 100%;
 
 				a {
 					margin: 0 5px;
