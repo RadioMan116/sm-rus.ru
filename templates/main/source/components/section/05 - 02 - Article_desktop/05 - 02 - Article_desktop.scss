@@ -654,6 +654,7 @@
 	}
 
 	@media screen and (max-width: 767px) {
+		margin-bottom: 0;
 
 		.articles-main__name {
 			font-size: 16px;
@@ -745,20 +746,26 @@
 			position: unset !important;
 			margin-top: 20px !important;
 			flex-wrap: wrap;
+
+			.swiper-pagination-bullet {
+				margin: 0 5px 5px;
+
+				&-active {
+					background: $base !important;
+				}
+			}
 		}
 
 		.swiper-scrollbar {
 			display: none !important;
 		}
 
-		.swiper-pagination-bullet {
-			margin: 0 5px 5px;
 
-			&-active {
-				background: $base !important;
-			}
-		}
 
+	}
+
+	+.reviews_article {
+		padding-top: 16px;
 	}
 }
 

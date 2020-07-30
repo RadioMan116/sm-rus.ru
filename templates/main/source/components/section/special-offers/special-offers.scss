@@ -563,7 +563,8 @@
 		}
 
 		&.promotional-goods {
-			margin-bottom: 31px;
+			margin-bottom: 14px;
+			padding-bottom: 18px;
 
 			.special-offers__text {
 				padding-bottom: 39px;
@@ -577,6 +578,12 @@
 			.swiper-pagination {
 				position: unset;
 				margin: 28px auto 0;
+				display: flex;
+				flex-wrap: wrap;
+
+				&-bullet {
+					margin-bottom: 5px;
+				}
 			}
 
 			.special-offers__slide {
