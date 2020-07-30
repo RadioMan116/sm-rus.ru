@@ -75,7 +75,7 @@
 			width: 15%;
 			display: flex;
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 
@@ -96,7 +96,7 @@
 			display: flex;
 			width: 52%;
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 		}
@@ -104,13 +104,14 @@
 		&__text {
 			padding-left: 8%;
 			padding-right: 16px;
+			padding-top: 12px;
 		}
 
 		.how-many {
 			display: flex;
 			align-items: center;
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 			height: 34px;
@@ -145,7 +146,7 @@
 			.decr,
 			.incr {
 				color: #999999;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 19px;
 				font-weight: 700;
 				position: absolute;
@@ -307,7 +308,7 @@
 
 		label:not(.ordering__payment-label) {
 			color: #333333;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 32px;
 			flex-basis: 199px;
@@ -320,7 +321,7 @@
 
 		.copyright {
 			color: #999999;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 20px;
 			padding: 8px 0;
@@ -450,7 +451,7 @@
 		}
 
 		.checkbox__text {
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 12px;
 			line-height: 18px;
 
@@ -560,7 +561,7 @@
 
 			&-text {
 				color: #333333;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 20px;
 				margin-bottom: 11px;
@@ -582,8 +583,8 @@
 		}
 	}
 
-	.order.js-basket_props.js-ecom_order-ready{
-		+.ordering__payment-label{
+	.order.js-basket_props.js-ecom_order-ready {
+		+.ordering__payment-label {
 			display: none;
 		}
 	}
@@ -683,7 +684,7 @@
 				.decr,
 				.incr {
 					color: #999999;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 18px;
 					font-weight: 700;
 					position: absolute;
@@ -906,7 +907,7 @@
 			.item__title {
 				display: flex;
 				color: #999999;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 				font-weight: 700;
 				flex: 0 1 53%;
@@ -1178,7 +1179,7 @@
 
 				&-text {
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 					margin-bottom: 4px;
 					line-height: 14px;
