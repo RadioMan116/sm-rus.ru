@@ -1647,6 +1647,8 @@
 				width: calc(25% - 12px);
 				padding: 18px 11px 9px;
 				flex-grow: 0;
+				background: white;
+				// height: 303px;
 
 				&:nth-child(3n-1) {
 					margin: 0 16px 20px 0;
@@ -1659,10 +1661,21 @@
 					margin-right: 0;
 				}
 
+				&:hover {
+
+					height: fit-content;
+
+					.doc_loading {
+						&:nth-child(n + 5) {
+							display: flex;
+						}
+					}
+				}
 			}
 
 			&__items {
 				overflow: visible;
+				height: 303px;
 			}
 
 			.catalog {
@@ -1734,6 +1747,10 @@
 						width: 31px;
 						background: url("../images/documentation__pic.svg") no-repeat 100% 4px/24px;
 					}
+
+					&:nth-child(n + 5) {
+						display: none;
+					}
 				}
 			}
 
@@ -1745,7 +1762,9 @@
 				color: $base;
 				border-bottom: 1px dashed;
 				text-decoration: none;
-				z-index: 2;
+				// z-index: 2;
+				position: absolute;
+				bottom: 0;
 			}
 
 		}
@@ -2141,7 +2160,8 @@
 
 			img {
 				max-width: 100%;
-				max-height: 100%;
+				// max-height: 100%;
+				max-height: 110px;
 				align-self: center;
 			}
 		}
@@ -3220,7 +3240,9 @@
 
 			// .instructions__all
 
-			&__all {}
+			&__all {
+				position: unset !important;
+			}
 
 			.swiper-wrapper {}
 
