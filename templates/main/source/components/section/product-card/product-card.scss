@@ -5016,10 +5016,14 @@
 				flex-wrap: wrap;
 				height: unset;
 
-				.ratings__star {
-					width: 24px;
-					height: 24px;
-					background-size: contain;
+				.ratings {
+					margin-right: auto;
+
+					&__star {
+						width: 24px;
+						height: 24px;
+						background-size: contain;
+					}
 				}
 
 				.ratings__number {
@@ -5496,6 +5500,7 @@
 				align-items: center;
 				z-index: 9;
 				cursor: pointer;
+				border-bottom: 0;
 				// display: none;
 
 				&:before {
