@@ -3123,12 +3123,8 @@
 		flex-direction: column;
 		padding: 27px 0 8px;
 		z-index: 99;
-		border-bottom: 1px solid #eee;
+		// border-bottom: 1px solid #eee;
 		margin-bottom: 18px;
-
-		* {
-			transition: 0.5s;
-		}
 
 		&::after {
 			display: none;
@@ -3439,6 +3435,96 @@
 		.swiper-pagination-bullet {
 			margin-left: 16px;
 		}
+	}
+
+	.card-slider {
+
+		.swiper-container {
+			padding: 20px;
+			margin: -20px;
+		}
+
+		&__item {
+			padding: 19px;
+
+			&:hover {
+				box-shadow: 0 2px 21px rgba(0, 0, 0, .1);
+				transition: none;
+
+				.special-offers__sale {
+
+					.special-offers__buttons {
+						display: flex;
+						align-items: center;
+					}
+				}
+
+			}
+
+
+
+			.card__stock {
+				color: green;
+				font-size: 14px;
+			}
+
+			.special-offers__text {
+				display: flex;
+				flex-direction: column;
+				padding: 8px 0 40px;
+
+				&:hover {
+					span {
+						color: #ba1212;
+					}
+				}
+
+				span {
+					font-size: 15px;
+					color: #666666;
+				}
+			}
+
+			.special-offers__sale {
+				margin-bottom: 60px;
+				// justify-content: flex-start;
+
+
+				.special-offers__price {
+					color: black;
+					height: 34px !important;
+					margin-top: 0 !important;
+					align-items: center !important;
+				}
+
+				.special-offers__buttons {
+					// margin-left: 12px;
+					display: none;
+
+					.special-offers__card-compare {
+						margin: 0 16px;
+						cursor: pointer;
+					}
+
+					.special-offers__card-favorite {
+						cursor: pointer;
+					}
+
+					.special-offers__card-buy {
+						cursor: pointer;
+					}
+				}
+			}
+
+			.announcing {
+				position: absolute;
+				top: 19px;
+			}
+		}
+
+
+
+
 	}
 
 	&__cheaper {
@@ -5616,6 +5702,7 @@
 			height: auto;
 			box-shadow: unset;
 			z-index: 999999;
+			margin-bottom: 70px;
 
 			&__title {
 				width: 100%;
@@ -5750,7 +5837,7 @@
 
 			.diagram__comparison {
 				position: absolute;
-				bottom: 0;
+				bottom: -70px;
 				width: 100%;
 				display: flex;
 				justify-content: center;
@@ -5772,6 +5859,46 @@
 
 				height: calc(100% - 104px);
 			}
+		}
+
+		.card-slider {
+
+
+			&__item {
+
+				border: solid 1px #f1f1f1;
+
+				&:hover {
+					box-shadow: none;
+				}
+			}
+
+
+
+			.special-offers__text {
+				padding: 8px 0 19px;
+			}
+
+			.special-offers__sale {
+				flex-direction: column;
+				align-items: baseline;
+				margin-bottom: 0;
+
+				.special-offers__price {
+					margin-bottom: 21px !important;
+				}
+
+				.special-offers__buttons {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+				}
+			}
+		}
+
+		.diagram__pagination {
+			display: none !important;
 		}
 
 
