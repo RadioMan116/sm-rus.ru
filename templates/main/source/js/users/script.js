@@ -1144,10 +1144,11 @@ $(document).ready(function() {
 		$('.articles .articles__text').matchHeight();
 		$('.catalog__thumb .catalog__specification').matchHeight();
 		(() => {
-			if ($('.catalog .js-recently-watched').length) {
+			let check = document.querySelector('.catalog .js-recently-watched')
+			if (check) {
 				$('.col-md-3 .sidebar').css('padding-bottom', '400px')
 			}
-		})()
+		})();
 	}
 	if ($('.js-sidebar-articles').length > 0) {
 		var mySwiper15 = new Swiper(".js-sidebar-articles", {
