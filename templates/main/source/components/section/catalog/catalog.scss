@@ -6,10 +6,9 @@
 	margin: 0 !important;
 	padding-left: 7px;
 
-	* {
-		transition: 0.4s;
-	}
-
+	// * {
+	// 	transition: 0.4s;
+	// }
 	&__sorting {
 		display: flex;
 		margin-bottom: 25px;
@@ -71,17 +70,64 @@
 
 		.link-pop-glossary {
 			position: relative;
-			cursor: pointer;
 			width: calc(100%/6);
+
+			.popup-prop {
+				display: none;
+				width: 274px;
+				box-shadow: 0 2px 12px rgba(82, 64, 64, 0.17);
+				border-radius: 3px;
+				background-color: #ffffff;
+				padding: 22px 24px 26px;
+				z-index: 100;
+				bottom: 100%;
+				height: auto;
+				opacity: 1;
+				max-height: unset;
+				max-width: unset;
+				position: absolute;
+			}
+
+			.popup-prop__img {
+				width: 100%;
+				height: auto;
+				margin-bottom: 10px;
+			}
+
+			.popup-prop__title {
+				color: #333333;
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				font-weight: 700;
+				margin-bottom: 4px;
+			}
+
+			.popup-prop__text {
+				color: #333333;
+				font-family: Arial, sans-serif;
+				font-size: 12px;
+				line-height: 18px;
+				margin-bottom: 5px;
+
+				&.active {
+					height: 180px;
+					overflow: hidden;
+				}
+			}
+
+			.popup-prop__link {
+				color: $base;
+				font-family: "Roboto Condensed";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 20px;
+			}
 		}
 
 		.icons-prop-item {
-			width: auto;
-			height: auto;
-			padding: 0 2px 4px;
-			max-height: inherit;
-			display: flex;
-			justify-content: center;
+			width: 38.94px;
+			height: 39px;
+			padding: 0 2px 4px 0;
 		}
 	}
 
