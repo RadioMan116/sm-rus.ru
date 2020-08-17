@@ -504,9 +504,7 @@ $(document).ready(function() {
 	// }
 	$('.js-product-card__buy,.product-day__buy,.special-offers__buy').click(function() {
 		$(document).ajaxSuccess(function() {
-			console.log('1111')
 			if ($(".basket__item").length > 3) {
-				console.log('2222')
 				$('.added-cart__items .basket__prev').show();
 				$('.added-cart__items .basket__next').show();
 				var mySwiper14 = new Swiper(".added-cart__items .swiper-container", {
@@ -717,12 +715,8 @@ $(document).ready(function() {
 		var text = $(this).find('.popup-prop__text').text();
 		var handel = $(this).position().left;
 		const $this = $(this);
-		// console.log(text)
-		// console.log(handel)
-		console.log('go go go')
 		if ($(this).children('.popup-prop').css('display') == 'none') {
 			if ($(this).attr('click') == 'false') {
-				console.log('11')
 				$(this).attr('click', 'true');
 				return false;
 			}
@@ -739,7 +733,6 @@ $(document).ready(function() {
 				var lastIndex = text.lastIndexOf(" "); // позиция последнего пробела
 				text = text.substring(0, lastIndex) + '...';
 				$(this).find('.popup-prop__text').text(text);
-				console.log($(this).find('.popup-prop__text').text().length);
 			}
 		} else {
 			$(this).children('.popup-prop').hide();
@@ -760,7 +753,6 @@ $(document).ready(function() {
 		} else {
 			$('.characteristic-glossary ').removeClass('active');
 			$(this).addClass('active');
-			console.log(text)
 			$(this).find('.characteristic-glossary__link').attr('target', 'blank');
 			if ($(this).find(".button-close").length < 1) {
 				var buttonClose = document.createElement("div");
@@ -808,7 +800,6 @@ $(document).ready(function() {
 		} else {
 			$('.characteristic-glossary ').removeClass('active');
 			$(this).addClass('active');
-			console.log(text)
 			$(this).find('.characteristic-glossary__link').attr('target', 'blank');
 			if ($(this).find(".button-close").length < 1) {
 				var buttonClose = document.createElement("div");
@@ -848,6 +839,44 @@ $(document).ready(function() {
 			});
 		}
 	});
+	$('.load-more').click(function() {
+		$(document).ajaxSuccess(function() {
+			$(".catalog__prop .js-link-pop-glossary").hover(function() {
+				var text = $(this).find('.popup-prop__text').text();
+				var handel = $(this).position().left;
+				const $this = $(this);
+				if ($(this).children('.popup-prop').css('display') == 'none') {
+					if ($(this).attr('click') == 'false') {
+						$(this).attr('click', 'true');
+						return false;
+					}
+					$('.popup-prop').hide()
+					$(this).children('.popup-prop').show();
+					$(this).find('.popup-prop__link').attr('target', 'blank');
+					if ($(this).find(".button-close").length < 1) {
+						var buttonClose = document.createElement("div");
+						buttonClose.className = ('button-close');
+						$(this).find('.popup-prop').append(buttonClose);
+					}
+					if (text.length > 300) {
+						text = text.substring(0, 300);
+						var lastIndex = text.lastIndexOf(" "); // позиция последнего пробела
+						text = text.substring(0, lastIndex) + '...';
+						$(this).find('.popup-prop__text').text(text);
+					}
+				} else {
+					$(this).children('.popup-prop').hide();
+				}
+				// $(document).mouseup(function (e) { // событие клика по веб-документу
+				// 	if (!$this.is(e.target) // если клик был не по нашему блоку
+				// 		&&
+				// 		$this.has(e.target).length === 0) { // и не по его дочерним элементам
+				// 		$('.popup-prop').hide() // скрываем его
+				// 	}
+				// });
+			});
+		});
+	})
 	// $(".js-filter-glossary").hover(function (e) {
 	// 	// e.stopPropagation();
 	// 	// e.preventDefault();
@@ -927,11 +956,9 @@ $(document).ready(function() {
 	});
 	$(document).on("click", "a[href='#'].js-close", function(e) {
 		e.preventDefault();
-		console.log('preventClick-1')
 	});
 	$(document).on("click", "a[href='#'].load-more", function(e) {
 		e.preventDefault();
-		console.log('preventClick-2')
 	});
 	$(document).on("click", ".js-city-change", function(e) {
 		$(this).toggleClass('active');
@@ -939,16 +966,13 @@ $(document).ready(function() {
 	$(document).on("click", ".button-close", function(e) {
 		// var shareItems = document.getElementsByClassName('share__items');
 		if (this.parentElement.classList.contains('share__items')) {
-			console.log('222222222222');
 			this.parentElement.style.display = ('none');
 		}
 		if (this.parentElement.classList.contains('popup-gloss')) {
-			console.log('33333');
 			this.parentElement.parentElement.setAttribute('click', 'false');
 			this.parentElement.parentElement.removeClass = 'active';
 		}
 		if (this.parentElement.classList.contains('popup-prop')) {
-			console.log('44444');
 			this.parentElement.style.display = 'none';
 		}
 		this.remove();
@@ -1061,9 +1085,7 @@ $(document).ready(function() {
 				},
 			}
 		});
-		if ($(".favorite__items").length) {
-			console.log('юк');
-		}
+		if ($(".favorite__items").length) {}
 		if ($('.js-favorite_list[data-list="Избранное"]').length) {
 			var favorite = $('.js-favorite_list[data-list="Избранное"]')
 			favorite.addClass('favorite__items')
@@ -1106,14 +1128,12 @@ $(document).ready(function() {
 		(function() {
 			let catalogList = document.querySelector(".catalog__list");
 			if (catalogList) {
-				console.log('catalog__list');
 				catalogList.parentNode.classList.add('new-catalog');
 			}
 		})();
 		(function() {
 			let catalogThumb = document.querySelector(".catalog__thumb");
 			if (catalogThumb) {
-				console.log('catalog__thumb');
 				catalogThumb.parentNode.classList.add('new-catalog');
 			}
 		})();
@@ -1182,9 +1202,7 @@ $(document).ready(function() {
 			articleSlide.forEach(function(element) {
 				articleCurretSlide.push(element);
 			})
-			console.log(articleCurretSlide.length);
 			if (articleCurretSlide.length < 2) {
-				console.log('low')
 				// console.log($(".articles__item"))
 				$('.swiper-pagination-articles').hide();
 				$('.articles__next').hide();
@@ -1407,7 +1425,6 @@ $(document).ready(function() {
 			});
 			$(".js-comparison__select").removeClass("active");
 			$(".js-comparison__select[compare='DIFF']").addClass("active");
-			console.log("compare_table")
 			$(".js-comparison-height").parent().parent().addClass('thead__comparison');
 			$('.js-comparison__link').click(function(e) {
 				e.preventDefault();
@@ -1418,13 +1435,10 @@ $(document).ready(function() {
 				// 	$(el).height(height);
 				// });
 				if (windowWidth2 > 767) {
-					console.log($(".products-line").outerHeight(true))
 					$(".thead__comparison").css({
 						'height': ($(".products-line").outerHeight() + 'px')
 					});
-					console.log('1')
 				} else {
-					console.log('2')
 					$(".thead__comparison").css({
 						'margin-bottom': ($(".products-line").innerHeight() + 'px')
 					});
@@ -1444,13 +1458,11 @@ $(document).ready(function() {
 						if ($(this).text().length > 60) {
 							$(this).addClass('level')
 							$('.js-swiper-comparison .characteristic__row').eq(index).addClass("level");
-							console.log($(this).text())
 						}
 					});
 				}
 			}();
 			var comparison_height = $('.thead__comparison').height();
-			console.log(comparison_height)
 			var if_max_width = false;
 			$(window).scroll(function() {
 				var scroll = $(window).scrollTop();
@@ -1609,7 +1621,6 @@ $(document).ready(function() {
 					});
 				})
 			}
-			console.log(value);
 			$('.js-diagram__param2').click(function() {
 				var array = []
 				$('.diagram__tabs').removeClass('active');
@@ -1891,7 +1902,6 @@ $(document).ready(function() {
 	});
 	if ($("[type=tel],[title=Телефон],.js-phone_mask").length) {
 		setTimeout(function() {
-			console.log('inputmask')
 			$("[title=Телефон],.js-phone_mask").attr('type', 'tel')
 			$("[title=Телефон],.js-phone_mask,[title=Телефон]").prop('required', true);
 			$("[title=Телефон],.js-phone_mask,[title=Телефон]").val('');
@@ -2122,13 +2132,10 @@ $(window).on('load', function() {
 			// }
 		}
 		if (windowWidth2 > 767) {
-			console.log($(".products-line").outerHeight(true))
 			$(".thead__comparison").css({
 				'height': ($(".products-line").outerHeight() + 'px')
 			});
-			console.log('1')
 		} else {
-			console.log('2')
 			$(".thead__comparison").css({
 				'margin-bottom': ($(".products-line").innerHeight() + 'px')
 			});
@@ -2148,7 +2155,6 @@ $(window).on('load', function() {
 				if ($(this).text().length > 60) {
 					$(this).addClass('level')
 					$('.js-swiper-comparison .characteristic__row').eq(index).addClass("level");
-					console.log($(this).text())
 				}
 			});
 		}
@@ -2156,12 +2162,10 @@ $(window).on('load', function() {
 			if ($(this).text().length > 60) {
 				$(this).addClass('level')
 				$('.js-swiper-comparison .characteristic__row').eq(index).addClass("level");
-				console.log($(this).text())
 			}
 			if ($(this).text().length > 110) {
 				$(this).addClass('level-2')
 				$('.js-swiper-comparison .characteristic__row').eq(index).addClass("level-2");
-				console.log($(this).text())
 			}
 		});
 		$('.comparison__main .characteristic__row').each(function(index, el) {
@@ -2284,12 +2288,10 @@ $(window).on('load', function() {
 					},
 				}
 			});
-			console.log($(this))
 		});
 		(function() {
 			let moreText = document.querySelector('.description.text-default');
 			if (moreText) {
-				console.log('есть');
 				let button = document.createElement('div');
 				let openText = 'Читать подробнее',
 					closeText = 'Свернуть';
@@ -2305,7 +2307,6 @@ $(window).on('load', function() {
 		(function() {
 			let moreText = document.querySelector('.catalog__description.description');
 			if (moreText) {
-				console.log('есть');
 				let button = document.createElement('div');
 				let openText = 'Читать подробнее',
 					closeText = 'Свернуть';
