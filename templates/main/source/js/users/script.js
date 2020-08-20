@@ -270,6 +270,40 @@ $(document).ready(function() {
 			},
 		},
 	});
+	var mySwiper9 = new Swiper(".js-popular__rel", {
+		slidesPerView: 2,
+		slidesPerGroup: 1,
+		spaceBetween: 18,
+		slidesPerColumn: 2,
+		touchRatio: 1,
+		allowTouchMove: false,
+		navigation: {
+			nextEl: ".rel__next",
+			prevEl: ".rel__prev"
+		},
+		pagination: {
+			el: ".rel__pagination",
+			clickable: true
+		},
+		breakpoints: {
+			479: {
+				allowTouchMove: true,
+				slidesPerView: 1,
+				// slidesPerGroup: 1,
+			},
+			600: {
+				allowTouchMove: true,
+				slidesPerView: 1.8,
+				// slidesPerGroup: 1,
+			},
+			767: {
+				allowTouchMove: true,
+				slidesPerView: 2,
+				// slidesPerGroup: 1,
+				spaceBetween: 18
+			},
+		},
+	});
 	var mySwiper10 = new Swiper(".js-download-catalogs", {
 		// Optional parameters
 		// slidesPerGroup: 1,
@@ -1102,6 +1136,9 @@ $(document).ready(function() {
 		(function() {
 			let productCard = document.querySelector('.product-card');
 			if (productCard) {
+				if (document.querySelector(".out-production")) {
+					return false
+				}
 				let favorite = productCard.querySelector('.product-card__social');
 				let productHeaderBottom = productCard.querySelector('.product__header_bottom');
 				productHeaderBottom.append(favorite);
@@ -2020,9 +2057,7 @@ $(window).on('load', function() {
 				$(this).addClass('more');
 				$(this).find('.filter-color__item').eq(5).addClass('js-autoHeight');
 				$(this).find('.js-autoHeight').hide();
-
 				$(this).find('.js-autoHeight').nextAll(".filter-color__item").hide();
-
 				// $('.js-autoHeight').each(function () {
 				// 	var elHeight = $(this).offset().top
 				// 	var elHeightParent = $(this).parent().offset().top

@@ -746,7 +746,7 @@
 		}
 
 		&.out-production {
-			color: #333333;
+			color: #666666;
 		}
 	}
 
@@ -995,7 +995,7 @@
 		.rel__prev {
 			background: url("../images/special-offers_prev.svg") 0/24px no-repeat;
 			position: absolute;
-			top: 27px;
+			top: 24px;
 			right: 36px;
 			left: unset;
 			width: 24px;
@@ -1008,7 +1008,7 @@
 
 		.rel__next {
 			background: url("../images/special-offers_next.svg") 0/24px no-repeat;
-			top: 27px;
+			top: 24px;
 			right: 3px;
 			width: 24px;
 			height: 24px;
@@ -2358,6 +2358,11 @@
 			align-items: flex-start;
 			flex-wrap: wrap;
 			border-bottom: 1px solid #f1f1f1;
+
+			&.no-border {
+				padding-bottom: 0;
+				border-bottom: unset;
+			}
 		}
 
 		div:first-child {
@@ -4121,6 +4126,78 @@
 		}
 	}
 
+	.popular__rel {
+
+		// .product-card__rel
+		.rel {
+
+			// .rel__pagination
+			&__pagination {}
+
+			// .rel__prev
+			&__prev {}
+
+			// .rel__next
+			&__next {}
+
+			// .rel__color
+			&__color {
+				display: flex;
+				flex-direction: column;
+				font-size: 14px;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+
+			&__button {
+				border-radius: 3px;
+				border: solid 1px #ba1212;
+				color: #ba1212;
+				font-family: "Roboto Condensed";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+				width: fit-content;
+				text-transform: uppercase;
+				padding: 5px 19px;
+				margin-top: 25px;
+				order: 5;
+			}
+		}
+
+		tr {
+			padding: 0;
+		}
+
+		td {
+			justify-content: flex-start;
+
+			a {
+				margin-bottom: 7px;
+			}
+		}
+
+		.swiper-pagination {}
+
+		.swiper-button-prev {}
+
+		.swiper-button-next {}
+
+		.swiper-container {}
+
+		.js-product-card {
+
+			// .js-product-card__rel
+			&__rel {}
+		}
+
+		.swiper-wrapper {}
+
+		.swiper-slide {}
+
+		.lazyload {}
+	}
+
 	@media screen and (max-width: 767px) {
 		.breadcrumbs {
 			line-height: 20px;
@@ -4422,6 +4499,11 @@
 			margin: 9px 24px 3px 0;
 			order: 3;
 			justify-content: center;
+
+			&.out-production {
+				margin-right: 0;
+				font-weight: 700;
+			}
 		}
 
 		&__key,
@@ -4434,6 +4516,12 @@
 		&__date {
 			margin-left: 0;
 			justify-content: center;
+			text-align: left;
+
+			&.out {
+				font-size: 11px;
+				white-space: nowrap;
+			}
 		}
 
 		&__key {
@@ -6218,6 +6306,27 @@
 			text-align: center;
 			padding: 0 33px;
 			margin: 0 0 12px;
+		}
+
+		.popular__rel {
+			.rel__button {
+				width: 100%;
+				text-align: center;
+				margin-top: 10px;
+			}
+
+			h4 {
+				margin-bottom: 13px;
+			}
+
+			th {
+				width: 120px;
+				height: 120px;
+			}
+
+			.rel__pagination {
+				margin-top: 15px;
+			}
 		}
 	}
 }
