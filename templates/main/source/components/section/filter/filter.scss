@@ -1232,6 +1232,7 @@
 		z-index: 999;
 		cursor: pointer;
 		padding-top: 4px;
+		flex-shrink: 0;
 
 		* {
 			transition: all 0s;
