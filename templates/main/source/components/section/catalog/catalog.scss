@@ -70,7 +70,7 @@
 
 		.link-pop-glossary {
 			position: relative;
-			width: auto;
+			width: calc(100%/6);
 
 			.popup-prop {
 				display: none;
@@ -1899,6 +1899,11 @@
 
 				margin-bottom: 8px;
 			}
+		}
+
+		.link-pop-glossary {
+			position: relative;
+			width: calc(100%/8);
 		}
 
 		.catalog__pic {
