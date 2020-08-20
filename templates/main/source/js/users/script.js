@@ -2016,6 +2016,20 @@ $(window).on('load', function() {
 				// 	$(this).closest('.bx-filter-parameters-box-container').css('height', summ + 27);
 				// })
 			}
+			if ($(this).find('.filter-color__item').length >= 4) {
+				$(this).addClass('more');
+				$(this).find('.filter-color__item').eq(5).addClass('js-autoHeight');
+				$(this).find('.js-autoHeight').hide();
+
+				$(this).find('.js-autoHeight').nextAll(".filter-color__item").hide();
+
+				// $('.js-autoHeight').each(function () {
+				// 	var elHeight = $(this).offset().top
+				// 	var elHeightParent = $(this).parent().offset().top
+				// 	var summ = elHeight - elHeightParent;
+				// 	$(this).closest('.bx-filter-parameters-box-container').css('height', summ + 27);
+				// })
+			}
 		})
 		$('<span class="more-text js-more-text">Показать еще</span>').prependTo($('.more .col-xs-12'));
 		$('.js-more-text').click(function() {
@@ -2024,11 +2038,13 @@ $(window).on('load', function() {
 				$(this).text('Свернуть');
 				$(this).siblings('.js-autoHeight').show();
 				$(this).siblings('.js-autoHeight').nextAll(".checkbox").show();
+				$(this).siblings('.js-autoHeight').nextAll(".filter-color__item").show();
 			} else {
 				$(this).parent().parent().addClass('more');
 				$(this).text('Показать еще');
 				$(this).siblings('.js-autoHeight').hide();
 				$(this).siblings('.js-autoHeight').nextAll(".checkbox").hide();
+				$(this).siblings('.js-autoHeight').nextAll(".filter-color__item").hide();
 				// $(this).siblings('.js-autoHeight').each(function () {
 				// 	var elHeight = $(this).offset().top
 				// 	var elHeightParent = $(this).parent().offset().top

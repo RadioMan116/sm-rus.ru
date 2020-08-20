@@ -555,6 +555,12 @@
 		}
 	}
 
+	&-color {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 20px;
+	}
+
 	@media screen and (max-width: 768px) {
 		width: 100%;
 		margin-right: 0;
@@ -1004,6 +1010,7 @@
 		// width: 100%;
 		// height: auto !important;
 		padding-bottom: 0;
+		position: relative;
 
 		input {
 			height: 34px;
