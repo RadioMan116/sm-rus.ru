@@ -542,7 +542,7 @@
 	&-color {
 		display: flex;
 		flex-wrap: wrap;
-		padding-left: 20px;
+		padding-left: 1px;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -1016,6 +1016,18 @@
 			.col-xs-12 {
 				position: unset;
 			}
+		}
+
+		.filter-color {
+
+			.more-text {
+				left: 0;
+
+				&:after {
+					left: 0;
+				}
+			}
+
 		}
 
 		.more-text {
