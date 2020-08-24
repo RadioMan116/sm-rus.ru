@@ -1429,30 +1429,17 @@
 				box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
 			}
 
-			&:before {
-				content: '';
-				position: absolute;
-				left: 16px;
-				right: 16px;
-				height: 1px;
-				width: auto;
-				background: #f1f1f1;
-				top: 53%;
-				transform: translateY(-50%)
-			}
-
-			&:after {
-				content: '';
-				position: absolute;
-				left: 16px;
-				right: 16px;
-				height: 1px;
-				width: auto;
-				background: #f1f1f1;
-				bottom: 58px;
-				transform: translateY(-50%)
-			}
-
+			// &:after {
+			// 	content: '';
+			// 	position: absolute;
+			// 	left: 16px;
+			// 	right: 16px;
+			// 	height: 1px;
+			// 	width: auto;
+			// 	background: #f1f1f1;
+			// 	bottom: 58px;
+			// 	transform: translateY(-50%)
+			// }
 			&__title {
 				font-size: 20px;
 				font-weight: 500;
@@ -1495,6 +1482,18 @@
 				&:last-child {
 					border-bottom: 0;
 					padding-bottom: 0;
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					left: 16px;
+					right: 16px;
+					height: 1px;
+					width: auto;
+					background: #f1f1f1;
+					top: calc(100% + 5px);
+					// transform: translateY(-50%)
 				}
 			}
 
@@ -3361,8 +3360,8 @@
 			}
 
 			.special-offers__sale {
-				// margin-bottom: 60px;
 
+				// margin-bottom: 60px;
 				// justify-content: flex-start;
 				.special-offers__price {
 					color: black;
@@ -3404,7 +3403,6 @@
 
 					.special-offers__card-buy {
 						cursor: pointer;
-
 					}
 				}
 			}
