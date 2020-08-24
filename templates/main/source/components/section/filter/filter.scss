@@ -1470,6 +1470,55 @@
 		text-decoration: none;
 	}
 
+	.three-days {
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+
+		.checkbox {
+
+			// .checkbox__input
+			&__input {
+				opacity: 0;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			// .checkbox__icon
+			&__icon {
+				top: 2px;
+			}
+
+			// .checkbox__text
+			&__text {
+				margin-left: 32px;
+			}
+		}
+
+		.filter-glossary {
+			padding-top: 0;
+
+			// .filter-glossary__title
+			&__title {}
+
+			// .filter-glossary__text
+			&__text {}
+
+			&:hover {
+				.icon-gloss {
+					width: 14px;
+					height: 14px;
+					background: url(../images/chara__off.png) no-repeat;
+				}
+			}
+		}
+
+		.js-tooltip {}
+
+		.popup-gloss {}
+	}
+
 	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-direction: column;
