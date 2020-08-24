@@ -2465,7 +2465,7 @@ $(window).on('load', function() {
 					collectionPagination[index].classList.add('active');
 				});
 			});
-			tabsParent.style.paddingBottom = `${maxHeight - 50}px`;
+			tabsParent.style.paddingBottom = `${maxHeight - 45}px`;
 		}
 	})();
 	(function() {
