@@ -1410,7 +1410,8 @@
 	.filter-color__item {
 		display: inline-block;
 		vertical-align: top;
-		margin: 0 7px 10px 0
+		margin: 0 7px 10px 0;
+		padding: 1px 0;
 	}
 
 	.filter-color__label {
@@ -1533,7 +1534,7 @@
 		}
 
 		.bx-filter-parameters-box-container.more {
-			height: 60px;
+			height: 63px;
 			overflow: hidden;
 			position: relative;
 			padding-bottom: 25px;
