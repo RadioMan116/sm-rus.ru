@@ -1019,7 +1019,6 @@
 		}
 
 		.filter-color {
-
 			.more-text {
 				left: 0;
 
@@ -1027,7 +1026,6 @@
 					left: 0;
 				}
 			}
-
 		}
 
 		.more-text {
@@ -1261,6 +1259,7 @@
 			opacity: 0;
 			max-height: 0;
 			max-width: 0;
+			display: none;
 		}
 
 		&[data-glossary="show"] {
@@ -1468,6 +1467,7 @@
 		background: url("../images/close-filter.svg")no-repeat calc(100% - 15px) 50% $base;
 		// margin-left: -8px;
 		justify-content: center;
+		text-decoration: none;
 	}
 
 	@media screen and (max-width: 767px) {
@@ -1541,13 +1541,13 @@
 			align-items: baseline;
 
 			.checkbox {
-				position: unset;
+				position: relative;
 			}
 		}
 
 		.bx-filter-parameters-box-container.more {
-			height: 63px;
-			overflow: hidden;
+			// height: 63px;
+			// overflow: hidden;
 			position: relative;
 			padding-bottom: 25px;
 		}
