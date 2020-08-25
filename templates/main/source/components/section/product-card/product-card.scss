@@ -2962,6 +2962,7 @@
 			align-items: flex-start;
 			padding-bottom: 0px;
 			margin-top: 12px;
+			width: 100%;
 		}
 
 		.swiper-pagination-practical-features {
@@ -3342,7 +3343,8 @@
 		}
 
 		.special-offers__pic {
-			height: auto;
+			height: 150px;
+			margin-bottom: 19px;
 		}
 	}
 
@@ -3375,7 +3377,7 @@
 			.special-offers__text {
 				display: flex;
 				flex-direction: column;
-				padding: 8px 0 40px;
+				padding: 8px 0 32px;
 
 				&:hover {
 					span {
