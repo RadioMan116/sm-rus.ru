@@ -1917,27 +1917,18 @@ $(document).ready(function() {
 		// ignoreAttributes: true,
 		content: this.querySelector('.popup-gloss')
 	});
-	tippy(".js-tooltip", {
+	tippy('.announcing__item img', {
+		placement: 'right',
 		arrow: true,
-		placement: 'right', // top, right, bottom, left
-		// trigger: 'click',
-		distance: 15, //px or string
-		// maxWidth: 300, //px or string
-		interactive: true,
-		// leave these as they are
-		// followCursor: true,
+		distance: 15,
+		theme: 'light',
 		allowHTML: true,
-		hideOnClick: true,
-		theme: 'light',
 		appendTo: () => document.body,
-		// ignoreAttributes: true,
-		content: this.querySelector('.popup-gloss')
-	});
-	new tippy('.announcing__item', {
-		position: 'right',
-		content: 'Tooltip',
-		arrow: true,
-		theme: 'light',
+		ccontent(reference) {
+			const title = reference.getAttribute('title');
+			reference.removeAttribute('title');
+			return title;
+		},
 		// trigger: 'click'
 	});
 	$('.load-more').click(function() {
