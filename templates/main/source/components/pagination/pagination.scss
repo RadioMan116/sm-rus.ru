@@ -13,7 +13,6 @@
 		width: 32px;
 		height: 32px;
 
-
 		&:after {
 			content: '';
 			border-left: 2px solid #eeeeee;
@@ -30,10 +29,8 @@
 				content: '';
 				border-left: 2px solid #2e2e2e;
 				border-bottom: 2px solid #2e2e2e;
-
 			}
 		}
-
 	}
 
 	&__item {
@@ -46,7 +43,6 @@
 		letter-spacing: normal;
 		text-align: left;
 		color: #333333;
-
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -82,7 +78,6 @@
 		letter-spacing: normal;
 		text-align: left;
 		color: #333333;
-
 	}
 
 	&__next {
@@ -110,9 +105,11 @@
 				border-right: 2px solid #2e2e2e;
 			}
 		}
-
 	}
 
+	@media screen and (max-width: 767px) {
+		max-width: 100%;
+	}
 
 	@media screen and (max-width: 480px) {
 		margin: 15px auto !important;
