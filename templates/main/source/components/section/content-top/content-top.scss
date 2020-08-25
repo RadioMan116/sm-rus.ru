@@ -6,6 +6,7 @@
 	min-height: 362px;
 	display: flex;
 	background-position-x: right;
+	background-repeat: no-repeat;
 
 	br {
 		display: none;
@@ -48,7 +49,6 @@
 	}
 
 	.container {
-
 		padding: 0;
 		display: flex;
 		flex-direction: column;
@@ -58,15 +58,13 @@
 	&__aside {
 		border-radius: 3px;
 		background-color: $base;
-
-		padding: 32px 65px 32px 32px;
-		max-width: 572px;
+		padding: 32px;
+		max-width: 600px;
 		margin-bottom: 32px;
 	}
 
 	&__title {
 		width: 100%;
-
 
 		&_top {
 			color: #ffffff;
@@ -133,7 +131,6 @@
 		}
 	}
 
-
 	@media screen and (max-width: 767px) {
 		height: auto;
 		background-position-x: 100% !important;
@@ -171,7 +168,6 @@
 			max-width: unset !important;
 		}
 
-
 		&__title_top {
 			color: #ffffff;
 			font-family: "Roboto Condensed";
@@ -183,7 +179,6 @@
 			text-align: center;
 			width: 100%;
 			background: none;
-
 		}
 
 		&__title_bottom {
@@ -202,8 +197,6 @@
 			div[itemtype="http://schema.org/BreadcrumbList"] {
 				justify-content: center;
 			}
-
-
 		}
 
 		&__tags {
