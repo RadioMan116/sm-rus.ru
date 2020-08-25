@@ -1120,6 +1120,7 @@ $(document).ready(function() {
 			}
 		});
 		$('.articles .articles__text').matchHeight();
+		$('.articles-main__slider .catalog__specification').matchHeight();
 		$('.catalog__thumb .catalog__specification').matchHeight();
 		(() => {
 			let check = document.querySelector('.catalog .js-recently-watched')
