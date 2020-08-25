@@ -1430,6 +1430,7 @@
 		flex-direction: column;
 		align-items: center;
 		position: relative;
+		margin-bottom: 24px;
 
 		// .instructions__title
 		&__title {
@@ -1555,6 +1556,10 @@
 
 		.swiper-pagination-instructions {
 			display: none;
+		}
+
+		+.new-gallery {
+			margin-top: 14px;
 		}
 	}
 
