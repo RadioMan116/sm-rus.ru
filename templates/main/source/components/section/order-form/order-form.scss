@@ -10,7 +10,6 @@
 	&__title {
 		width: 100%;
 		margin: 4px 0 32px;
-
 		font-size: 36px;
 		font-weight: 500;
 		font-style: normal;
@@ -84,7 +83,6 @@
 				font-family: "Roboto Condensed";
 				font-size: 18px;
 				font-weight: 400;
-
 			}
 
 			&.delete {
@@ -194,7 +192,6 @@
 			font-size: 18px;
 			font-weight: 400;
 
-
 			strong {
 				color: #333333;
 				font-family: "Roboto Condensed";
@@ -205,7 +202,6 @@
 			}
 		}
 	}
-
 
 	.swiper-slide {
 		padding: 32px 19px 26px;
@@ -234,13 +230,9 @@
 		top: 65px !important;
 	}
 
-
-
 	.special-offers__text {
 		padding: 32px 0 6px;
-
 		max-height: unset;
-
 	}
 
 	.swiper-wrapper {
@@ -284,7 +276,6 @@
 				top: 57px;
 				margin-bottom: 1rem;
 			}
-
 		}
 	}
 
@@ -326,12 +317,10 @@
 			line-height: 20px;
 			padding: 8px 0;
 			max-width: 880px;
-
 		}
 	}
 
 	.form__title {
-
 		font-size: 31px;
 		font-weight: 500;
 		font-style: normal;
@@ -363,8 +352,8 @@
 		width: 100%;
 		display: flex;
 		padding: 12px 0 4px;
-		// align-items: center;
 
+		// align-items: center;
 		label {
 			width: unset;
 			margin-top: 8px;
@@ -386,6 +375,7 @@
 			max-width: 472px;
 			width: 100%;
 			height: 124px;
+			padding-top: 8px;
 		}
 
 		input,
@@ -396,6 +386,10 @@
 			background-color: #ffffff;
 			resize: none;
 			padding-left: 15px;
+			font-family: Arial;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
 		}
 	}
 
@@ -454,13 +448,10 @@
 			font-family: Arial, sans-serif;
 			font-size: 12px;
 			line-height: 18px;
-
 		}
-
 	}
 
 	.ordering {
-
 		&_heading {
 			color: #424242;
 			font-size: 31px;
@@ -473,7 +464,6 @@
 			margin-bottom: 3px;
 			padding-top: 43px;
 			width: 100%;
-
 
 			&-list {
 				display: flex;
@@ -538,8 +528,8 @@
 
 				&:hover {
 					outline: 0px solid transparent;
-					// box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 
+					// box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 					.ordering__payment-item {
 						padding: 20px 10px 9px;
 						border-color: transparent;
@@ -550,7 +540,6 @@
 				&:last-of-type {
 					margin-left: 0px;
 				}
-
 			}
 
 			&-icon {
@@ -583,6 +572,11 @@
 		}
 	}
 
+	input,
+	textarea {
+		font-family: Arial;
+	}
+
 	.order.js-basket_props.js-ecom_order-ready {
 		+.ordering__payment-label {
 			display: none;
@@ -591,7 +585,6 @@
 
 	@media screen and (max-width: 767px) {
 		.table {
-
 			&__items {
 				max-height: 130px;
 			}
@@ -628,7 +621,6 @@
 
 				strong {
 					font-size: 16px !important;
-
 				}
 
 				&.how-many {
@@ -658,14 +650,11 @@
 				img {
 					flex-shrink: 0;
 				}
-
 			}
 
 			.table__text {
 				padding-left: 38px;
 			}
-
-
 
 			.special-offers__text {
 				color: #333333;
@@ -675,11 +664,9 @@
 				line-height: 24px;
 			}
 
-
 			.how-many {
 				white-space: nowrap;
 				height: unset;
-
 
 				.decr,
 				.incr {
@@ -714,7 +701,6 @@
 			}
 
 			&__link {
-
 				img {
 					// width: 37px;width: 37px;
 					// height: 69px;
@@ -786,8 +772,6 @@
 		.form__payment {
 			padding-left: 0;
 
-
-
 			.form__title {
 				font-size: 23px;
 				margin-top: 12px;
@@ -802,7 +786,6 @@
 		}
 	}
 
-
 	@media screen and (max-width: 767px) {
 		padding-top: 14px;
 
@@ -816,7 +799,6 @@
 			text-align: left;
 			color: #262626;
 		}
-
 
 		.table {
 			&__title {
@@ -843,7 +825,6 @@
 				flex-basis: unset;
 				width: 100% !important;
 				padding: 0 0 17px 0 !important;
-
 
 				&.price {
 					padding-left: 0 !important;
@@ -882,8 +863,6 @@
 					border-left: 0;
 					padding-right: 10px;
 				}
-
-
 			}
 
 			.special-offers__text {
@@ -901,8 +880,6 @@
 				text-align: left;
 				color: #333333;
 			}
-
-
 
 			.item__title {
 				display: flex;
@@ -1015,7 +992,6 @@
 			}
 		}
 
-
 		.special-offers__buy {
 			margin-left: 10px;
 		}
@@ -1027,7 +1003,6 @@
 		.swiper-slide {
 			margin-left: -1%;
 			padding: 31px 15px 18px !important;
-
 		}
 
 		.delivery_terms {
@@ -1061,7 +1036,6 @@
 				margin-right: auto;
 				width: 100% !important;
 			}
-
 		}
 
 		.form__row {
@@ -1106,12 +1080,10 @@
 
 				flex: 0 0 100% !important;
 				margin-right: 0;
-
 			}
 		}
 
 		.ordering {
-
 			&_heading {
 				color: #2e2e2e;
 				font-family: "Roboto Condensed";
@@ -1126,9 +1098,7 @@
 			&__payment {
 				padding-top: 17px;
 
-
 				&-list {
-
 					// align-items: flex-start;
 				}
 
@@ -1154,8 +1124,8 @@
 					}
 
 					&:nth-of-type(2) {
-						// background: red;
 
+						// background: red;
 						.ordering__payment-text {
 							max-width: 90px;
 						}
@@ -1163,8 +1133,8 @@
 
 					&:hover {
 						outline: 0px solid transparent;
-						// box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 
+						// box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 						.ordering__payment-item {
 							padding: 20px 4px 9px;
 							border-color: transparent;
