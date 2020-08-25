@@ -45,20 +45,17 @@
 	}
 
 	.special-offers__text {
-		padding-bottom: 0;
 		color: #333333;
 		font-family: "Roboto Condensed";
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 26px;
-		padding-top: 24px;
-
+		padding: 19px 0 40px;
 	}
 
 	.special-offers__sale {
-		padding-top: 14px;
+		// padding-top: 14px;
 	}
-
 
 	&__how {
 		font-size: 14px;
@@ -81,7 +78,6 @@
 			color: $base;
 			font-style: initial;
 			padding: 0 5px;
-
 		}
 	}
 
@@ -101,8 +97,6 @@
 		text-transform: uppercase;
 		text-decoration: none !important;
 	}
-
-
 
 	@media screen and (max-width: 767px) {
 		margin-top: 0;
@@ -126,13 +120,13 @@
 		}
 
 		.special-offers__text {
-			padding-top: 16px !important;
-			padding-bottom: 13px !important;
+			// padding-top: 16px !important;
+			// padding-bottom: 13px !important;
 		}
 
 		.special-offers__sale {
 			align-items: flex-end !important;
-			padding-top: 0;
+			// padding-top: 0;
 		}
 
 		.special-offers__slide {
@@ -166,7 +160,6 @@
 		}
 
 		.new-items__how {
-
 			color: #2e2e2e;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
@@ -174,52 +167,40 @@
 			margin-top: 0px;
 		}
 
-
 		.announcing {
 			top: 15px;
 			left: 16px;
 		}
-
-
 	}
 
 	// @media screen and (max-width: 480px) {
 	// 	padding-top: 28px !important;
 	// 	padding-bottom: 0px !important;
-
 	// 	.new-items__caption {
 	// 		align-items: center;
 	// 		width: 100%;
 	// 		margin-bottom: 27px
 	// 	}
-
 	// 	.new-items__title {
 	// 		margin-top: 0px;
 	// 	}
-
 	// 	.new-items__how {
 	// 		margin-bottom: 0;
 	// 		margin-left: auto;
 	// 	}
-
 	// 	.swiper-slide {
 	// 		align-content: flex-end;
-
 	// 		img {
 	// 			max-height: 250px;
 	// 		}
 	// 	}
-
 	// 	.swiper-container {
 	// 		.new-items__slide {}
-
 	// 		.special-offers__text {
 	// 			font-size: 18px;
 	// 			padding: 19px 0 18px;
 	// 		}
-
 	// 	}
-
 	// 	.swiper-pagination_3 {
 	// 		display: flex;
 	// 		bottom: 92px;
@@ -229,28 +210,20 @@
 	// 		width: 100%;
 	// 		margin: 0 auto;
 	// 		justify-content: center;
-
 	// 		* {
 	// 			margin: 0 5px;
 	// 		}
 	// 	}
-
 	// 	.new-items__link {
 	// 		margin-top: 62px;
 	// 		margin-bottom: 23px;
 	// 	}
-
 	// 	.announcing {
 	// 		top: 20px;
 	// 		left: 20px;
 	// 	}
 	// }
-
 	// @media screen and (max-width: 375px) {
-
-
-
-
 	// 	/*AGENT_SHEET*/
 	// 	.swiper-pagination_3 .swiper-pagination-bullet-active {
 	// 		background: #ffffff !important;
