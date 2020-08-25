@@ -38,7 +38,6 @@ img {
 // 	z-index: 1;
 // 	width: 100%;
 // }
-
 .popup {
 	display: none;
 
@@ -47,7 +46,6 @@ img {
 		width: 320px;
 
 		&__title {
-
 			font-size: 24px;
 			font-weight: 500;
 			font-style: normal;
@@ -60,7 +58,6 @@ img {
 		}
 
 		&__text {
-
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
@@ -113,7 +110,6 @@ h1.title {
 
 .col-md-3 {
 	padding-left: 0;
-
 }
 
 .fancybox-container {
@@ -124,7 +120,6 @@ h1.title {
 	top: 50% !important;
 	transform: translateX(-50%)translateY(-50%)scale(1) !important;
 	left: 50% !important;
-
 	max-width: 100% !important;
 	height: 98% !important;
 	display: flex !important;
@@ -145,14 +140,11 @@ h1.title {
 		max-height: 100%;
 		cursor: pointer !important;
 	}
-
-
 }
 
 .fancybox-container {
 	transition-duration: 500ms !important;
 }
-
 
 .compensate-for-scrollbar {
 	margin-right: 0px !important;
@@ -175,7 +167,7 @@ body.fancybox-active {
 	iframe {
 		// height: auto !important;
 		height: 100% !important;
-		height: 50vh !important;
+		height: 90vh !important;
 		// height: -moz-available !important;
 		// /* WebKit-based browsers will ignore this. */
 		// height: -webkit-fill-available !important;
@@ -245,7 +237,6 @@ input:required {
 		}
 	}
 
-
 	.col-md-3 {
 		padding-right: 0;
 		padding-left: 0;
@@ -267,4 +258,7 @@ input:required {
 		}
 	}
 
+	.docs-frame iframe {
+		height: 60vh !important;
+	}
 }
