@@ -1434,7 +1434,7 @@
 		flex-direction: column;
 		align-items: center;
 		position: relative;
-		margin-bottom: 24px;
+		margin-bottom: 0px;
 
 		// .instructions__title
 		&__title {
@@ -1573,6 +1573,7 @@
 		.instructions {
 			align-items: flex-start;
 			padding-top: 12px;
+			padding-bottom: 44px;
 
 			&__item {
 				min-width: unset;
@@ -1584,11 +1585,11 @@
 
 				// height: 303px;
 				&:nth-child(3n-1) {
-					margin: 0 16px 20px 0;
+					margin: 0 16px 0px 0;
 				}
 
 				margin-right: 16px;
-				margin-bottom: 20px;
+				margin-bottom: 0px;
 
 				&:last-child {
 					margin-right: 0;
@@ -1694,7 +1695,7 @@
 				text-decoration: none;
 				// z-index: 2;
 				position: absolute;
-				bottom: -15px;
+				bottom: 0px;
 			}
 		}
 
