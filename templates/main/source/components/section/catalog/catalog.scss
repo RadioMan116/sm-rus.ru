@@ -1564,9 +1564,12 @@
 			display: none;
 		}
 
-		+.new-gallery,
 		+.all-video {
 			margin-top: 14px;
+		}
+
+		+.new-gallery {
+			margin-top: 32px;
 		}
 	}
 
@@ -3103,6 +3106,7 @@
 		}
 
 		.instructions {
+			padding-bottom: 24px;
 
 			// .instructions__title
 			&__title {
@@ -3163,6 +3167,10 @@
 						margin-left: auto;
 					}
 				}
+			}
+
+			+.new-gallery {
+				margin-top: 0px;
 			}
 		}
 
