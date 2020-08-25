@@ -2083,35 +2083,35 @@ $(window).on('load', function() {
 		})
 	}
 	if ($(".filter__form.js-form").length) {
-		$('.filter__form.js-form .filter__checkbox').each(function() {
-			if ($(this).find('label').length > 4) {
-				$(this).addClass('more');
-				$(this).find('label').eq(2).addClass('js-autoHeight');
-				$('.js-autoHeight').each(function() {
-					var elHeight = $(this).offset().top
-					var elHeightParent = $(this).parent().offset().top
-					var summ = elHeight - elHeightParent;
-					$(this).closest('.filter__checkbox').css('height', summ + 27);
-				})
-			}
-		})
-		$('<span class="more-text js-more-text">Показать еще</span>').prependTo($('.more'));
-		$('.js-more-text').click(function() {
-			if ($(this).parent().hasClass('more')) {
-				$(this).parent().removeClass('more');
-				$(this).parent().css('height', 'auto');
-				$(this).text('Свернуть');
-			} else {
-				$(this).parent().addClass('more');
-				$(this).text('Показать еще');
-				$(this).siblings('.js-autoHeight').each(function() {
-					var elHeight = $(this).offset().top
-					var elHeightParent = $(this).parent().offset().top
-					var summ = elHeight - elHeightParent;
-					$(this).closest('.filter__checkbox').css('height', summ + 27);
-				})
-			}
-		})
+		// $('.filter__form.js-form .filter__checkbox').each(function() {
+		// 	if ($(this).find('label').length > 4) {
+		// 		$(this).addClass('more');
+		// 		$(this).find('label').eq(2).addClass('js-autoHeight');
+		// 		$('.js-autoHeight').each(function() {
+		// 			var elHeight = $(this).offset().top
+		// 			var elHeightParent = $(this).parent().offset().top
+		// 			var summ = elHeight - elHeightParent;
+		// 			$(this).closest('.filter__checkbox').css('height', summ + 27);
+		// 		})
+		// 	}
+		// })
+		// $('<span class="more-text js-more-text">Показать еще</span>').prependTo($('.more'));
+		// $('.js-more-text').click(function() {
+		// 	if ($(this).parent().hasClass('more')) {
+		// 		$(this).parent().removeClass('more');
+		// 		$(this).parent().css('height', 'auto');
+		// 		$(this).text('Свернуть');
+		// 	} else {
+		// 		$(this).parent().addClass('more');
+		// 		$(this).text('Показать еще');
+		// 		$(this).siblings('.js-autoHeight').each(function() {
+		// 			var elHeight = $(this).offset().top
+		// 			var elHeightParent = $(this).parent().offset().top
+		// 			var summ = elHeight - elHeightParent;
+		// 			$(this).closest('.filter__checkbox').css('height', summ + 27);
+		// 		})
+		// 	}
+		// })
 	}
 	if ($(".comparison").length) {
 		$('.js-compare_block-change.active').parent().addClass('order');
