@@ -1917,19 +1917,26 @@ $(document).ready(function() {
 		// ignoreAttributes: true,
 		content: this.querySelector('.popup-gloss')
 	});
-	tippy('.announcing__item img', {
-		placement: 'right',
-		arrow: true,
-		distance: 15,
-		theme: 'light',
-		allowHTML: true,
-		appendTo: () => document.body,
-		ccontent(reference) {
-			const title = reference.getAttribute('title');
-			reference.removeAttribute('title');
-			return title;
-		},
-		// trigger: 'click'
+	$('.announcing__item img').each(function(i, el) {
+		tippy(el, {
+			arrow: true,
+			placement: 'right', // top, right, bottom, left
+			// trigger: 'click',
+			distance: 15, //px or string
+			// maxWidth: 300, //px or string
+			interactive: true,
+			// leave these as they are
+			// followCursor: true,
+			allowHTML: true,
+			theme: 'light',
+			appendTo: () => document.body,
+			// ignoreAttributes: true,
+			content(el) {
+				const title = el.getAttribute('title');
+				el.removeAttribute('title');
+				return title;
+			},
+		});
 	});
 	$('.load-more').click(function() {
 		$(document).ajaxSuccess(function() {
@@ -1953,6 +1960,29 @@ $(document).ready(function() {
 					});
 				}
 			})
+			$('.announcing__item img').each(function(i, el) {
+				if (!$(el).is('[aria-expanded]')) {
+					tippy(el, {
+						arrow: true,
+						placement: 'right', // top, right, bottom, left
+						// trigger: 'click',
+						distance: 15, //px or string
+						// maxWidth: 300, //px or string
+						interactive: true,
+						// leave these as they are
+						// followCursor: true,
+						allowHTML: true,
+						theme: 'light',
+						appendTo: () => document.body,
+						// ignoreAttributes: true,
+						content(el) {
+							const title = el.getAttribute('title');
+							el.removeAttribute('title');
+							return title;
+						},
+					});
+				}
+			});
 		});
 	})
 });
