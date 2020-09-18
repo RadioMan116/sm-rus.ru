@@ -280,6 +280,7 @@
 		// overflow: hidden;
 		border: solid 1px #d6d6d6;
 		border-bottom: 0;
+		background: white;
 
 		// background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 10px) 5px/15px no-repeat;
 		&.triangle {
@@ -1112,7 +1113,8 @@
 			left: 100px;
 			width: fit-content;
 			height: fit-content;
-			top: 47%;
+			top: 60%;
+			transform: translateY(-49%);
 			z-index: 9999;
 			max-width: 150px;
 			// height: 34px;
