@@ -75,6 +75,7 @@
 		.link-pop-glossary {
 			position: relative;
 			width: calc(100%/6);
+			max-width: 48px;
 
 			.popup-prop {
 				display: none;
@@ -129,9 +130,8 @@
 		}
 
 		.icons-prop-item {
-			width: 38.94px;
-			height: 39px;
-			padding: 0 2px 4px 0;
+			max-width: 100%;
+			padding: 0 4px 4px 0;
 		}
 	}
 
@@ -444,7 +444,7 @@
 		width: 100%;
 		justify-content: space-between;
 		margin-bottom: 8px;
-		align-items: flex-end;
+		align-items: center;
 
 		&:last-of-type {
 			margin-bottom: 0px;
@@ -3356,8 +3356,7 @@
 			.link-pop-glossary {
 				margin-left: 0px;
 				position: static;
-				width: 42px;
-				height: 44px;
+				max-width: 48px;
 
 				.popup-prop {
 					left: 0 !important;
