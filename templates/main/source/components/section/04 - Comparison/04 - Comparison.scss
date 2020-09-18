@@ -11,7 +11,6 @@
 	thead {
 		display: flex;
 		flex-direction: column;
-
 		// tr {
 		// 	// border-top: 1px solid black !important;
 		// 	border-bottom: 1px solid black !important;
@@ -21,7 +20,6 @@
 	tbody {
 		display: flex;
 		flex-direction: column;
-
 		// tr {
 		// 	// border-top: 1px solid red !important;
 		// 	border-bottom: 1px solid red !important;
@@ -87,7 +85,6 @@
 			}
 
 			.announcing {
-
 				&__popup {
 					width: 261px;
 					border-radius: 3px;
@@ -140,7 +137,6 @@
 			}
 
 			&:hover {
-
 				.announcing__popup {
 					display: flex;
 				}
@@ -156,11 +152,10 @@
 		top: 19px;
 		right: 100px;
 
-		// span {
-		// 	margin: 0 16px 0 0 !important;
-		// }
+		span {
+			margin: 0 16px 0 0;
+		}
 	}
-
 
 	&__middle {
 		display: flex;
@@ -285,9 +280,13 @@
 		// overflow: hidden;
 		border: solid 1px #d6d6d6;
 		border-bottom: 0;
-		background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 10px) 5px/15px no-repeat;
-		// max-height: 26px;
 
+		// background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 10px) 5px/15px no-repeat;
+		&.triangle {
+			background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 10px) 8px/15px no-repeat;
+		}
+
+		// max-height: 26px;
 		&:hover {
 			overflow: unset;
 
@@ -319,7 +318,6 @@
 		flex: 1 0 auto;
 		margin: 0 -1px;
 		display: none;
-
 
 		&.active {
 			order: -1;
@@ -355,7 +353,6 @@
 			pointer-events: none;
 		}
 	}
-
 
 	&__button {
 		padding: 17px 16px;
@@ -411,7 +408,6 @@
 		position: relative;
 		display: flex;
 
-
 		&:before {
 			content: 'Открыть все параметры';
 		}
@@ -422,10 +418,8 @@
 			background: url('https://icongr.am/entypo/chevron-small-down.svg?color=394791') 50% 50%/20px no-repeat;
 		}
 
-
 		&.active {
 			color: #666666;
-
 
 			&:before {
 				content: 'Закрыть все параметры';
@@ -457,11 +451,9 @@
 			// padding: 4px 27px;
 			// background: red;
 			transition: .2s;
-
 			// &.active {
 			// 	background: rgba(238, 238, 238, 0.4);
 			// }
-
 			// cursor: pointer;
 			margin-bottom: 14px;
 
@@ -484,10 +476,9 @@
 			// overflow: hidden;
 			border: 0;
 			display: flex;
+
 			// border-top: 1px solid black;
 			// border-bottom: 1px solid #e8e8e8;
-
-
 			&.active {
 				display: flex !important;
 				overflow: unset;
@@ -644,12 +635,11 @@
 		flex-direction: column;
 
 		tr {
-
 			width: 100%;
 			display: flex;
 			flex-direction: column;
-			// display: flex !important;
 
+			// display: flex !important;
 			td {
 				width: 100%;
 
@@ -716,7 +706,6 @@
 				// 	z-index: 99;
 				// 	background: url('https://icongr.am/entypo/chevron-small-down.svg?color=666666')#f8f8f8 50% 50%/27px no-repeat;
 				// }
-
 				&.active {
 					td {}
 
@@ -737,7 +726,6 @@
 		// tr{
 		// 	border-bottom: 1px solid black !important;
 		// }
-
 	}
 
 	.swiper-container-comparison {
@@ -758,7 +746,6 @@
 			max-width: 100%;
 			height: 510px;
 			background-color: #ffffff;
-
 		}
 
 		.diagram {
@@ -841,7 +828,6 @@
 				background-position: 100% 0px;
 				padding-left: 25px;
 
-
 				.swiper-slide {
 					flex-direction: column;
 					flex-basis: unset;
@@ -856,7 +842,6 @@
 
 				.swiper-wrapper {
 					height: 100%;
-
 				}
 
 				&:before {
@@ -973,8 +958,6 @@
 		.fixed-header {
 			top: 0;
 		}
-
-
 	}
 
 	.fixed-header {
@@ -1040,21 +1023,16 @@
 			padding-left: 100px;
 
 			// &:nth-child(1) {
-
 			// }
-
 			// &:nth-child(2) {
 			// 	background: yellow;
 			// }
-
 			// &:nth-child(3) {
 			// 	background: green;
 			// }
-
 			// &:nth-child(4) {
 			// 	background: purple;
 			// }
-
 			// &:nth-child(5) {
 			// 	background: blue;
 			// }
@@ -1076,7 +1054,6 @@
 				&__rub {}
 
 				&__buy {
-
 					padding: 0;
 					color: transparent;
 					// background-image: url(/mockup/templates/main/build/css/../images/shopping-cart.svg);
@@ -1193,8 +1170,8 @@
 		.fixed-header {
 			max-width: 100%;
 			height: unset;
-			// display: none;
 
+			// display: none;
 			.title {
 				display: none;
 			}
@@ -1208,7 +1185,6 @@
 				.special-offers__sale {
 					width: 100%;
 					flex-direction: row;
-
 				}
 
 				.catalog__presence {
@@ -1269,7 +1245,6 @@
 				width: 100%;
 				margin-bottom: 10px;
 			}
-
 		}
 
 		.swiper-container-comparison .comparison__diagram,
@@ -1287,7 +1262,6 @@
 			padding-top: 0;
 			display: flex;
 			flex-direction: column;
-
 
 			tr {
 				position: relative;
@@ -1343,7 +1317,6 @@
 						font-weight: 700;
 						line-height: 1.2;
 
-
 						&:after {
 							display: none;
 						}
@@ -1369,14 +1342,11 @@
 				top: unset;
 				padding: 10px 0 0px 5px !important;
 
-
 				.swiper__comparison_first.js-comparison-height {
 					width: 100%;
 					height: auto !important;
 					padding-bottom: 60px;
 				}
-
-
 			}
 
 			.comparison__inner {
@@ -1390,7 +1360,6 @@
 				// margin-bottom: 330px;
 				td {
 					padding: 0 !important;
-
 				}
 			}
 
@@ -1425,8 +1394,6 @@
 					padding: 0;
 					overflow: hidden;
 					margin-bottom: 16px;
-
-
 
 					&.active {
 						overflow: visible;
@@ -1536,8 +1503,8 @@
 		.characteristic__row {
 			position: relative;
 			padding-top: 1px;
-			// margin-top: 10px;
 
+			// margin-top: 10px;
 			&.level {
 				min-height: 69px;
 			}
@@ -1549,7 +1516,6 @@
 
 		.characteristic__title {
 			height: 40px;
-
 
 			td {
 				padding: 0 !important;
@@ -1596,7 +1562,6 @@
 			right: unset;
 			transform: translateX(-50%);
 			left: 50%;
-
 		}
 
 		.swiper-pagination span:nth-child(2n) {
@@ -1612,8 +1577,6 @@
 			top: 390px;
 			right: 0;
 		}
-
-
 
 		.special-offers__buy {
 			background-image: none;
@@ -1641,9 +1604,7 @@
 			flex-direction: column;
 
 			.special-offers__price {
-
 				.announcing {
-
 					&__popup {
 						width: 147px;
 						padding: 7px;
@@ -1671,8 +1632,8 @@
 		.comparison__list {
 			margin-top: 0;
 			margin-bottom: 18px;
-			// height: 50px;
 
+			// height: 50px;
 			&.active {
 				overflow: unset;
 			}
@@ -1756,7 +1717,6 @@
 					line-height: 24px;
 				}
 			}
-
 		}
 
 		.modal__close {
@@ -1808,7 +1768,6 @@
 				background: url(../images/papka.png) 3px/16px no-repeat;
 			}
 		}
-
 	}
 
 	@media screen and (max-width: 320px) {

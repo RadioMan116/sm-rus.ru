@@ -1042,6 +1042,7 @@
 			cursor: pointer;
 			order: 5;
 			width: calc(100% - 50px);
+			min-width: 200px;
 
 			&:after {
 				content: '';
@@ -1239,7 +1240,7 @@
 		transition: all 0.2s;
 		margin-left: 5px;
 		// align-items: flex-start;
-		z-index: 999;
+		z-index: 998;
 		cursor: pointer;
 		padding-top: 4px;
 		flex-shrink: 0;
