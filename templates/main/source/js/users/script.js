@@ -2251,7 +2251,10 @@ $(window).on("load", function () {
 				}, 4000);
 			}
 		});
-		$(".js-comparison__select.active").trigger("click");
+		setTimeout(function () {
+
+			$(".js-comparison__select.active").trigger("click");
+		}, 100);
 	}
 	if ($("a[data-fancybox=\"gallery\"] img").length) {
 		// $('a[data-fancybox="gallery"] img').eq(0).each(function () {
