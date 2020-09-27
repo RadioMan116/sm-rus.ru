@@ -521,6 +521,7 @@
 		// }
 		.special-offers__pic {
 			max-height: 240px;
+			flex-shrink: 0;
 		}
 
 		.special-offers__text {
