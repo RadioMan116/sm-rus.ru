@@ -567,12 +567,13 @@ $(document).ready(function () {
 	$(".js-tags_data").click(function () {
 
 		$(document).ajaxSuccess(function () {
-			if ($(".js-tags_data").hasClass('active')) {
-				$(".js-tags_data").removeClass('active')
-			}
-			else {
-				$(".js-tags_data").addClass('active')
-			}
+			$(".js-tags_data").toggleClass('active')
+			// if ($(".js-tags_data").hasClass('active')) {
+			// 	$(".js-tags_data").removeClass('active')
+			// }
+			// else {
+			// 	$(".js-tags_data").addClass('active')
+			// }
 
 		});
 
