@@ -1,21 +1,97 @@
 .tags {
 	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1176px;
 	// margin-top: auto;
 	margin-bottom: 21px;
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 1176px;
-	flex-direction: column;
-	width: 100%;
+
+	@media screen and (max-width: 767px) {
+		display: block;
+		position: relative;
+		overflow-x: auto;
+		margin-bottom: 40px;
+		margin-right: unset;
+		margin-left: unset;
+
+		&__container {
+			display: block;
+			overflow-x: auto;
+		}
+
+		&__list {
+			// width: 1176px;
+			width: max-content;
+			max-width: 700px;
+			overflow-x: scroll;
+		}
+
+		&__title {
+			color: #212121;
+			font-family: "Roboto Condensed";
+			font-size: 5vw;
+			font-weight: 400;
+			margin-bottom: 15px;
+		}
+
+		&__all {
+			display: none;
+		}
+
+		&__item {
+
+			&.last, &.js-tags_data {
+				display: flex;
+				align-items: center;
+				border: none;
+				background-color: transparent;
+				color: $base;
+
+				&:after {
+					content: "";
+					width: 12px;
+					height: 12px;
+					background: url("https://icongr.am/entypo/chevron-small-down.svg?color=bb0000&size=50");
+					background-size: 22px;
+					background-position: 50%;
+					background-repeat: no-repeat;
+					margin-left: 5px;
+				}
+
+				a {
+					border-bottom: 1px dashed $base;
+					line-height: 1;
+					margin-right: 2px;
+				}
+			}
+		}
+
+		&.main-tags {
+			display: block;
+			overflow-x: unset;
+			margin-bottom: 30px;
+			padding-left: 16px;
+		}
+	}
+
+	.container {
+		position: relative;
+	}
+
+	.text-default & {
+		margin: 0 auto 0 0;
+	}
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		width: 100%;
 		align-items: center;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
 
 		&.active {
 			.tags__item {
@@ -26,9 +102,23 @@
 
 	&__item {
 		border: 1px solid #f1f1f1;
+		padding: 5px 11px;
 		margin-right: 4px;
 		margin-bottom: 3px;
-		padding: 5px 11px;
+
+		&:hover {
+			border: 1px solid #ffe3e3;
+			// background-color: #F1F1F1;
+			background-color: #ffe3e3;
+
+			a {
+				color: $base;
+				// font-family: Arial, sans-serif;
+				// font-size: 14px;
+				// font-weight: 700;
+				// letter-spacing: 0.6px;
+			}
+		}
 
 		a {
 			color: #666;
@@ -48,12 +138,12 @@
 		// }
 		&.last {
 			border: none;
-			margin-left: 10px;
-			padding: 0;
-			color: $base;
-			background: url('/images/round-3.svg') no-repeat 100% 50%/15px;
-			background-color: transparent !important;
 			border: 0 !important;
+			padding: 0;
+			margin-left: 10px;
+			color: $base;
+			background: url("/images/round-3.svg") no-repeat 100% 50%/15px;
+			background-color: transparent !important;
 
 			a {
 				padding: 0 0 2px;
@@ -76,20 +166,6 @@
 			}
 		}
 
-		&:hover {
-			border: 1px solid #ffe3e3;
-			// background-color: #F1F1F1;
-			background-color: #ffe3e3;
-
-			a {
-				color: $base;
-				// font-family: Arial, sans-serif;
-				// font-size: 14px;
-				// font-weight: 700;
-				// letter-spacing: 0.6px;
-			}
-		}
-
 		&.button {
 			order: 2;
 		}
@@ -101,21 +177,30 @@
 			display: flex;
 		}
 
-		&.last,
-		&.js-tags_data {
+		&.last, &.js-tags_data {
 			display: flex;
 			align-items: center;
 			margin-right: 12px;
 
 			&:after {
 				content: "";
-				background: url("https://icongr.am/entypo/chevron-small-down.svg?color=bb0000&size=50");
 				width: 12px;
 				height: 12px;
+				background: url("https://icongr.am/entypo/chevron-small-down.svg?color=bb0000&size=50");
 				background-size: 22px;
 				background-position: 50%;
 				background-repeat: no-repeat;
 				// margin-left: 5px
+			}
+			&.active {
+				color: inherit;
+				&:after {
+					background: url("https://icongr.am/entypo/chevron-small-up.svg?color=bb0000&size=50");
+					background-size: 22px;
+					background-position: 50%;
+					background-repeat: no-repeat;
+
+				}
 			}
 		}
 	}
@@ -129,110 +214,33 @@
 	}
 
 	&__all {
-		border-radius: 3px;
+		position: absolute;
+		top: -7px;
+		right: 0;
 		border: 1px solid $base;
+		padding: 6px 12px;
+		transform: translateY(0);
+		border-radius: 3px;
 		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
-		position: absolute;
-		right: 0px;
-		top: -7px;
-		transform: translateY(0px);
-		padding: 6px 12px;
 		text-decoration: none !important;
 	}
 
-	.container {
-		position: relative;
-	}
-
 	&.main-tags {
-		margin-bottom: 61px;
 		position: relative;
+		margin-bottom: 61px;
 
 		// width: 1176px;
 		// max-width: 100%;
 		@media screen and (max-width: 1200px) and (min-width: 768px) {
-			margin: 0 16px 48px;
-			max-width: 100%;
+			flex: 1 1 100%;
 			width: -webkit-fill-available;
-			flex: 1 1 100%
-		}
-	}
-
-	.text-default & {
-		margin: 0 auto 0 0;
-	}
-
-	@media screen and (max-width: 767px) {
-		display: block;
-		overflow-x: auto;
-		margin-bottom: 40px;
-		margin-right: unset;
-		margin-left: unset;
-		position: relative;
-
-		&.main-tags {
-			display: block;
-			overflow-x: unset;
-			margin-bottom: 30px;
-			padding-left: 16px;
-		}
-
-		&__container {
-			display: block;
-			overflow-x: auto;
-		}
-
-		&__list {
-			max-width: 700px;
-			overflow-x: scroll;
-			// width: 1176px;
-			width: max-content;
-		}
-
-		&__title {
-			color: #212121;
-			font-family: "Roboto Condensed";
-			font-size: 5vw;
-			font-weight: 400;
-			margin-bottom: 15px;
-		}
-
-		&__all {
-			display: none;
-		}
-
-		&__item {
-
-			&.last,
-			&.js-tags_data {
-				border: none;
-				display: flex;
-				align-items: center;
-				background-color: transparent;
-				color: $base;
-
-				a {
-					border-bottom: 1px dashed $base;
-					line-height: 1;
-					margin-right: 2px;
-				}
-
-				&:after {
-					content: "";
-					background: url("https://icongr.am/entypo/chevron-small-down.svg?color=bb0000&size=50");
-					width: 12px;
-					height: 12px;
-					background-size: 22px;
-					background-position: 50%;
-					background-repeat: no-repeat;
-					margin-left: 5px
-				}
-			}
+			max-width: 100%;
+			margin: 0 16px 48px;
 		}
 	}
 }
