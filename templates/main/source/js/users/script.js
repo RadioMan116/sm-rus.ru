@@ -571,7 +571,7 @@ $(document).ready(function () {
 				$(".js-tags_data").removeClass('active')
 			}
 			else {
-				$(".js-tags_data").toggleClass('active')
+				$(".js-tags_data").addClass('active')
 			}
 
 		});
