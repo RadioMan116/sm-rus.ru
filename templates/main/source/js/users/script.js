@@ -565,15 +565,8 @@ $(document).ready(function () {
 		});
 	});
 	$(".js-tags_data").click(function () {
+		$(this).toggleClass('active')
 
-		if ($(this).hasClass('active')) {
-			$(this).removeClass('active')
-		}
-		else {
-			$(document).ajaxSuccess(function () {
-				$(this).addClass('active')
-			});
-		}
 	});
 	$(".js-header__search").click(function () {
 		if ($(".search__popup").hasClass("search__popup-open") == false) {
