@@ -520,8 +520,12 @@
 		// 	align-items: center;
 		// }
 		.special-offers__pic {
-			max-height: 240px;
+			max-height: 210px;
+			height: 210px;
 			flex-shrink: 0;
+			img{
+				max-height: 205px;
+			}
 		}
 
 		.special-offers__text {
