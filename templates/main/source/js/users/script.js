@@ -2252,9 +2252,8 @@ $(window).on("load", function () {
 			}
 		});
 		setTimeout(function () {
-
 			$(".js-comparison__select.active").trigger("click");
-		}, 100);
+		}, 200);
 	}
 	if ($("a[data-fancybox=\"gallery\"] img").length) {
 		// $('a[data-fancybox="gallery"] img').eq(0).each(function () {
