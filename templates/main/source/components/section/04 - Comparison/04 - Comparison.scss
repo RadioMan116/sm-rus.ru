@@ -34,6 +34,18 @@
 				.catalog__presence {
 					display: none;
 				}
+				.special-offers__price{
+					padding-bottom: 0;
+					letter-spacing: -0.5px;
+				}
+				.special-offers__buy {
+					width: 34px;
+					&:before {
+
+						padding-right: 16px;
+
+					}
+				}
 			}
 
 			.swiper-wrapper {
