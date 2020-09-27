@@ -1433,7 +1433,7 @@ $(document).ready(function () {
 						"marginBottom": ($(".products-line").innerHeight() + "px")
 					});
 					$(".js-swiper-comparison").css({
-						"marginTop": ($(".thead__comparison").height() - 10 + "px")
+						"marginTop": ($(".thead__comparison").height() - 7 + "px")
 					});
 					$(".comparison .js-swiper-pagination").css({
 						"top": ($(".thead__comparison").height() + 29 + "px")
@@ -2219,7 +2219,7 @@ $(window).on("load", function () {
 				"marginBottom": ($(".products-line").innerHeight() + "px")
 			});
 			$(".js-swiper-comparison").css({
-				"marginTop": ($(".thead__comparison").height() - 10 + "px")
+				"marginTop": ($(".thead__comparison").height() - 7 + "px")
 			});
 			$(".comparison .js-swiper-pagination").css({
 				"top": ($(".thead__comparison").height() + 29 + "px")
