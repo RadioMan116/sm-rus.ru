@@ -808,8 +808,8 @@
 			&__items {
 				border-top: 1px solid #eee;
 				flex-wrap: wrap;
-				max-height: 280px;
-				padding: 16px 0px 43px;
+				max-height: unset;
+				padding: 16px 0px 12px;
 			}
 
 			.name {
@@ -913,11 +913,11 @@
 				padding-right: 33px;
 				display: flex;
 				right: 16px;
-				background: url("../images/order__pic.png") 95% no-repeat;
+				background: url("../images/comparison-delete-2.svg") 95% no-repeat;
 				margin-left: auto;
 
 				&:hover {
-					background: url("../images/order__color.png") 95% no-repeat;
+					background: url("../images/comparison-delete.svg") 95% no-repeat;
 				}
 			}
 
