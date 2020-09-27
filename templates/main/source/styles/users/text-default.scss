@@ -980,7 +980,14 @@
 
 		&.active {
 			height: auto;
+			.seo-text__button,
+			.switch,
+			.js-switch{
+				&:after {
+					background: url('https://icongr.am/entypo/chevron-small-up.svg?color=2e2e2e&size=50') no-repeat;
 
+				}
+			}
 			.about-store__button {
 				position: static;
 
