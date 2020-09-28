@@ -2570,4 +2570,123 @@ $(window).on("load", function () {
 		e.preventDefault();
 		$("html, body").animate({ scrollTop: 0 }, "300");
 	});
+
+
+	var $filter = document.querySelector('.bx-blue');
+	$filterSlider = [...$filter.querySelectorAll('[data-filter-slider]')];
+	// инициализация слайдеров
+
+		$filterSlider.forEach(function(node) {
+			var $noUiSlider = node.querySelector('[data-nouislider]');
+			var emptyTitle = $(node).parents('[data-empty-title]').attr('data-empty-title');
+			var $priceParentElement = node.querySelector('[data-filter-setPrice]');
+			if (node.classList.contains('noUi-target')) {
+				return false;
+			}
+			node.addEventListener('click', function(e) {
+				e.stopPropagation();
+			});
+			var $inputs = [...node.querySelectorAll('input')];
+			var $result = node.querySelector('[data-filter-value]');
+			var valStart = parseInt($noUiSlider.getAttribute('data-value-start'));
+			var valEnd = parseInt($noUiSlider.getAttribute('data-value-end'));
+			var resStart = valStart;
+			var resEnd = valEnd;
+			var min = parseInt($noUiSlider.getAttribute('data-min'));
+			var max = parseInt($noUiSlider.getAttribute('data-max'));
+			var property = '';
+			var isEqualLVal = min == valStart ? true : false;
+			var isEqualRVal = max == valEnd ? true : false;
+			if ($result) {
+				property = $result.getAttribute('data-property');
+				$result.innerHTML = isEqualLVal && isEqualRVal ? emptyTitle : `<b>${valStart} - ${resEnd} ${property}</b>`
+			}
+			$inputs.forEach(function(input, index) {
+				input.addEventListener('blur', function() {
+					if (index == 0) {
+						if (parseInt(this.value) >= parseInt($inputs[1].value)) {
+							this.value = $inputs[1].value;
+						}
+						if (parseInt(this.value) <= 0) {
+							this.value = 0;
+						}
+						$noUiSlider.noUiSlider.set([this.value, null]);
+						resStart = parseInt(this.value);
+						if ($result) {
+							$result.innerHTML = (resStart == min && resEnd == max) ? emptyTitle : `<b>${resStart}-${resEnd} ${property}</b>`;
+						}
+						return false;
+					}
+					if (parseInt(this.value) <= parseInt($inputs[0].value)) {
+						this.value = $inputs[0].value;
+					}
+					if (parseInt(this.value) > max) {
+						this.value = max;
+					}
+					resEnd = parseInt(this.value);
+					$noUiSlider.noUiSlider.set([null, this.value]);
+					if ($result) {
+						$result.innerHTML = (resStart == min && resEnd == max) ? emptyTitle : `<b>${resStart}-${resEnd} ${property}</b>`;
+					}
+				});
+			});
+			noUiSlider.create($noUiSlider, {
+				start: [
+					valStart,
+					valEnd
+				],
+				behaviour: "drag-tap",
+				connect: true,
+				range: {
+					'min': min,
+					'max': max
+				}
+			});
+			$noUiSlider.noUiSlider.on('slide', function(values) {
+				resStart = Math.round(values[0]);
+				resEnd = Math.round(values[1]);
+				$inputs[0].value = resStart;
+				$inputs[1].value = resEnd;
+				if ($result) {
+					$result.innerHTML = `<b>${resStart}-${resEnd} ${property}</b>`
+				}
+			});
+			$noUiSlider.noUiSlider.on('end', function(values) {
+				if (resStart == min && resEnd == max) {
+					if ($result) {
+						$result.innerHTML = emptyTitle;
+					}
+				}
+				// $filterCheckboxForChangeForm.click();
+				var $parent = $noUiSlider.closest('[data-filter-popup]');
+				if ($parent) $parent.classList.add('active');
+				virtualElement.getBoundingClientRect = generateGetBoundingClientRect($inputs[0].parentNode.getBoundingClientRect());
+				placementPopper = 'top';
+				instancePopper.scheduleUpdate()
+				instancePopper.update();
+			});
+			if ($priceParentElement) {
+				[...$priceParentElement.querySelectorAll('span')].forEach($node => {
+					$node.addEventListener('click', function() {
+						let startValue = this.getAttribute('data-value-start');
+						let endValue = this.getAttribute('data-value-end');
+						$noUiSlider.noUiSlider.set([startValue, null]);
+						$noUiSlider.noUiSlider.set([null, endValue]);
+						$inputs[0].value = startValue;
+						$inputs[1].value = endValue;
+						if ($result) {
+							$result.innerHTML = (resStart == min && resEnd == max) ? emptyTitle : `<b>${resStart}-${resEnd} ${property}</b>`;
+						}
+						// change form event
+						let eventChange = new Event('change');
+						$filterForm.dispatchEvent(eventChange);
+						virtualElement.getBoundingClientRect = generateGetBoundingClientRect($inputs[0].parentNode.getBoundingClientRect());
+						placementPopper = 'top';
+						instancePopper.scheduleUpdate()
+						instancePopper.update();
+					})
+				})
+			}
+		});
+
 });

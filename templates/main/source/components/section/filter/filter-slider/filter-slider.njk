@@ -1,0 +1,31 @@
+{% macro filterSlider(modCls = '', min = '0', max = '200000', startValue = '12000', endValue = '132000',variable=false) %}
+<div class="filter-slider {{ modCls }}">
+	{% if variable %}
+	<div class="filter-slider__variables" data-filter-setPrice>
+		<span data-value-start="0" data-value-end="20000">до 20 000</span>
+		<span data-value-start="20000" data-value-end="40000">20 000 - 40 000</span>
+		<span data-value-start="40000" data-value-end="200000">более 40 000</span>
+	</div>
+	{% endif %}
+	<div class="filter-slider__header">
+		<span class="first"><input class="filter-slider__input " type="number" value="{{ startValue }}" min="{{ min }}" max="{{ max }}" /></span>
+		<div class="filter-slider__sep"></div>
+		<span class="last"><input class="filter-slider__input " type="number" value="{{ endValue }}" min="{{ min }}" max="{{ max }}" /></span>
+	</div>
+	<div class="filter-slider__slider" data-nouislider="data-nouislider" data-min="{{ min }}" data-max="{{ max }}"
+		data-value-start="{{ startValue }}" data-value-end="{{ endValue }}"></div>
+	{% if variable %}
+	{% from "form/checkbox/checkbox.njk" import checkbox %}
+	<div class="filter__checkbox">
+		{{
+			checkbox(
+				mod = 'checkbox_filter',
+				text = 'Только товары в продаже',
+				dataText = 'Только товары в продаже'
+			)
+		}}
+	</div>
+	{% endif %}
+</div>
+<!-- /.filter-slider -->
+{% endmacro %}
