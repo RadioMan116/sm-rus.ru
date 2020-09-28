@@ -2579,7 +2579,7 @@ $(window).on("load", function () {
 		$filterSlider.forEach(function(node) {
 			var $noUiSlider = node.querySelector('[data-nouislider]');
 			var emptyTitle = $(node).parents('[data-empty-title]').attr('data-empty-title');
-			var $priceParentElement = node.querySelector('[data-filter-setPrice]');
+			// var $priceParentElement = node.querySelector('[data-filter-setPrice]');
 			if (node.classList.contains('noUi-target')) {
 				return false;
 			}
@@ -2661,32 +2661,11 @@ $(window).on("load", function () {
 				var $parent = $noUiSlider.closest('[data-filter-popup]');
 				if ($parent) $parent.classList.add('active');
 				virtualElement.getBoundingClientRect = generateGetBoundingClientRect($inputs[0].parentNode.getBoundingClientRect());
-				placementPopper = 'top';
-				instancePopper.scheduleUpdate()
-				instancePopper.update();
+				// placementPopper = 'top';
+				// instancePopper.scheduleUpdate()
+				// instancePopper.update();
 			});
-			if ($priceParentElement) {
-				[...$priceParentElement.querySelectorAll('span')].forEach($node => {
-					$node.addEventListener('click', function() {
-						let startValue = this.getAttribute('data-value-start');
-						let endValue = this.getAttribute('data-value-end');
-						$noUiSlider.noUiSlider.set([startValue, null]);
-						$noUiSlider.noUiSlider.set([null, endValue]);
-						$inputs[0].value = startValue;
-						$inputs[1].value = endValue;
-						if ($result) {
-							$result.innerHTML = (resStart == min && resEnd == max) ? emptyTitle : `<b>${resStart}-${resEnd} ${property}</b>`;
-						}
-						// change form event
-						let eventChange = new Event('change');
-						$filterForm.dispatchEvent(eventChange);
-						virtualElement.getBoundingClientRect = generateGetBoundingClientRect($inputs[0].parentNode.getBoundingClientRect());
-						placementPopper = 'top';
-						instancePopper.scheduleUpdate()
-						instancePopper.update();
-					})
-				})
-			}
+
 		});
 
 });
