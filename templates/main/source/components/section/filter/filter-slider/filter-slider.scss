@@ -45,8 +45,8 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 20px;
-		.first {
 
+		.first {
 			&:before {
 				content: "от";
 				left: 10px;
@@ -60,9 +60,11 @@
 			}
 		}
 
-		.first, .last {
+		.first,
+		.last {
 			position: relative;
 			width: calc(50% - 10px);
+
 			&:before {
 				display: block;
 				position: absolute;
@@ -71,7 +73,6 @@
 				transform: translateY(-50%);
 				padding-bottom: 0 !important;
 				color: #999;
-
 				font-family: Arial, sans-serif;
 				line-height: 20px;
 				text-transform: lowercase;
@@ -92,12 +93,19 @@
 		border: 1px solid #d6d6d6;
 		border-radius: 2px;
 		max-width: 100%;
+		-moz-appearance: textfield;
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			margin: 0;
+		}
 
 		&_large {
 			width: 90px !important;
 		}
-
-
 	}
 
 	&__sep {
@@ -156,12 +164,14 @@
 					transform: scale(1.1);
 				}
 
-				&:after, &:before {
+				&:after,
+				&:before {
 					display: none;
 				}
 			}
 
-			&:after, &:before {
+			&:after,
+			&:before {
 				display: none;
 			}
 
@@ -215,6 +225,7 @@
 		margin-bottom: 14px;
 	}
 }
-[data-filter-slider]{
+
+[data-filter-slider] {
 	width: 100%;
 }
