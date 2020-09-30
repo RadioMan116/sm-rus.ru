@@ -2598,6 +2598,17 @@ $(window).on("load", function () {
 				var property = '';
 				var isEqualLVal = min == valStart ? true : false;
 				var isEqualRVal = max == valEnd ? true : false;
+				let minInput = node.querySelector('.min');
+				let maxInput = node.querySelector('.max');
+
+
+				if (typeof BX !== "undefined") {
+					this.minInput = BX(minInput);
+					smartFilter.keyup(this.minInput);
+
+					this.maxInput = BX(maxInput);
+					smartFilter.keyup(this.maxInput);
+				}
 				if ($result) {
 					property = $result.getAttribute('data-property');
 					$result.innerHTML = isEqualLVal && isEqualRVal ? emptyTitle : `<b>${valStart} - ${resEnd} ${property}</b>`
@@ -2616,6 +2627,9 @@ $(window).on("load", function () {
 							if ($result) {
 								$result.innerHTML = (resStart == min && resEnd == max) ? emptyTitle : `<b>${resStart}-${resEnd} ${property}</b>`;
 							}
+							console.log(
+								'min'
+							)
 							return false;
 						}
 						if (parseInt(this.value) <= parseInt($inputs[0].value)) {
@@ -2629,6 +2643,9 @@ $(window).on("load", function () {
 						if ($result) {
 							$result.innerHTML = (resStart == min && resEnd == max) ? emptyTitle : `<b>${resStart}-${resEnd} ${property}</b>`;
 						}
+						console.log(
+							'max'
+						)
 					});
 				});
 				noUiSlider.create($noUiSlider, {
@@ -2648,14 +2665,17 @@ $(window).on("load", function () {
 					resEnd = Math.round(values[1]);
 					$inputs[0].value = resStart;
 					$inputs[1].value = resEnd;
+					console.log('slide')
 					if ($result) {
 						$result.innerHTML = `<b>${resStart}-${resEnd} ${property}</b>`
 					}
 				});
 				$noUiSlider.noUiSlider.on('end', function (values) {
+					console.log('end')
 					if (resStart == min && resEnd == max) {
 						if ($result) {
 							$result.innerHTML = emptyTitle;
+
 						}
 					}
 					// $filterCheckboxForChangeForm.click();

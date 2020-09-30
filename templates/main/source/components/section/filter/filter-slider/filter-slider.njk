@@ -8,9 +8,9 @@
 	</div>
 	{% endif %}
 	<div class="filter-slider__header">
-		<span class="first"><input class="filter-slider__input " type="number" value="{{ startValue }}" min="{{ min }}" max="{{ max }}" /></span>
+		<span class="first"><input class="filter-slider__input min" type="number" value="{{ startValue }}" min="{{ min }}" max="{{ max }}" /></span>
 		<div class="filter-slider__sep"></div>
-		<span class="last"><input class="filter-slider__input " type="number" value="{{ endValue }}" min="{{ min }}" max="{{ max }}" /></span>
+		<span class="last"><input class="filter-slider__input max" type="number" value="{{ endValue }}" min="{{ min }}" max="{{ max }}" /></span>
 	</div>
 	<div class="filter-slider__slider" data-nouislider="data-nouislider" data-min="{{ min }}" data-max="{{ max }}"
 		data-value-start="{{ startValue }}" data-value-end="{{ endValue }}"></div>
