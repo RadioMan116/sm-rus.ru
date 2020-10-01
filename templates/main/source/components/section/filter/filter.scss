@@ -1267,9 +1267,12 @@
 			.more-text {
 				left: 0;
 				position: absolute;
+				width: fit-content;
+				min-width: unset;
 
 				&:after {
 					left: 0;
+					width: 100%;
 				}
 			}
 		}
