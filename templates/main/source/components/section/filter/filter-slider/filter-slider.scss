@@ -64,6 +64,7 @@
 		.last {
 			position: relative;
 			width: calc(50% - 10px);
+			display: flex;
 
 			&:before {
 				display: block;
@@ -96,6 +97,7 @@
 		appearance: none;
 		-webkit-appearance: none;
 		-moz-appearance: textfield;
+		flex-grow: 1;
 
 		&::-webkit-inner-spin-button,
 		&::-webkit-outer-spin-button {
