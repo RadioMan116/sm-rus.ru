@@ -1263,8 +1263,10 @@
 		}
 
 		.filter-color {
+			padding-bottom: 20px;
 			.more-text {
 				left: 0;
+				position: absolute;
 
 				&:after {
 					left: 0;
