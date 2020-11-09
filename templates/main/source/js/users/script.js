@@ -2135,9 +2135,18 @@ $(window).on("load", function () {
 				// 	$(this).closest('.bx-filter-parameters-box-container').css('height', summ + 27);
 				// })
 			}
-			$(this).find(".checkbox input").click(function() {
+			$(this).find(".checkbox input").click(function () {
 				$(this).closest('.checkbox').toggleClass('active')
+				if ($('#modef:visible')) {
+
+					setTimeout(() => {
+						$("html, body").animate({
+							scrollTop: $('#modef').offset().top
+						}, 800);
+					}, 300);
+				}
 			})
+
 			// if ($(this).find(".filter-color__item").length >= 4) {
 			// 	$(this).addClass("more");
 			// 	$(this).find(".filter-color__item").eq(5).addClass("js-autoHeight");
@@ -2577,6 +2586,7 @@ $(window).on("load", function () {
 		e.preventDefault();
 		$("html, body").animate({ scrollTop: 0 }, "300");
 	});
+
 
 	(() => {
 		var $filter = document.querySelector('.bx-blue');
