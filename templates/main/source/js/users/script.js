@@ -2143,7 +2143,7 @@ $(window).on("load", function () {
 						$("html, body").animate({
 							scrollTop: $('#modef').offset().top
 						}, 800);
-					}, 300);
+					}, 500);
 				}
 			})
 
