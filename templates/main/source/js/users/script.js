@@ -6,7 +6,8 @@ $(document).ready(function () {
 			menuList = document.querySelector(".menu"),
 			menuBottom = document.getElementById("js-header__block_bottom"),
 			favorite = document.querySelector(".header__favorite"),
-			compare = document.querySelector(".header__compare");
+			compare = document.querySelector(".header__compare"),
+			menuParent = document.querySelector('.header__blocks');
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
 			if (-1 !== button.className.indexOf("opened")) {
@@ -15,6 +16,7 @@ $(document).ready(function () {
 				button.setAttribute("aria-expanded", "false");
 				menuBottom.classList.remove("active");
 				menuList.classList.remove("active");
+				menuParent.classList.remove("active");
 				$("body").removeClass("fixed");
 				$("html").removeClass("js-height");
 				$(".header__overlay").hide();
@@ -26,6 +28,7 @@ $(document).ready(function () {
 				button.setAttribute("aria-expanded", "true");
 				menuBottom.classList.add("active");
 				menuList.classList.add("active");
+				menuParent.classList.add("active");
 				$("body").addClass("fixed");
 				$("html").addClass("js-height");
 				if ((favorite.classList.contains("active")) || (compare.classList.contains("active"))) {
