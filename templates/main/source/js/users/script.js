@@ -2138,15 +2138,13 @@ $(window).on("load", function () {
 			$(this).find(".checkbox input").click(function () {
 				$(this).closest('.checkbox').toggleClass('active')
 
-
-
-
-				setTimeout(() => {
-					$("html, body").animate({
-						scrollTop: $(this).closest('.bx-filter-parameters-box').offset().top
+				if (windowWidth2 > 767) {
+					setTimeout(() => {
+						$("html, body").animate({
+							scrollTop: $(this).closest('.bx-filter-parameters-box').offset().top
+						}, 1000);
 					}, 1000);
-				}, 1000);
-
+				}
 			})
 
 			// if ($(this).find(".filter-color__item").length >= 4) {
