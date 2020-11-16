@@ -27,7 +27,7 @@
 			flex-direction: column;
 			background-color: #ffffff;
 			margin-top: 0px;
-			max-height: calc(100vh - 95px);
+			// max-height: calc(100vh - 95px);
 		}
 
 		&:not(.collection) {
@@ -124,7 +124,7 @@
 
 			.dropdown-menu__list {
 				display: flex;
-				overflow-y: auto;
+				// overflow-y: auto;
 				// margin-right: -16px;
 				// padding-right: 20px;
 
