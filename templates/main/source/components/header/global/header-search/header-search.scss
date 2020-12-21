@@ -350,6 +350,10 @@
 			background: #4b4b4b;
 			transform-origin: 50% 50%;
 		}
+
+		&:hover {
+			background: #e3e3e3;
+		}
 	}
 
 	&__inner {
@@ -482,10 +486,9 @@
 		border-radius: 3px;
 		text-decoration: none !important;
 		text-transform: uppercase;
-
-		&:hover {
-			background-color: #ececec;
-		}
+		// &:hover {
+		// 	background-color: #ececec;
+		// }
 	}
 
 	&__searchTable {
