@@ -582,31 +582,31 @@ $(document).ready(function () {
 	// 	// });
 
 	// });
-	// $(".js-header__search").click(function () {
-	// 	if ($(".search__popup").hasClass("search__popup-open") == false) {
-	// 		$(".header .search__popup").addClass("search__popup-open");
-	// 		$(".header__search").addClass("header__search-open");
-	// 		$(".header__overlay").addClass("header__overlay-open");
-	// 		$("html").addClass("fixed");
-	// 	} else {
-	// 		$(".header .search__popup").removeClass("search__popup-open");
-	// 		$(".header__search").removeClass("header__search-open");
-	// 		$(".header__overlay").removeClass("header__overlay-open");
-	// 		$("html").removeClass("fixed");
-	// 	}
-	// });
-	// $(".js-search-header__input").on("input", function () {
-	// 	if ($(this).val()) {
-	// 		$(".js-header__button,.js-header__submit").show();
-	// 	} else {
-	// 		$(".js-header__button,.js-header__submit").hide();
-	// 	}
-	// });
-	// $(".js-header__button").click(function () {
-	// 	$(".header__input").val("");
-	// 	$(this).hide();
-	// 	$(".js-header__submit").hide();
-	// });
+	$(".js-header__search").click(function () {
+		if ($(".search__popup").hasClass("search__popup-open") == false) {
+			$(".header .search__popup").addClass("search__popup-open");
+			$(".header__search").addClass("header__search-open");
+			$(".header__overlay").addClass("header__overlay-open");
+			$("html").addClass("fixed");
+		} else {
+			$(".header .search__popup").removeClass("search__popup-open");
+			$(".header__search").removeClass("header__search-open");
+			$(".header__overlay").removeClass("header__overlay-open");
+			$("html").removeClass("fixed");
+		}
+	});
+	$(".js-search-header__input").on("input", function () {
+		if ($(this).val()) {
+			$(".js-header__button,.js-header__submit").show();
+		} else {
+			$(".js-header__button,.js-header__submit").hide();
+		}
+	});
+	$(".js-header__button").click(function () {
+		$(".header__input").val("");
+		$(this).hide();
+		$(".js-header__submit").hide();
+	});
 	(function () {
 		var inputSearch = document.querySelector(".js-header-search__input");
 		[].forEach.call(document.querySelectorAll(".js-form__hint"), function (item) {
